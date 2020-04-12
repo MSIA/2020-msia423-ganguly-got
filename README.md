@@ -100,7 +100,12 @@ Stories that are not essential immediately, but are good to have, are not sized 
 
  - [ ] Migrate model code to scripts - 2
  - [ ] Write unit tests and log - 2
- - [ ] Gat
+ - [ ] Gather environment configuration requirements and library dependencies - 2
+ - [ ] Create and review 'requirements.txt' - 1
+
+2. Set up database and storage architecture
+
+ - [ ] List item
 
 ## Directory structure 
 
@@ -263,7 +268,7 @@ docker run -p 5000:5000 --name test pennylane
 
 The new image defines the entry command as `python3 app.py` instead of `./boot.sh`. Building the sample PennyLane image this way will require initializing the database prior to building the image so that it is copied over, rather than created when the container is run. Therefore, please **do the step [Create the database with a single song](#create-the-database-with-a-single-song) above before building the image**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxNTk4MTIyMSwxMDI2MTM1NzcwLC0xMj
+eyJoaXN0b3J5IjpbLTExMTY0NjUyMCwxMDI2MTM1NzcwLC0xMj
 YzMzQzODE0LC0xMzczNzE4MzUsLTEyODI4OTgwMjUsNDk3Mjg3
 NjkyLC0yOTQwNDEwNzQsMTkxOTMxNzAwMl19
 -->
