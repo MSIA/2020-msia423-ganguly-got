@@ -31,7 +31,11 @@ To provide fans of the hit TV series Game of Thrones(GoT), based on the equally 
 
 ### Mission
 Develop an application that allows user to build his/her own character in the fantasy series GoT, by choosing responses to a set of questions. The application then outputs the expected life span of the user's character considering the survival of similar existing characters in the series.
-**Data Source**: 
+**Data Source**: https://www.kaggle.com/mylesoneill/game-of-thrones
+
+### Success Criteria
+#### 1. Model Performance
+
 
 ## Directory structure 
 
@@ -194,5 +198,5 @@ docker run -p 5000:5000 --name test pennylane
 
 The new image defines the entry command as `python3 app.py` instead of `./boot.sh`. Building the sample PennyLane image this way will require initializing the database prior to building the image so that it is copied over, rather than created when the container is run. Therefore, please **do the step [Create the database with a single song](#create-the-database-with-a-single-song) above before building the image**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODYxMDgxNDgzLDE5MTkzMTcwMDJdfQ==
+eyJoaXN0b3J5IjpbLTE1NTYwNDg1NzcsMTkxOTMxNzAwMl19
 -->
