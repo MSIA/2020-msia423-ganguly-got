@@ -89,12 +89,12 @@ Stories that are not essential immediately, but are good to have, are not sized 
 
 **Initiative**: Iterate with other suitable ML techniques
 
-**Epic**: Train and assess benchmark model
-1. Research and identify other relevant supervised modeling techniques - 2
-2. Develop further hypothesis based on understanding of the series and create corresponding features - 4
-3. Train alternate models - 2
-4. Evaluate said models on test data and record metrics - 2
-5. Compare and choose the best model for production deployment - 1
+**Epic**: Improve model using alternative ML techniques and engineering newer features
+ - [ ] Research and identify other relevant supervised modeling techniques - 2
+ - [ ] Develop further hypothesis based on understanding of the series and create corresponding features - 4
+ - [ ] Train alternate models - 2
+ - [ ] Evaluate said models on test data and record metrics - 2
+ - [ ] Compare and choose the best model for production deployment - 1
 
 **Initiative**: Design and develop Web Application
 
@@ -303,7 +303,7 @@ docker run -p 5000:5000 --name test pennylane
 
 The new image defines the entry command as `python3 app.py` instead of `./boot.sh`. Building the sample PennyLane image this way will require initializing the database prior to building the image so that it is copied over, rather than created when the container is run. Therefore, please **do the step [Create the database with a single song](#create-the-database-with-a-single-song) above before building the image**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1NDkwNzg2MSwxMDI2MTM1NzcwLC0xMj
-YzMzQzODE0LC0xMzczNzE4MzUsLTEyODI4OTgwMjUsNDk3Mjg3
-NjkyLC0yOTQwNDEwNzQsMTkxOTMxNzAwMl19
+eyJoaXN0b3J5IjpbLTE3MDA5ODI2NjYsMTAyNjEzNTc3MCwtMT
+I2MzM0MzgxNCwtMTM3MzcxODM1LC0xMjgyODk4MDI1LDQ5NzI4
+NzY5MiwtMjk0MDQxMDc0LDE5MTkzMTcwMDJdfQ==
 -->
