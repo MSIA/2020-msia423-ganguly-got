@@ -64,7 +64,8 @@ The initiatives defined above are broken down into major milestones (epics) whic
 Stories that are not essential immediately, but are good to have, are not sized and denoted with 'icebox'
 
 **Initiative**: Develop benchmark model
- 1. Prepare data for Machine Learning model development
+
+ **Epic**: Prepare data for Machine Learning model development
  - [ ] Download datasets from Kaggle - 0
  - [ ] Identify overlap between datasets and merge relevant fields - 1
  - [ ] Identify gaps in the data and assess how to best fill them - 2
@@ -301,7 +302,7 @@ docker run -p 5000:5000 --name test pennylane
 
 The new image defines the entry command as `python3 app.py` instead of `./boot.sh`. Building the sample PennyLane image this way will require initializing the database prior to building the image so that it is copied over, rather than created when the container is run. Therefore, please **do the step [Create the database with a single song](#create-the-database-with-a-single-song) above before building the image**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjE5NjUwNjYsMTAyNjEzNTc3MCwtMT
-I2MzM0MzgxNCwtMTM3MzcxODM1LC0xMjgyODk4MDI1LDQ5NzI4
-NzY5MiwtMjk0MDQxMDc0LDE5MTkzMTcwMDJdfQ==
+eyJoaXN0b3J5IjpbMTMwNzU2MDE5MCwxMDI2MTM1NzcwLC0xMj
+YzMzQzODE0LC0xMzczNzE4MzUsLTEyODI4OTgwMjUsNDk3Mjg3
+NjkyLC0yOTQwNDEwNzQsMTkxOTMxNzAwMl19
 -->
