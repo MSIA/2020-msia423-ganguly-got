@@ -106,7 +106,14 @@ Stories that are not essential immediately, but are good to have, are not sized 
 2. Set up database and storage architecture
 
  - [ ] Identify data requirements for model deployment - 1
- - [ ] Design and create appropria
+ - [ ] Design and create appropriate database structure - 2
+ - [ ] Ensure databases are up to date and pipelines, if any, are in place - 4
+
+3. Configure target environment
+
+ - [ ] Identify current state of environment - 1
+ - [ ] Determine target environment configuration - 1
+ - [ ] Set t
 
 ## Directory structure 
 
@@ -269,7 +276,7 @@ docker run -p 5000:5000 --name test pennylane
 
 The new image defines the entry command as `python3 app.py` instead of `./boot.sh`. Building the sample PennyLane image this way will require initializing the database prior to building the image so that it is copied over, rather than created when the container is run. Therefore, please **do the step [Create the database with a single song](#create-the-database-with-a-single-song) above before building the image**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjEzMTg0NTYsMTAyNjEzNTc3MCwtMT
-I2MzM0MzgxNCwtMTM3MzcxODM1LC0xMjgyODk4MDI1LDQ5NzI4
-NzY5MiwtMjk0MDQxMDc0LDE5MTkzMTcwMDJdfQ==
+eyJoaXN0b3J5IjpbMTM5MTQ3NzkxOCwxMDI2MTM1NzcwLC0xMj
+YzMzQzODE0LC0xMzczNzE4MzUsLTEyODI4OTgwMjUsNDk3Mjg3
+NjkyLC0yOTQwNDEwNzQsMTkxOTMxNzAwMl19
 -->
