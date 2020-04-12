@@ -48,7 +48,10 @@ The following set of metrics will be measured for tracking user engagement with 
  - Average time spent on the app per visit
 
 ## Project Backlog
+### Initiatives
 
+ 1. Develop benchmark supervised machine learning model to predict lifespan of existing GoT characters
+ 2. 
 
 ## Directory structure 
 
@@ -211,6 +214,6 @@ docker run -p 5000:5000 --name test pennylane
 
 The new image defines the entry command as `python3 app.py` instead of `./boot.sh`. Building the sample PennyLane image this way will require initializing the database prior to building the image so that it is copied over, rather than created when the container is run. Therefore, please **do the step [Create the database with a single song](#create-the-database-with-a-single-song) above before building the image**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODI4OTgwMjUsNDk3Mjg3NjkyLC0yOT
-QwNDEwNzQsMTkxOTMxNzAwMl19
+eyJoaXN0b3J5IjpbLTU5MTcyNDQwMiwtMTI4Mjg5ODAyNSw0OT
+cyODc2OTIsLTI5NDA0MTA3NCwxOTE5MzE3MDAyXX0=
 -->
