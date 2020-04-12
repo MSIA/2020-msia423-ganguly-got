@@ -88,7 +88,8 @@ Stories that are not essential immediately, but are good to have, are not sized 
 
 **Initiative**: Iterate with other suitable ML techniques
 
-1. 
+1. Research and identify other relevant supervised modeling techniques - 
+2. 
 
 ## Directory structure 
 
@@ -251,7 +252,7 @@ docker run -p 5000:5000 --name test pennylane
 
 The new image defines the entry command as `python3 app.py` instead of `./boot.sh`. Building the sample PennyLane image this way will require initializing the database prior to building the image so that it is copied over, rather than created when the container is run. Therefore, please **do the step [Create the database with a single song](#create-the-database-with-a-single-song) above before building the image**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0OTAwOTQyNCwxMDI2MTM1NzcwLC0xMj
-YzMzQzODE0LC0xMzczNzE4MzUsLTEyODI4OTgwMjUsNDk3Mjg3
-NjkyLC0yOTQwNDEwNzQsMTkxOTMxNzAwMl19
+eyJoaXN0b3J5IjpbLTIwMzM4Mjg1MzgsMTAyNjEzNTc3MCwtMT
+I2MzM0MzgxNCwtMTM3MzcxODM1LC0xMjgyODk4MDI1LDQ5NzI4
+NzY5MiwtMjk0MDQxMDc0LDE5MTkzMTcwMDJdfQ==
 -->
