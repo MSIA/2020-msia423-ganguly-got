@@ -30,7 +30,7 @@
 To provide fans of the hit TV series Game of Thrones(GoT), based on the equally famous book series "A Song of Fire and Ice" by George RR Martin, a platform to interact with its vastly complicated and perilous fantasy world
 
 ### Mission
-Develop an application that allows user to build his/her own character in the fantasy series GoT, by cho
+Develop an application that allows user to build his/her own character in the fantasy series GoT, by choosing responses to a set of questions. The application then outputs the expected life span of the user's character considering it's different aspects
 
 ## Directory structure 
 
@@ -193,5 +193,5 @@ docker run -p 5000:5000 --name test pennylane
 
 The new image defines the entry command as `python3 app.py` instead of `./boot.sh`. Building the sample PennyLane image this way will require initializing the database prior to building the image so that it is copied over, rather than created when the container is run. Therefore, please **do the step [Create the database with a single song](#create-the-database-with-a-single-song) above before building the image**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTIxMTI5NywxOTE5MzE3MDAyXX0=
+eyJoaXN0b3J5IjpbMTcwMTM0MzM2OCwxOTE5MzE3MDAyXX0=
 -->
