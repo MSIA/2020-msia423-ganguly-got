@@ -122,7 +122,14 @@ Stories that are not essential immediately, but are good to have, are not sized 
  - [ ] Wireframe the UI to finalize design concepts - 2
  - [ ] Implement the finalized design - 4
  - [ ] Get feedback from sample of fans on experience - 2
- - [ ] (icebox) Brainstorm on additional results that can be displayed to add more context to the game and hence aid user
+ - [ ] (icebox) Brainstorm on additional results that can be displayed to add more context to the game and hence aid user engagement
+
+5. Setting up application monitoring framework
+
+ - [ ] Create model monitoring dashboards - 2
+ - [ ] Establish model monitoring data pipelines - 4
+ - [ ] Deploy and validate model performance requirements - 2
+ - [ ] E
 
 ## Directory structure 
 
@@ -285,7 +292,7 @@ docker run -p 5000:5000 --name test pennylane
 
 The new image defines the entry command as `python3 app.py` instead of `./boot.sh`. Building the sample PennyLane image this way will require initializing the database prior to building the image so that it is copied over, rather than created when the container is run. Therefore, please **do the step [Create the database with a single song](#create-the-database-with-a-single-song) above before building the image**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1NTcyMTk0OCwxMDI2MTM1NzcwLC0xMj
+eyJoaXN0b3J5IjpbMjAzODExODk1NSwxMDI2MTM1NzcwLC0xMj
 YzMzQzODE0LC0xMzczNzE4MzUsLTEyODI4OTgwMjUsNDk3Mjg3
 NjkyLC0yOTQwNDEwNzQsMTkxOTMxNzAwMl19
 -->
