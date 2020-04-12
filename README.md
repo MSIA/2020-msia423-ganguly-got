@@ -55,7 +55,12 @@ The following set of metrics will be measured for tracking user engagement with 
  3. Design and develop the web application to deploy final model
 
 ### Epics and Stories
-The initiatives defined above are broken down into major milestones (epics) which are further split into distinct pieces of work (stories). Stories are listed in descending order of priority or order of execution. Each story is assigned points according to expected magnitude of work (0 - 
+The initiatives defined above are broken down into major milestones (epics) which are further split into distinct pieces of work (stories). Stories are listed in descending order of priority or in order of execution. Each story is assigned points according to expected magnitude of work
+-   0 points - quick chore
+-   1 point ~ 1 hour (small)
+-   2 points ~ 1/2 day (medium)
+-   4 points ~ 1 day (large)
+
 **Initiative**: Develop benchmark model
  1. Prepare data for Machine Learning model development
  - [ ] Download datasets from Kaggle - 0
@@ -222,7 +227,7 @@ docker run -p 5000:5000 --name test pennylane
 
 The new image defines the entry command as `python3 app.py` instead of `./boot.sh`. Building the sample PennyLane image this way will require initializing the database prior to building the image so that it is copied over, rather than created when the container is run. Therefore, please **do the step [Create the database with a single song](#create-the-database-with-a-single-song) above before building the image**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjI1NTEwMzA1LC0xMzczNzE4MzUsLTEyOD
-I4OTgwMjUsNDk3Mjg3NjkyLC0yOTQwNDEwNzQsMTkxOTMxNzAw
-Ml19
+eyJoaXN0b3J5IjpbLTEwMDc0OTQ1NCwtMTM3MzcxODM1LC0xMj
+gyODk4MDI1LDQ5NzI4NzY5MiwtMjk0MDQxMDc0LDE5MTkzMTcw
+MDJdfQ==
 -->
