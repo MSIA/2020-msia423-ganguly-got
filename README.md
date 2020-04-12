@@ -66,7 +66,11 @@ The initiatives defined above are broken down into major milestones (epics) whic
  - [ ] Download datasets from Kaggle - 0
  - [ ] Identify overlap between datasets and merge relevant fields - 1
  - [ ] Identify gaps in the data and assess how to best fill them - 2
- - [ ] 
+ - [ ] (icebox) Identify other external sources of information that might bring relevant insights
+
+ 2. E
+
+
 
 ## Directory structure 
 
@@ -229,7 +233,7 @@ docker run -p 5000:5000 --name test pennylane
 
 The new image defines the entry command as `python3 app.py` instead of `./boot.sh`. Building the sample PennyLane image this way will require initializing the database prior to building the image so that it is copied over, rather than created when the container is run. Therefore, please **do the step [Create the database with a single song](#create-the-database-with-a-single-song) above before building the image**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5ODAxMjUxOCwtMTM3MzcxODM1LC0xMj
+eyJoaXN0b3J5IjpbLTE3NDQzODY3MiwtMTM3MzcxODM1LC0xMj
 gyODk4MDI1LDQ5NzI4NzY5MiwtMjk0MDQxMDc0LDE5MTkzMTcw
 MDJdfQ==
 -->
