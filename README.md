@@ -35,8 +35,10 @@ Develop an application that allows user to build his/her own character in the fa
 
 ### Success Criteria
 #### 1. Model Performance
-The problem will be attempted via both regression and classificat
+The problem will be attempted via both regression and classification techniques. Accordingly the following performance metrics will be evaluated to assess success:
 
+ - Classification - misclassification rate (<20%)
+ - Regression - Mean Square Error (
 
 ## Directory structure 
 
@@ -199,5 +201,5 @@ docker run -p 5000:5000 --name test pennylane
 
 The new image defines the entry command as `python3 app.py` instead of `./boot.sh`. Building the sample PennyLane image this way will require initializing the database prior to building the image so that it is copied over, rather than created when the container is run. Therefore, please **do the step [Create the database with a single song](#create-the-database-with-a-single-song) above before building the image**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTE4MDU1NjUsMTkxOTMxNzAwMl19
+eyJoaXN0b3J5IjpbLTI5NDA0MTA3NCwxOTE5MzE3MDAyXX0=
 -->
