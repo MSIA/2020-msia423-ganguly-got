@@ -98,27 +98,23 @@ Stories that are not essential immediately, but are good to have, are not sized 
 
 **Initiative**: Design and develop Web Application
 
-1. Prepare for production deployment
-
+**Epic**: Prepare for production deployment
  - [ ] Migrate model code to scripts - 2
  - [ ] Write unit tests and log - 2
  - [ ] Gather environment configuration requirements and library dependencies - 2
  - [ ] Create and review 'requirements.txt' - 1
 
-2. Set up database and storage architecture
-
+**Epic**: Set up database and storage architecture
  - [ ] Identify data requirements for model deployment - 1
  - [ ] Design and create appropriate database structure - 2
  - [ ] Ensure databases are up to date and pipelines, if any, are in place - 4
 
-3. Configure target environment
-
+**Epic**: Configure target environment
  - [ ] Identify current state of environment - 1
  - [ ] Determine target environment configuration - 1
  - [ ] Set target environment configuration - 1
 
-4. Design front end of application
-
+**Epic**: Design front end of application
  - [ ] Conceptualize appropriate questions and their responses to enable user to create interesting characters - 4
  - [ ] Design layout of user interface - 2
  - [ ] Wireframe the UI to finalize design concepts - 2
@@ -303,7 +299,7 @@ docker run -p 5000:5000 --name test pennylane
 
 The new image defines the entry command as `python3 app.py` instead of `./boot.sh`. Building the sample PennyLane image this way will require initializing the database prior to building the image so that it is copied over, rather than created when the container is run. Therefore, please **do the step [Create the database with a single song](#create-the-database-with-a-single-song) above before building the image**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDA5ODI2NjYsMTAyNjEzNTc3MCwtMT
-I2MzM0MzgxNCwtMTM3MzcxODM1LC0xMjgyODk4MDI1LDQ5NzI4
-NzY5MiwtMjk0MDQxMDc0LDE5MTkzMTcwMDJdfQ==
+eyJoaXN0b3J5IjpbOTE0MTA4NDAyLDEwMjYxMzU3NzAsLTEyNj
+MzNDM4MTQsLTEzNzM3MTgzNSwtMTI4Mjg5ODAyNSw0OTcyODc2
+OTIsLTI5NDA0MTA3NCwxOTE5MzE3MDAyXX0=
 -->
