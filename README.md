@@ -43,6 +43,10 @@ The problem will be attempted via both regression and classification techniques.
 #### 2. Business Outcome
 The following set of metrics will be measured for tracking user engagement with the application
 
+ - Number of visits to the app in an interval of time
+ - Fraction of returning users
+ - Average time spent on the app per visit
+
 ## Directory structure 
 
 ```
@@ -204,6 +208,6 @@ docker run -p 5000:5000 --name test pennylane
 
 The new image defines the entry command as `python3 app.py` instead of `./boot.sh`. Building the sample PennyLane image this way will require initializing the database prior to building the image so that it is copied over, rather than created when the container is run. Therefore, please **do the step [Create the database with a single song](#create-the-database-with-a-single-song) above before building the image**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3NTIxODQ4OCw0OTcyODc2OTIsLTI5ND
+eyJoaXN0b3J5IjpbLTYxOTk5NjQzNyw0OTcyODc2OTIsLTI5ND
 A0MTA3NCwxOTE5MzE3MDAyXX0=
 -->
