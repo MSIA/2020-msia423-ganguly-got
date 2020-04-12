@@ -69,9 +69,9 @@ Stories that are not essential immediately, but are good to have, are not sized 
  - [ ] Download datasets from Kaggle - 0
  - [ ] Identify overlap between datasets and merge relevant fields - 1
  - [ ] Identify gaps in the data and assess how to best fill them - 2
- - [ ] (icebox) Identify other external sources of information that might bring relevant insights
+ - [ ] *(icebox)* Identify other external sources of information that might bring relevant insights
 
- 2. Perform Exploratory Data Analysis
+ **Epic**: Perform Exploratory Data Analysis
  - [ ] Investigate univariate distribution of each of the fields - 2
  - [ ] Examine bivariate relationships between features - 1
  - [ ] Design suitable target variable for both classification and regression approaches - 2
@@ -80,7 +80,7 @@ Stories that are not essential immediately, but are good to have, are not sized 
  - [ ] Remove redundant or repetitive features - 1
  - [ ] Record insights obtained during EDA to feed into future iterations - 1
 
-3. Train and assess benchmark model
+**Epic**: Train and assess benchmark model
  - [ ] Split data into train and test samples - 1
  - [ ] Decide if regression or classification should be the benchmark model - 0
  - [ ] Decide performance evaluation criteria to be used - 2
@@ -89,6 +89,7 @@ Stories that are not essential immediately, but are good to have, are not sized 
 
 **Initiative**: Iterate with other suitable ML techniques
 
+**Epic**: Train and assess benchmark model
 1. Research and identify other relevant supervised modeling techniques - 2
 2. Develop further hypothesis based on understanding of the series and create corresponding features - 4
 3. Train alternate models - 2
@@ -302,7 +303,7 @@ docker run -p 5000:5000 --name test pennylane
 
 The new image defines the entry command as `python3 app.py` instead of `./boot.sh`. Building the sample PennyLane image this way will require initializing the database prior to building the image so that it is copied over, rather than created when the container is run. Therefore, please **do the step [Create the database with a single song](#create-the-database-with-a-single-song) above before building the image**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwNzU2MDE5MCwxMDI2MTM1NzcwLC0xMj
+eyJoaXN0b3J5IjpbMjA1NDkwNzg2MSwxMDI2MTM1NzcwLC0xMj
 YzMzQzODE0LC0xMzczNzE4MzUsLTEyODI4OTgwMjUsNDk3Mjg3
 NjkyLC0yOTQwNDEwNzQsMTkxOTMxNzAwMl19
 -->
