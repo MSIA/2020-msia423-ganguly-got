@@ -129,7 +129,11 @@ Stories that are not essential immediately, but are good to have, are not sized 
  - [ ] Create model monitoring dashboards - 2
  - [ ] Establish model monitoring data pipelines - 4
  - [ ] Deploy and validate model performance requirements - 2
- - [ ] E
+ - [ ] Establish application KPIs - 2
+ - [ ] Establish and verify logging pipelines - 4
+ - [ ] Validate application performance requirements - 2
+
+6. 
 
 ## Directory structure 
 
@@ -292,7 +296,7 @@ docker run -p 5000:5000 --name test pennylane
 
 The new image defines the entry command as `python3 app.py` instead of `./boot.sh`. Building the sample PennyLane image this way will require initializing the database prior to building the image so that it is copied over, rather than created when the container is run. Therefore, please **do the step [Create the database with a single song](#create-the-database-with-a-single-song) above before building the image**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzODExODk1NSwxMDI2MTM1NzcwLC0xMj
-YzMzQzODE0LC0xMzczNzE4MzUsLTEyODI4OTgwMjUsNDk3Mjg3
-NjkyLC0yOTQwNDEwNzQsMTkxOTMxNzAwMl19
+eyJoaXN0b3J5IjpbODg4NTE2MDc2LDEwMjYxMzU3NzAsLTEyNj
+MzNDM4MTQsLTEzNzM3MTgzNSwtMTI4Mjg5ODAyNSw0OTcyODc2
+OTIsLTI5NDA0MTA3NCwxOTE5MzE3MDAyXX0=
 -->
