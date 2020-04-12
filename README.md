@@ -72,8 +72,10 @@ Stories that are not essential immediately, but are good to have, are not sized 
 
  2. Perform Exploratory Data Analysis
  - [ ] Investigate univariate distribution of each of the fields - 2
- - [ ] Examine bivariate relationship - 1
+ - [ ] Examine bivariate relationships between feauture - 1
  - [ ] Explore expected lifespan of characters from particular segments - 2
+ - [ ] Transform existing features into suitable form - 2
+ - [ ] Design suitable target variable for 
 
 ## Directory structure 
 
@@ -236,7 +238,7 @@ docker run -p 5000:5000 --name test pennylane
 
 The new image defines the entry command as `python3 app.py` instead of `./boot.sh`. Building the sample PennyLane image this way will require initializing the database prior to building the image so that it is copied over, rather than created when the container is run. Therefore, please **do the step [Create the database with a single song](#create-the-database-with-a-single-song) above before building the image**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3Mzg2MTUyOSwtMTI2MzM0MzgxNCwtMT
+eyJoaXN0b3J5IjpbLTQ5MzMxNDU5MiwtMTI2MzM0MzgxNCwtMT
 M3MzcxODM1LC0xMjgyODk4MDI1LDQ5NzI4NzY5MiwtMjk0MDQx
 MDc0LDE5MTkzMTcwMDJdfQ==
 -->
