@@ -135,9 +135,10 @@ Stories that are not essential immediately, but are good to have, are not sized 
 
 6. Testing and Deployment
 
- - [ ] Release application to initial subset of users - 1
- - [ ] Identify problem areas (technical and conceptual) by entering end cases and examining app behaviour - 
- - [ ] Rectify identified issues - 
+ - [ ] Release application to initial subset of users - 2
+ - [ ] Identify problem areas (technical and conceptual) by entering end cases and examining app behaviour - 4
+ - [ ] Rectify identified issues - 4
+ - [ ] Deploy application - 1
 
 ## Directory structure 
 
@@ -300,7 +301,7 @@ docker run -p 5000:5000 --name test pennylane
 
 The new image defines the entry command as `python3 app.py` instead of `./boot.sh`. Building the sample PennyLane image this way will require initializing the database prior to building the image so that it is copied over, rather than created when the container is run. Therefore, please **do the step [Create the database with a single song](#create-the-database-with-a-single-song) above before building the image**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDA2MzE4MzQxLDEwMjYxMzU3NzAsLTEyNj
-MzNDM4MTQsLTEzNzM3MTgzNSwtMTI4Mjg5ODAyNSw0OTcyODc2
-OTIsLTI5NDA0MTA3NCwxOTE5MzE3MDAyXX0=
+eyJoaXN0b3J5IjpbLTExMjE5NjUwNjYsMTAyNjEzNTc3MCwtMT
+I2MzM0MzgxNCwtMTM3MzcxODM1LC0xMjgyODk4MDI1LDQ5NzI4
+NzY5MiwtMjk0MDQxMDc0LDE5MTkzMTcwMDJdfQ==
 -->
