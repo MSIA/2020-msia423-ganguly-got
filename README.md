@@ -6,7 +6,7 @@
 
 <!-- toc -->
 
-- [Project Charter](#directory-structure)
+- Project Charter
 - [Project Backlog](#directory-structure)
 - [Directory structure](#directory-structure)
 - [Running the app](#running-the-app)
@@ -296,8 +296,10 @@ docker run -p 5000:5000 --name test pennylane
 ```
 
 The new image defines the entry command as `python3 app.py` instead of `./boot.sh`. Building the sample PennyLane image this way will require initializing the database prior to building the image so that it is copied over, rather than created when the container is run. Therefore, please **do the step [Create the database with a single song](#create-the-database-with-a-single-song) above before building the image**.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODI3MTQ2MzUsMTAyNjEzNTc3MCwtMT
-I2MzM0MzgxNCwtMTM3MzcxODM1LC0xMjgyODk4MDI1LDQ5NzI4
-NzY5MiwtMjk0MDQxMDc0LDE5MTkzMTcwMDJdfQ==
+eyJoaXN0b3J5IjpbLTU3MjkyMTU4LC0xMDgyNzE0NjM1LDEwMj
+YxMzU3NzAsLTEyNjMzNDM4MTQsLTEzNzM3MTgzNSwtMTI4Mjg5
+ODAyNSw0OTcyODc2OTIsLTI5NDA0MTA3NCwxOTE5MzE3MDAyXX
+0=
 -->
