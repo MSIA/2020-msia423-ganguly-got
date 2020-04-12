@@ -77,7 +77,9 @@ Stories that are not essential immediately, but are good to have, are not sized 
  - [ ] Explore expected lifespan of characters from particular segments - 2
  - [ ] Transform existing features into suitable form - 2
  - [ ] Remove redundant or repetitive features - 1
- - [ ] 
+ - [ ] Record insights obtained during EDA to feed into future iterations - 1
+
+3. Train and assess 
 
 ## Directory structure 
 
@@ -240,7 +242,7 @@ docker run -p 5000:5000 --name test pennylane
 
 The new image defines the entry command as `python3 app.py` instead of `./boot.sh`. Building the sample PennyLane image this way will require initializing the database prior to building the image so that it is copied over, rather than created when the container is run. Therefore, please **do the step [Create the database with a single song](#create-the-database-with-a-single-song) above before building the image**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjAzODg2MDgsLTEyNjMzNDM4MTQsLT
-EzNzM3MTgzNSwtMTI4Mjg5ODAyNSw0OTcyODc2OTIsLTI5NDA0
-MTA3NCwxOTE5MzE3MDAyXX0=
+eyJoaXN0b3J5IjpbMTY0NTgxMjA5NSwtMTI2MzM0MzgxNCwtMT
+M3MzcxODM1LC0xMjgyODk4MDI1LDQ5NzI4NzY5MiwtMjk0MDQx
+MDc0LDE5MTkzMTcwMDJdfQ==
 -->
