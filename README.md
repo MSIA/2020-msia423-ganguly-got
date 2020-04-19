@@ -1,4 +1,4 @@
-# MSiA 423 2020
+# MSiA 423 2020 Analytics Value Chain
 ## How long will you play the Game of Thrones?
 
  - Developer - Shreyashi Ganguly
