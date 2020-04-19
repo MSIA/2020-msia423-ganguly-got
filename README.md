@@ -1,4 +1,4 @@
-# MSiA 423 2020 Analytics Value Chain
+# MSiA 423 2020
 ## How long will you play the Game of Thrones?
 
  - Developer - Shreyashi Ganguly
@@ -27,7 +27,7 @@
 
 ## Project Charter
 ### Vision
-To provide fans of the hit TV series Game of Thrones(GoT), based on the equally famous book series "A Song of Fire and Ice" by George RR Martin, a platform to interact with its vastly complicated and perilous fantasy world
+To provide fans of the hit TV series Game of Thrones (GoT), based on the equally famous book series "A Song of Fire and Ice" by George RR Martin, a platform to interact with its vastly complicated and perilous fantasy world
 
 ### Mission
 Develop an application that allows user to build his/her own character in the fantasy series GoT, by choosing responses to a set of questions. The application then outputs the expected life span of the user's character considering the survival of similar existing characters in the series.
