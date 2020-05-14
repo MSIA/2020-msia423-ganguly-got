@@ -32,7 +32,7 @@ Download the data from the following location
 - Data source:  https://www.kaggle.com/mylesoneill/game-of-thrones
 - Filename: character-deaths.csv
 
-The above mentioned file has been downloaded and stored in `data/external` folder. User can choose to use the same file for the subsequent steps, in which case there is no need to download again. Otherwise the file needs to be downloaded and placed in `data/external`. Please do not change the file name.
+The file has been downloaded and stored in `data/external` folder. User can choose to use the same file for the subsequent steps, in which case there is no need to download again. Otherwise the file needs to be downloaded and placed in `data/external`. Please do not change the file name.
 
 **NOTE: You will need to be on the Northwestern VPN for the subsequent steps*
 
@@ -344,7 +344,7 @@ docker run -p 5000:5000 --name test pennylane
 
 The new image defines the entry command as `python3 app.py` instead of `./boot.sh`. Building the sample PennyLane image this way will require initializing the database prior to building the image so that it is copied over, rather than created when the container is run. Therefore, please **do the step [Create the database with a single song](#create-the-database-with-a-single-song) above before building the image**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDMwNDcyMTYsMjEyOTAxNzI2NiwxNT
+eyJoaXN0b3J5IjpbLTE2MTc2NTM3MTgsMjEyOTAxNzI2NiwxNT
 I1NTk1NTMsLTIzOTU2NjEyMyw1ODgzMDMzMzUsLTEwODI3MTQ2
 MzUsMTAyNjEzNTc3MCwtMTI2MzM0MzgxNCwtMTM3MzcxODM1LC
 0xMjgyODk4MDI1LDQ5NzI4NzY5MiwtMjk0MDQxMDc0LDE5MTkz
