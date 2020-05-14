@@ -36,7 +36,7 @@ The file has been downloaded and stored in `data/external` folder. User can choo
 
 **NOTE: You will need to be on the Northwestern VPN for the subsequent steps*
 
-### Step 1. Updating src/config.py
+### Step 2. Updating src/config.py
 `src/config.py` contains all the configurable details about the data ingestion pipeline. All options can be used as is with their default values or user can choose to update them as needed.
 
  - `S3_BUCKET` - specify the name of the S3 bucket for storing the csv file
@@ -66,18 +66,18 @@ Again all the variables are given default values which can be left unchanged.
      `echo 'source .mysqlconfig'>>~/.bashrc`
      `source ~/.bashrc`
 
-### Step 2. Build docker image
+### Step 3. Build docker image
 
     docker build -t got_image .
 
-### Step 3. Write raw data to S3 bucket
+### Step 4. Write raw data to S3 bucket
 Run the following command with your AWS credentials
 
     docker run -e AWS_ACCESS_KEY_ID=<aws_key> -e AWS_SECRET_ACCESS_KEY=<aws_secret_key> got_image src/write_to_s3.py
 
 The file character-death.csv is now written to the S3 bucket!
 
-### Step 4. Creating database for model serving
+### Step 5. Creating database for model serving
  -  Case 1: `CREATE_DB_LOCALLY=True` (creating local SQLite database)
 ```bash
 docker run --mount type=bind,source="$(pwd)"/data,target=/app/data got_image src/createDB_RDS.py
@@ -262,8 +262,8 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTg5MTU5Niw1ODgzMDMzMzUsLTEwOD
-I3MTQ2MzUsMTAyNjEzNTc3MCwtMTI2MzM0MzgxNCwtMTM3Mzcx
-ODM1LC0xMjgyODk4MDI1LDQ5NzI4NzY5MiwtMjk0MDQxMDc0LD
-E5MTkzMTcwMDJdfQ==
+eyJoaXN0b3J5IjpbLTIwNjAwMDgwNDIsLTEyMTg5MTU5Niw1OD
+gzMDMzMzUsLTEwODI3MTQ2MzUsMTAyNjEzNTc3MCwtMTI2MzM0
+MzgxNCwtMTM3MzcxODM1LC0xMjgyODk4MDI1LDQ5NzI4NzY5Mi
+wtMjk0MDQxMDc0LDE5MTkzMTcwMDJdfQ==
 -->
