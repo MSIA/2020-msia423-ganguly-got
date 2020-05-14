@@ -74,17 +74,17 @@ Run the following command with your AWS credentials
 The file character-death.csv is now written to the S3 bucket!
 
 ### Step 4. Creating database for model serving
- -  `CREATE_DB_LOCALLY=True` (creating local SQLite database)
+ -  Case 1: `CREATE_DB_LOCALLY=True` (creating local SQLite database)
 ```bash
 docker run --mount type=bind,source="$(pwd)"/data,target=/app/data got_image src/createDB_RDS.py
 ```
- - `CREATE_DB_LOCALLY=False` (creating AWS RDS database)
+ - Case 2: `CREATE_DB_LOCALLY=False` (creating AWS RDS database)
 ```bash
 sh run_docker.sh
 ```
 The database with the 'prediction' table has been created in SQLite/RDS with a dummy row.
 
-***Note: If recreating the database add --t at the end of option1 and at the end above to avoid IntegrityErrors due to duplicate records*
+***Note: If recreating the database add --t at the end of option1 and in run_docker.sh file for option2 to avoid IntegrityErrors due to duplicate records*
 
 ## Project Charter
 ### Vision
@@ -358,7 +358,7 @@ docker run -p 5000:5000 --name test pennylane
 
 The new image defines the entry command as `python3 app.py` instead of `./boot.sh`. Building the sample PennyLane image this way will require initializing the database prior to building the image so that it is copied over, rather than created when the container is run. Therefore, please **do the step [Create the database with a single song](#create-the-database-with-a-single-song) above before building the image**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3OTcwODM0OCwtMTYxNzY1MzcxOCwyMT
+eyJoaXN0b3J5IjpbLTY5OTEzNTY5NywtMTYxNzY1MzcxOCwyMT
 I5MDE3MjY2LDE1MjU1OTU1MywtMjM5NTY2MTIzLDU4ODMwMzMz
 NSwtMTA4MjcxNDYzNSwxMDI2MTM1NzcwLC0xMjYzMzQzODE0LC
 0xMzczNzE4MzUsLTEyODI4OTgwMjUsNDk3Mjg3NjkyLC0yOTQw
