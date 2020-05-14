@@ -45,7 +45,12 @@ The above mentioned file has been downloaded and stored in `data/external` folde
  
  - `DATABASE_PATH` - location where SQLite database must be stored. Defaulted to `/app/data/msia423_project_db.db`
 
- If `CREATE_DB_LOCALLY=False`, update the AWS RDS details in `.mysqlconfig` as follows,
+Proceed to Step 2.
+
+ If `CREATE_DB_LOCALLY=False`, 
+ 
+
+ - update the AWS RDS details in `.mysqlconfig` as follows,
 
     vi .mysqlconfig
 
@@ -54,8 +59,8 @@ The above mentioned file has been downloaded and stored in `data/external` folde
  - Set `MYSQL_HOST` to be the RDS instance endpoint from the console
  - Set `MYSQL_HOST` to be 3306
 
-Again all the details are given default values which can be left unchanged
-  
+Again all the details are given default values which can be left unchanged.
+Set the environment variables in your ~/.bashrc
 
 ## Project Charter
 ### Vision
@@ -329,8 +334,8 @@ docker run -p 5000:5000 --name test pennylane
 
 The new image defines the entry command as `python3 app.py` instead of `./boot.sh`. Building the sample PennyLane image this way will require initializing the database prior to building the image so that it is copied over, rather than created when the container is run. Therefore, please **do the step [Create the database with a single song](#create-the-database-with-a-single-song) above before building the image**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDIzMjc0MjIsLTIzOTU2NjEyMyw1OD
-gzMDMzMzUsLTEwODI3MTQ2MzUsMTAyNjEzNTc3MCwtMTI2MzM0
-MzgxNCwtMTM3MzcxODM1LC0xMjgyODk4MDI1LDQ5NzI4NzY5Mi
-wtMjk0MDQxMDc0LDE5MTkzMTcwMDJdfQ==
+eyJoaXN0b3J5IjpbMjA4MDg4MzQ5LC0yMzk1NjYxMjMsNTg4Mz
+AzMzM1LC0xMDgyNzE0NjM1LDEwMjYxMzU3NzAsLTEyNjMzNDM4
+MTQsLTEzNzM3MTgzNSwtMTI4Mjg5ODAyNSw0OTcyODc2OTIsLT
+I5NDA0MTA3NCwxOTE5MzE3MDAyXX0=
 -->
