@@ -96,7 +96,9 @@ If the database is created in RDS, it can be queried as follows,
 - To show databases
  `mysql> show databases;` 
  - To show tables
- `mysql> show databases;` 
+ 
+ `mysql> show tables from msia423_project_db;
+` 
 
 
 
@@ -372,7 +374,7 @@ docker run -p 5000:5000 --name test pennylane
 
 The new image defines the entry command as `python3 app.py` instead of `./boot.sh`. Building the sample PennyLane image this way will require initializing the database prior to building the image so that it is copied over, rather than created when the container is run. Therefore, please **do the step [Create the database with a single song](#create-the-database-with-a-single-song) above before building the image**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1MjM2OTI2OCwtMTYxMDM5MjQxMCwtMT
+eyJoaXN0b3J5IjpbLTc4NzA1Nzk3NywtMTYxMDM5MjQxMCwtMT
 YxNzY1MzcxOCwyMTI5MDE3MjY2LDE1MjU1OTU1MywtMjM5NTY2
 MTIzLDU4ODMwMzMzNSwtMTA4MjcxNDYzNSwxMDI2MTM1NzcwLC
 0xMjYzMzQzODE0LC0xMzczNzE4MzUsLTEyODI4OTgwMjUsNDk3
