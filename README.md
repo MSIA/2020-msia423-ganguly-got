@@ -65,8 +65,9 @@ Again all the details are given default values which can be left unchanged.
     docker build -t got_image .
 
 ### Step 3. Write raw data to S3 bucket
+Run the following command with your AWS credentials
+    docker run -e AWS_ACCESS_KEY_ID=<aws_key> -e AWS_SECRET_ACCESS_KEY=<aws_secret_key> got_image src/write_to_s3.py
 
-docker run -e AWS_ACCESS_KEY_ID=AKIAIQ3UKVOUETYP2FYQ -e AWS_SECRET_ACCESS_KEY=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 got_image src/write_to_s3.py
 
 
 
@@ -342,8 +343,8 @@ docker run -p 5000:5000 --name test pennylane
 
 The new image defines the entry command as `python3 app.py` instead of `./boot.sh`. Building the sample PennyLane image this way will require initializing the database prior to building the image so that it is copied over, rather than created when the container is run. Therefore, please **do the step [Create the database with a single song](#create-the-database-with-a-single-song) above before building the image**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjAyODI0MDE2LDE1MjU1OTU1MywtMjM5NT
-Y2MTIzLDU4ODMwMzMzNSwtMTA4MjcxNDYzNSwxMDI2MTM1Nzcw
-LC0xMjYzMzQzODE0LC0xMzczNzE4MzUsLTEyODI4OTgwMjUsND
-k3Mjg3NjkyLC0yOTQwNDEwNzQsMTkxOTMxNzAwMl19
+eyJoaXN0b3J5IjpbLTE1NjkzMTUxOTIsMTUyNTU5NTUzLC0yMz
+k1NjYxMjMsNTg4MzAzMzM1LC0xMDgyNzE0NjM1LDEwMjYxMzU3
+NzAsLTEyNjMzNDM4MTQsLTEzNzM3MTgzNSwtMTI4Mjg5ODAyNS
+w0OTcyODc2OTIsLTI5NDA0MTA3NCwxOTE5MzE3MDAyXX0=
 -->
