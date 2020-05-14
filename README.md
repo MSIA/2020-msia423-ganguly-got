@@ -64,6 +64,7 @@ Again all the variables are given default values which can be left unchanged.
  - Set the environment variables in your ~/.bashrc,
 
      `echo 'source .mysqlconfig'>>~/.bashrc`
+    
      `source ~/.bashrc`
 
 ### Step 3. Build docker image
@@ -262,8 +263,8 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjAwMDgwNDIsLTEyMTg5MTU5Niw1OD
-gzMDMzMzUsLTEwODI3MTQ2MzUsMTAyNjEzNTc3MCwtMTI2MzM0
-MzgxNCwtMTM3MzcxODM1LC0xMjgyODk4MDI1LDQ5NzI4NzY5Mi
-wtMjk0MDQxMDc0LDE5MTkzMTcwMDJdfQ==
+eyJoaXN0b3J5IjpbLTE1NjE4Nzc3MiwtMTIxODkxNTk2LDU4OD
+MwMzMzNSwtMTA4MjcxNDYzNSwxMDI2MTM1NzcwLC0xMjYzMzQz
+ODE0LC0xMzczNzE4MzUsLTEyODI4OTgwMjUsNDk3Mjg3NjkyLC
+0yOTQwNDEwNzQsMTkxOTMxNzAwMl19
 -->
