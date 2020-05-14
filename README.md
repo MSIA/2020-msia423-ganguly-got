@@ -86,6 +86,9 @@ The database with the 'prediction' table has been created in SQLite/RDS with a d
 
 ***Note: If recreating the database add --t at the end of option1 and in run_docker.sh file for option2 to avoid IntegrityErrors due to duplicate records*
 
+### Verifying database creation
+If database is created in local SQLite, the same can be viewed/queried
+
 ## Project Charter
 ### Vision
 To provide fans of the hit TV series Game of Thrones(GoT), based on the equally famous book series "A Song of Fire and Ice" by George RR Martin, a platform to interact with its vastly complicated and perilous fantasy world
@@ -358,9 +361,9 @@ docker run -p 5000:5000 --name test pennylane
 
 The new image defines the entry command as `python3 app.py` instead of `./boot.sh`. Building the sample PennyLane image this way will require initializing the database prior to building the image so that it is copied over, rather than created when the container is run. Therefore, please **do the step [Create the database with a single song](#create-the-database-with-a-single-song) above before building the image**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5OTEzNTY5NywtMTYxNzY1MzcxOCwyMT
-I5MDE3MjY2LDE1MjU1OTU1MywtMjM5NTY2MTIzLDU4ODMwMzMz
-NSwtMTA4MjcxNDYzNSwxMDI2MTM1NzcwLC0xMjYzMzQzODE0LC
-0xMzczNzE4MzUsLTEyODI4OTgwMjUsNDk3Mjg3NjkyLC0yOTQw
-NDEwNzQsMTkxOTMxNzAwMl19
+eyJoaXN0b3J5IjpbMjY1Njg1NTU1LC0xNjE3NjUzNzE4LDIxMj
+kwMTcyNjYsMTUyNTU5NTUzLC0yMzk1NjYxMjMsNTg4MzAzMzM1
+LC0xMDgyNzE0NjM1LDEwMjYxMzU3NzAsLTEyNjMzNDM4MTQsLT
+EzNzM3MTgzNSwtMTI4Mjg5ODAyNSw0OTcyODc2OTIsLTI5NDA0
+MTA3NCwxOTE5MzE3MDAyXX0=
 -->
