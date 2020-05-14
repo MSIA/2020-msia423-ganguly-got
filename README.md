@@ -35,7 +35,7 @@ The above mentioned file has been downloaded and stored in `data/external` folde
 
 **NOTE: You will need to be on the Northwestern VPN for the subsequent steps*
 
-### Step 1. Updating config.py
+### Step 1. Updating src/config.py
 `src/config.py` contains all the configurable details about the data ingestion pipeline. All options can be used as is with their default values or user can choose to update them as needed.
 
  - `S3_BUCKET` - specify the name of the S3 bucket for storing the csv file
@@ -59,6 +59,10 @@ Again all the details are given default values which can be left unchanged.
 
      `echo 'source .mysqlconfig'>>~/.bashrc`
      `source ~/.bashrc`
+
+### Step 2. Building docker image
+
+
 
 ## Project Charter
 ### Vision
@@ -332,8 +336,8 @@ docker run -p 5000:5000 --name test pennylane
 
 The new image defines the entry command as `python3 app.py` instead of `./boot.sh`. Building the sample PennyLane image this way will require initializing the database prior to building the image so that it is copied over, rather than created when the container is run. Therefore, please **do the step [Create the database with a single song](#create-the-database-with-a-single-song) above before building the image**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyNTU5NTUzLC0yMzk1NjYxMjMsNTg4Mz
-AzMzM1LC0xMDgyNzE0NjM1LDEwMjYxMzU3NzAsLTEyNjMzNDM4
-MTQsLTEzNzM3MTgzNSwtMTI4Mjg5ODAyNSw0OTcyODc2OTIsLT
-I5NDA0MTA3NCwxOTE5MzE3MDAyXX0=
+eyJoaXN0b3J5IjpbMzIzNTY4NTc2LDE1MjU1OTU1MywtMjM5NT
+Y2MTIzLDU4ODMwMzMzNSwtMTA4MjcxNDYzNSwxMDI2MTM1Nzcw
+LC0xMjYzMzQzODE0LC0xMzczNzE4MzUsLTEyODI4OTgwMjUsND
+k3Mjg3NjkyLC0yOTQwNDEwNzQsMTkxOTMxNzAwMl19
 -->
