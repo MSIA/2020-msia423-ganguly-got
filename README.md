@@ -34,10 +34,10 @@ Filename: character-deaths.csv
 The above mentioned file has been downloaded and stored in `data/external` folder. User can choose to use the same file for the subsequent steps, in which case there is no need to download again. Otherwise the file needs to be downloaded and placed in `data/external`. Please do not change the file name.
 
 ### Step 1. Updating config.py
-`src/config.py` contains all the configurable details about the data ingestion pipeline.
+`src/config.py` contains all the configurable details about the data ingestion pipeline. All details are defaulted to specific values.
 Update the following information,
 
- - 
+ - `S3_BUCKET` - specify the name of the S3 bucket for storing the csv file
  - 
 
 ## Project Charter
@@ -312,8 +312,8 @@ docker run -p 5000:5000 --name test pennylane
 
 The new image defines the entry command as `python3 app.py` instead of `./boot.sh`. Building the sample PennyLane image this way will require initializing the database prior to building the image so that it is copied over, rather than created when the container is run. Therefore, please **do the step [Create the database with a single song](#create-the-database-with-a-single-song) above before building the image**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2NTcyMDg3Nyw1ODgzMDMzMzUsLTEwOD
-I3MTQ2MzUsMTAyNjEzNTc3MCwtMTI2MzM0MzgxNCwtMTM3Mzcx
-ODM1LC0xMjgyODk4MDI1LDQ5NzI4NzY5MiwtMjk0MDQxMDc0LD
-E5MTkzMTcwMDJdfQ==
+eyJoaXN0b3J5IjpbMjQ0OTMwMjk2LDU4ODMwMzMzNSwtMTA4Mj
+cxNDYzNSwxMDI2MTM1NzcwLC0xMjYzMzQzODE0LC0xMzczNzE4
+MzUsLTEyODI4OTgwMjUsNDk3Mjg3NjkyLC0yOTQwNDEwNzQsMT
+kxOTMxNzAwMl19
 -->
