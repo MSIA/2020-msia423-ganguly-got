@@ -28,6 +28,7 @@
 ## Running the data ingestion pipeline
 ### Step 1. Acquire data
 Download the data from the following location
+
 	- Data source:  https://www.kaggle.com/mylesoneill/game-of-thrones
 	- Filename: character-deaths.csv
 
@@ -343,8 +344,9 @@ docker run -p 5000:5000 --name test pennylane
 
 The new image defines the entry command as `python3 app.py` instead of `./boot.sh`. Building the sample PennyLane image this way will require initializing the database prior to building the image so that it is copied over, rather than created when the container is run. Therefore, please **do the step [Create the database with a single song](#create-the-database-with-a-single-song) above before building the image**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyOTAxNzI2NiwxNTI1NTk1NTMsLTIzOT
-U2NjEyMyw1ODgzMDMzMzUsLTEwODI3MTQ2MzUsMTAyNjEzNTc3
-MCwtMTI2MzM0MzgxNCwtMTM3MzcxODM1LC0xMjgyODk4MDI1LD
-Q5NzI4NzY5MiwtMjk0MDQxMDc0LDE5MTkzMTcwMDJdfQ==
+eyJoaXN0b3J5IjpbMjE0MTM0Njc4NCwyMTI5MDE3MjY2LDE1Mj
+U1OTU1MywtMjM5NTY2MTIzLDU4ODMwMzMzNSwtMTA4MjcxNDYz
+NSwxMDI2MTM1NzcwLC0xMjYzMzQzODE0LC0xMzczNzE4MzUsLT
+EyODI4OTgwMjUsNDk3Mjg3NjkyLC0yOTQwNDEwNzQsMTkxOTMx
+NzAwMl19
 -->
