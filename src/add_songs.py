@@ -19,7 +19,6 @@ Base = declarative_base()
 
 class Tracks(Base):
     """Create a data model for the database to be set up for capturing songs
-
     """
 
     __tablename__ = 'tracks'
@@ -35,12 +34,9 @@ class Tracks(Base):
 
 def create_db(args):
     """Creates a database with the data model given by obj:`apps.models.Track`
-
     Args:
         args: Argparse args - should include args.title, args.artist, args.album
-
     Returns: None
-
     """
 
     engine = sqlalchemy.create_engine(args.engine_string)
@@ -59,12 +55,9 @@ def create_db(args):
 
 def add_track(args):
     """Seeds an existing database with additional songs.
-
     Args:
         args: Argparse args - should include args.title, args.artist, args.album
-
     Returns:None
-
     """
 
     engine = sqlalchemy.create_engine(args.engine_string)

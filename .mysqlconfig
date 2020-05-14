@@ -1,0 +1,5 @@
+export MYSQL_USER=admin
+export MYSQL_PASSWORD=aws_rds_2610
+export MYSQL_PORT=3306
+export DATABASE_NAME=msia423_project_db
+export MYSQL_HOST=nu-msia423-shreyashi.cckfadxvdkrg.us-east-1.rds.amazonaws.com
