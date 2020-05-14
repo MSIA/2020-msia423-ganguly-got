@@ -52,12 +52,15 @@ Proceed to Step 2.
  - update the AWS RDS details in `.mysqlconfig` as follows, 
 
 Enter `vi .mysqlconfig`
+
 		- Set `MYSQL_USER` to the “master username” that you used to create the database server
 		- Set `MYSQL_PASSWORD` to the “master password” that you used to create the database server
 		- Set `MYSQL_HOST` to be the RDS instance endpoint from the console
 		- Set  `MYSQL_HOST` to be 3306
-Again all the details are given default values which can be left unchanged.Set
 		- Set `DATABASE_NAME` to be the desired name for the database
+
+Again all the details are given default values which can be left unchanged.
+
  - Set the environment variables in your ~/.bashrc,
 
      `echo 'source .mysqlconfig'>>~/.bashrc`
@@ -376,10 +379,10 @@ docker run -p 5000:5000 --name test pennylane
 
 The new image defines the entry command as `python3 app.py` instead of `./boot.sh`. Building the sample PennyLane image this way will require initializing the database prior to building the image so that it is copied over, rather than created when the container is run. Therefore, please **do the step [Create the database with a single song](#create-the-database-with-a-single-song) above before building the image**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQzNzEzOTE3LDIwNzU2NTk1NSwtMTYxMD
-M5MjQxMCwtMTYxNzY1MzcxOCwyMTI5MDE3MjY2LDE1MjU1OTU1
-MywtMjM5NTY2MTIzLDU4ODMwMzMzNSwtMTA4MjcxNDYzNSwxMD
-I2MTM1NzcwLC0xMjYzMzQzODE0LC0xMzczNzE4MzUsLTEyODI4
-OTgwMjUsNDk3Mjg3NjkyLC0yOTQwNDEwNzQsMTkxOTMxNzAwMl
-19
+eyJoaXN0b3J5IjpbLTExMDU4NjY0ODEsMjA3NTY1OTU1LC0xNj
+EwMzkyNDEwLC0xNjE3NjUzNzE4LDIxMjkwMTcyNjYsMTUyNTU5
+NTUzLC0yMzk1NjYxMjMsNTg4MzAzMzM1LC0xMDgyNzE0NjM1LD
+EwMjYxMzU3NzAsLTEyNjMzNDM4MTQsLTEzNzM3MTgzNSwtMTI4
+Mjg5ODAyNSw0OTcyODc2OTIsLTI5NDA0MTA3NCwxOTE5MzE3MD
+AyXX0=
 -->
