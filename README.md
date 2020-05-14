@@ -59,7 +59,7 @@ Enter `vi .mysqlconfig`
 		- Set  `MYSQL_HOST` to be 3306
 		- Set `DATABASE_NAME` to be the desired name for the database
 
-Again all the details are given default values which can be left unchanged.
+Again all the variables are given default values which can be left unchanged.
 
  - Set the environment variables in your ~/.bashrc,
 
@@ -379,10 +379,10 @@ docker run -p 5000:5000 --name test pennylane
 
 The new image defines the entry command as `python3 app.py` instead of `./boot.sh`. Building the sample PennyLane image this way will require initializing the database prior to building the image so that it is copied over, rather than created when the container is run. Therefore, please **do the step [Create the database with a single song](#create-the-database-with-a-single-song) above before building the image**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDU4NjY0ODEsMjA3NTY1OTU1LC0xNj
-EwMzkyNDEwLC0xNjE3NjUzNzE4LDIxMjkwMTcyNjYsMTUyNTU5
-NTUzLC0yMzk1NjYxMjMsNTg4MzAzMzM1LC0xMDgyNzE0NjM1LD
-EwMjYxMzU3NzAsLTEyNjMzNDM4MTQsLTEzNzM3MTgzNSwtMTI4
-Mjg5ODAyNSw0OTcyODc2OTIsLTI5NDA0MTA3NCwxOTE5MzE3MD
-AyXX0=
+eyJoaXN0b3J5IjpbMTAzOTA4NDY2NiwyMDc1NjU5NTUsLTE2MT
+AzOTI0MTAsLTE2MTc2NTM3MTgsMjEyOTAxNzI2NiwxNTI1NTk1
+NTMsLTIzOTU2NjEyMyw1ODgzMDMzMzUsLTEwODI3MTQ2MzUsMT
+AyNjEzNTc3MCwtMTI2MzM0MzgxNCwtMTM3MzcxODM1LC0xMjgy
+ODk4MDI1LDQ5NzI4NzY5MiwtMjk0MDQxMDc0LDE5MTkzMTcwMD
+JdfQ==
 -->
