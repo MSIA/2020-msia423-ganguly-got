@@ -37,7 +37,8 @@ The above mentioned file has been downloaded and stored in `data/external` folde
 `src/config.py` contains all the configurable details about the data ingestion pipeline.
 Update the following information,
 
- - List item
+ - `RAW_DATA_FILE` - mention location of file downloaded above. Leave as is if using provided csv file.
+ - 
 
 ## Project Charter
 ### Vision
@@ -311,8 +312,8 @@ docker run -p 5000:5000 --name test pennylane
 
 The new image defines the entry command as `python3 app.py` instead of `./boot.sh`. Building the sample PennyLane image this way will require initializing the database prior to building the image so that it is copied over, rather than created when the container is run. Therefore, please **do the step [Create the database with a single song](#create-the-database-with-a-single-song) above before building the image**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2MDk0MTk4Nyw1ODgzMDMzMzUsLTEwOD
-I3MTQ2MzUsMTAyNjEzNTc3MCwtMTI2MzM0MzgxNCwtMTM3Mzcx
-ODM1LC0xMjgyODk4MDI1LDQ5NzI4NzY5MiwtMjk0MDQxMDc0LD
-E5MTkzMTcwMDJdfQ==
+eyJoaXN0b3J5IjpbMzgwNDExMzUzLDU4ODMwMzMzNSwtMTA4Mj
+cxNDYzNSwxMDI2MTM1NzcwLC0xMjYzMzQzODE0LC0xMzczNzE4
+MzUsLTEyODI4OTgwMjUsNDk3Mjg3NjkyLC0yOTQwNDEwNzQsMT
+kxOTMxNzAwMl19
 -->
