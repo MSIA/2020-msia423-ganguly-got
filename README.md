@@ -74,7 +74,10 @@ The file character-death.csv is now written to the S3 bucket!
 
 ### Step 4. Creating database for model serving
  -  `CREATE_DB_LOCALLY=True` (creating local SQLite database)
-docker run --mount type=bind,source="$(pwd)"/data,target=/app/data got_image src/createDB_RDS.py
+
+    docker run --mount type=bind,source="$(pwd)"/data,target=/app/data got_image src/createDB_RDS.py
+
+
 
     
 
@@ -355,7 +358,7 @@ docker run -p 5000:5000 --name test pennylane
 
 The new image defines the entry command as `python3 app.py` instead of `./boot.sh`. Building the sample PennyLane image this way will require initializing the database prior to building the image so that it is copied over, rather than created when the container is run. Therefore, please **do the step [Create the database with a single song](#create-the-database-with-a-single-song) above before building the image**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0NDQ1NjY0OCwtMTYxNzY1MzcxOCwyMT
+eyJoaXN0b3J5IjpbLTQ5OTkwMTQyMiwtMTYxNzY1MzcxOCwyMT
 I5MDE3MjY2LDE1MjU1OTU1MywtMjM5NTY2MTIzLDU4ODMwMzMz
 NSwtMTA4MjcxNDYzNSwxMDI2MTM1NzcwLC0xMjYzMzQzODE0LC
 0xMzczNzE4MzUsLTEyODI4OTgwMjUsNDk3Mjg3NjkyLC0yOTQw
