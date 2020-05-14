@@ -55,8 +55,10 @@ Proceed to Step 2.
 		- Set `MYSQL_HOST` to be the RDS instance endpoint from the console
 		- Set `MYSQL_HOST` to be 3306
 Again all the details are given default values which can be left unchanged.
+ - Set the environment variables in your ~/.bashrc,
+ 
 
-Set the environment variables in your ~/.bashrc
+    echo 'source .mysqlconfig'>>~/.bashrc
 
 ## Project Charter
 ### Vision
@@ -330,8 +332,8 @@ docker run -p 5000:5000 --name test pennylane
 
 The new image defines the entry command as `python3 app.py` instead of `./boot.sh`. Building the sample PennyLane image this way will require initializing the database prior to building the image so that it is copied over, rather than created when the container is run. Therefore, please **do the step [Create the database with a single song](#create-the-database-with-a-single-song) above before building the image**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzMTE1Njg4MSwtMjM5NTY2MTIzLDU4OD
-MwMzMzNSwtMTA4MjcxNDYzNSwxMDI2MTM1NzcwLC0xMjYzMzQz
-ODE0LC0xMzczNzE4MzUsLTEyODI4OTgwMjUsNDk3Mjg3NjkyLC
-0yOTQwNDEwNzQsMTkxOTMxNzAwMl19
+eyJoaXN0b3J5IjpbNDU2MDAxOTUyLC0yMzk1NjYxMjMsNTg4Mz
+AzMzM1LC0xMDgyNzE0NjM1LDEwMjYxMzU3NzAsLTEyNjMzNDM4
+MTQsLTEzNzM3MTgzNSwtMTI4Mjg5ODAyNSw0OTcyODc2OTIsLT
+I5NDA0MTA3NCwxOTE5MzE3MDAyXX0=
 -->
