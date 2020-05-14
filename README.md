@@ -25,6 +25,8 @@
 
 <!-- tocstop -->
 
+## 
+
 ## Project Charter
 ### Vision
 To provide fans of the hit TV series Game of Thrones(GoT), based on the equally famous book series "A Song of Fire and Ice" by George RR Martin, a platform to interact with its vastly complicated and perilous fantasy world
@@ -297,8 +299,8 @@ docker run -p 5000:5000 --name test pennylane
 
 The new image defines the entry command as `python3 app.py` instead of `./boot.sh`. Building the sample PennyLane image this way will require initializing the database prior to building the image so that it is copied over, rather than created when the container is run. Therefore, please **do the step [Create the database with a single song](#create-the-database-with-a-single-song) above before building the image**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTg4MzAzMzM1LC0xMDgyNzE0NjM1LDEwMj
-YxMzU3NzAsLTEyNjMzNDM4MTQsLTEzNzM3MTgzNSwtMTI4Mjg5
-ODAyNSw0OTcyODc2OTIsLTI5NDA0MTA3NCwxOTE5MzE3MDAyXX
-0=
+eyJoaXN0b3J5IjpbLTYzMTU2MjQyNSw1ODgzMDMzMzUsLTEwOD
+I3MTQ2MzUsMTAyNjEzNTc3MCwtMTI2MzM0MzgxNCwtMTM3Mzcx
+ODM1LC0xMjgyODk4MDI1LDQ5NzI4NzY5MiwtMjk0MDQxMDc0LD
+E5MTkzMTcwMDJdfQ==
 -->
