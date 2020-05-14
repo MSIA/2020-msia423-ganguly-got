@@ -26,8 +26,10 @@
 <!-- tocstop -->
 
 ## Running the data ingestion pipeline
+### Step 1. Acquire data
+The dataset for this project has been downloaded from 
 ### Step 1. Updating config.py
-src/config.py contains all the configurable details 
+src/config.py contains all the configurable details about the data ingestion pipeline. 
 
 
 ## Project Charter
@@ -302,7 +304,7 @@ docker run -p 5000:5000 --name test pennylane
 
 The new image defines the entry command as `python3 app.py` instead of `./boot.sh`. Building the sample PennyLane image this way will require initializing the database prior to building the image so that it is copied over, rather than created when the container is run. Therefore, please **do the step [Create the database with a single song](#create-the-database-with-a-single-song) above before building the image**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5NzgzNzg0OCw1ODgzMDMzMzUsLTEwOD
+eyJoaXN0b3J5IjpbMTkxMjUyODA0Niw1ODgzMDMzMzUsLTEwOD
 I3MTQ2MzUsMTAyNjEzNTc3MCwtMTI2MzM0MzgxNCwtMTM3Mzcx
 ODM1LC0xMjgyODk4MDI1LDQ5NzI4NzY5MiwtMjk0MDQxMDc0LD
 E5MTkzMTcwMDJdfQ==
