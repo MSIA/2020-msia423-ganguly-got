@@ -60,7 +60,8 @@ Again all the details are given default values which can be left unchanged.
      `echo 'source .mysqlconfig'>>~/.bashrc`
      `source ~/.bashrc`
 
-### Step 2. Building docker image
+### Step 2. Build docker image
+
 
 
 
@@ -336,8 +337,8 @@ docker run -p 5000:5000 --name test pennylane
 
 The new image defines the entry command as `python3 app.py` instead of `./boot.sh`. Building the sample PennyLane image this way will require initializing the database prior to building the image so that it is copied over, rather than created when the container is run. Therefore, please **do the step [Create the database with a single song](#create-the-database-with-a-single-song) above before building the image**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzIzNTY4NTc2LDE1MjU1OTU1MywtMjM5NT
-Y2MTIzLDU4ODMwMzMzNSwtMTA4MjcxNDYzNSwxMDI2MTM1Nzcw
-LC0xMjYzMzQzODE0LC0xMzczNzE4MzUsLTEyODI4OTgwMjUsND
-k3Mjg3NjkyLC0yOTQwNDEwNzQsMTkxOTMxNzAwMl19
+eyJoaXN0b3J5IjpbLTE5Nzk4MzI5NiwxNTI1NTk1NTMsLTIzOT
+U2NjEyMyw1ODgzMDMzMzUsLTEwODI3MTQ2MzUsMTAyNjEzNTc3
+MCwtMTI2MzM0MzgxNCwtMTM3MzcxODM1LC0xMjgyODk4MDI1LD
+Q5NzI4NzY5MiwtMjk0MDQxMDc0LDE5MTkzMTcwMDJdfQ==
 -->
