@@ -40,7 +40,11 @@ Update the following information as needed,
  - `S3_BUCKET` - specify the name of the S3 bucket for storing the csv file
  - `CREATE_DB_LOCALLY` - specify `False` to create RDS database, `True` to create local SQLite database. Defaulted to `False`
  
- If `CREATE_DB_LOCALLY` 
+ If `CREATE_DB_LOCALLY=True`, update the following in `src/config.py`
+ 
+ - List item
+
+  
 
 ## Project Charter
 ### Vision
@@ -314,7 +318,7 @@ docker run -p 5000:5000 --name test pennylane
 
 The new image defines the entry command as `python3 app.py` instead of `./boot.sh`. Building the sample PennyLane image this way will require initializing the database prior to building the image so that it is copied over, rather than created when the container is run. Therefore, please **do the step [Create the database with a single song](#create-the-database-with-a-single-song) above before building the image**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2MzM1OTY1NSw1ODgzMDMzMzUsLTEwOD
+eyJoaXN0b3J5IjpbLTE1MjYyMzMyMiw1ODgzMDMzMzUsLTEwOD
 I3MTQ2MzUsMTAyNjEzNTc3MCwtMTI2MzM0MzgxNCwtMTM3Mzcx
 ODM1LC0xMjgyODk4MDI1LDQ5NzI4NzY5MiwtMjk0MDQxMDc0LD
 E5MTkzMTcwMDJdfQ==
