@@ -54,8 +54,10 @@ Proceed to Step 2.
 		- Set `MYSQL_USER` to the “master username” that you used to create the database server
 		- Set `MYSQL_PASSWORD` to the “master password” that you used to create the database server
 		- Set `MYSQL_HOST` to be the RDS instance endpoint from the console
-		- Set `MYSQL_HOST` to be 3306
-Again all the details are given default values which can be left unchanged.
+		- Set  `MYSQL_HOST` to be 3306
+Again all the details are given default values which can be left unchanged.Set
+		- Set
+
  - Set the environment variables in your ~/.bashrc,
 
      `echo 'source .mysqlconfig'>>~/.bashrc`
@@ -81,14 +83,8 @@ docker run --mount type=bind,source="$(pwd)"/data,target=/app/data got_image src
 ```bash
 sh run_docker.sh
 ```
+The database with 
 ***Note: If recreating the database add --t at the end of both options above to avoid IntegrityErrors due to duplicate records*
-
-    
-
- 
-
-
-
 
 ## Project Charter
 ### Vision
@@ -362,9 +358,9 @@ docker run -p 5000:5000 --name test pennylane
 
 The new image defines the entry command as `python3 app.py` instead of `./boot.sh`. Building the sample PennyLane image this way will require initializing the database prior to building the image so that it is copied over, rather than created when the container is run. Therefore, please **do the step [Create the database with a single song](#create-the-database-with-a-single-song) above before building the image**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3MzUwMDI4NiwtMTYxNzY1MzcxOCwyMT
-I5MDE3MjY2LDE1MjU1OTU1MywtMjM5NTY2MTIzLDU4ODMwMzMz
-NSwtMTA4MjcxNDYzNSwxMDI2MTM1NzcwLC0xMjYzMzQzODE0LC
-0xMzczNzE4MzUsLTEyODI4OTgwMjUsNDk3Mjg3NjkyLC0yOTQw
-NDEwNzQsMTkxOTMxNzAwMl19
+eyJoaXN0b3J5IjpbLTE0MjM0NTcyMTUsLTE2MTc2NTM3MTgsMj
+EyOTAxNzI2NiwxNTI1NTk1NTMsLTIzOTU2NjEyMyw1ODgzMDMz
+MzUsLTEwODI3MTQ2MzUsMTAyNjEzNTc3MCwtMTI2MzM0MzgxNC
+wtMTM3MzcxODM1LC0xMjgyODk4MDI1LDQ5NzI4NzY5MiwtMjk0
+MDQxMDc0LDE5MTkzMTcwMDJdfQ==
 -->
