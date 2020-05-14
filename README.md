@@ -103,7 +103,6 @@ If the database is created in RDS, it can be queried as follows,
 ` 
 
 
-
 ## Project Charter
 ### Vision
 To provide fans of the hit TV series Game of Thrones(GoT), based on the equally famous book series "A Song of Fire and Ice" by George RR Martin, a platform to interact with its vastly complicated and perilous fantasy world
@@ -376,9 +375,9 @@ docker run -p 5000:5000 --name test pennylane
 
 The new image defines the entry command as `python3 app.py` instead of `./boot.sh`. Building the sample PennyLane image this way will require initializing the database prior to building the image so that it is copied over, rather than created when the container is run. Therefore, please **do the step [Create the database with a single song](#create-the-database-with-a-single-song) above before building the image**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3NDAwNTY1MywtMTYxMDM5MjQxMCwtMT
-YxNzY1MzcxOCwyMTI5MDE3MjY2LDE1MjU1OTU1MywtMjM5NTY2
-MTIzLDU4ODMwMzMzNSwtMTA4MjcxNDYzNSwxMDI2MTM1NzcwLC
-0xMjYzMzQzODE0LC0xMzczNzE4MzUsLTEyODI4OTgwMjUsNDk3
-Mjg3NjkyLC0yOTQwNDEwNzQsMTkxOTMxNzAwMl19
+eyJoaXN0b3J5IjpbMjA3NTY1OTU1LC0xNjEwMzkyNDEwLC0xNj
+E3NjUzNzE4LDIxMjkwMTcyNjYsMTUyNTU5NTUzLC0yMzk1NjYx
+MjMsNTg4MzAzMzM1LC0xMDgyNzE0NjM1LDEwMjYxMzU3NzAsLT
+EyNjMzNDM4MTQsLTEzNzM3MTgzNSwtMTI4Mjg5ODAyNSw0OTcy
+ODc2OTIsLTI5NDA0MTA3NCwxOTE5MzE3MDAyXX0=
 -->
