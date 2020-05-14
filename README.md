@@ -35,10 +35,10 @@ The above mentioned file has been downloaded and stored in `data/external` folde
 
 ### Step 1. Updating config.py
 `src/config.py` contains all the configurable details about the data ingestion pipeline. All details are defaulted to specific values.
-Update the following information,
+Update the following information as needed,
 
  - `S3_BUCKET` - specify the name of the S3 bucket for storing the csv file
- - 
+ - `CREATE_DB_LOCALLY` - specify False to create RDS database, True to create local SQLite database
 
 ## Project Charter
 ### Vision
@@ -312,7 +312,7 @@ docker run -p 5000:5000 --name test pennylane
 
 The new image defines the entry command as `python3 app.py` instead of `./boot.sh`. Building the sample PennyLane image this way will require initializing the database prior to building the image so that it is copied over, rather than created when the container is run. Therefore, please **do the step [Create the database with a single song](#create-the-database-with-a-single-song) above before building the image**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQ0OTMwMjk2LDU4ODMwMzMzNSwtMTA4Mj
+eyJoaXN0b3J5IjpbMTkxODg0ODIwLDU4ODMwMzMzNSwtMTA4Mj
 cxNDYzNSwxMDI2MTM1NzcwLC0xMjYzMzQzODE0LC0xMzczNzE4
 MzUsLTEyODI4OTgwMjUsNDk3Mjg3NjkyLC0yOTQwNDEwNzQsMT
 kxOTMxNzAwMl19
