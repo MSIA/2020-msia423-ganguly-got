@@ -60,7 +60,7 @@ Enter `vi .mysqlconfig`
 	- Set `MYSQL_HOST` to be 3306
 	- Set `DATABASE_NAME` to be the name of the database created
 
-**To only query from the RDS database already created by the developer, refer to the 
+**To only query from the RDS database *already created* by the developer, refer to Step 6: Verifying database creation
 
  - Set the environment variables in your ~/.bashrc,
 
@@ -92,7 +92,7 @@ The database with the 'prediction' table has been created in SQLite/RDS with a d
 
 ***Note: If recreating the database add --t at the end of option1 and in run_docker.sh file for option2 to avoid IntegrityErrors due to duplicate records*
 
-### Verifying database creation
+### Step 6: Verifying database creation
 If database is created in local SQLite, the same can be viewed/queried through applications like `DB Browser for SQLite`
 
 If the database is created in RDS, it can be queried as follows,
@@ -264,8 +264,8 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3NDA2MDkzNCwtMTU2MTg3NzcyLC0xMj
-E4OTE1OTYsNTg4MzAzMzM1LC0xMDgyNzE0NjM1LDEwMjYxMzU3
-NzAsLTEyNjMzNDM4MTQsLTEzNzM3MTgzNSwtMTI4Mjg5ODAyNS
-w0OTcyODc2OTIsLTI5NDA0MTA3NCwxOTE5MzE3MDAyXX0=
+eyJoaXN0b3J5IjpbLTE1ODgwMzU4NjgsLTE1NjE4Nzc3MiwtMT
+IxODkxNTk2LDU4ODMwMzMzNSwtMTA4MjcxNDYzNSwxMDI2MTM1
+NzcwLC0xMjYzMzQzODE0LC0xMzczNzE4MzUsLTEyODI4OTgwMj
+UsNDk3Mjg3NjkyLC0yOTQwNDEwNzQsMTkxOTMxNzAwMl19
 -->
