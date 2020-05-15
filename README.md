@@ -44,7 +44,7 @@ The file has been downloaded and stored in `data/external` folder. User can choo
  
  - `DATABASE_PATH` - location where SQLite database must be stored. Defaulted to `/app/data/msia423_project_db.db`
 
-Proceed to Step 2.
+**Proceed to Step 2**
 
  If `CREATE_DB_LOCALLY=False`, 
 User will have to create an RDS instance and database in their AWS account to carry out the following steps.
@@ -261,9 +261,9 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjU1MzA1MywtMTE3OTI3MjAxMSwtMT
-U2MTg3NzcyLC0xMjE4OTE1OTYsNTg4MzAzMzM1LC0xMDgyNzE0
-NjM1LDEwMjYxMzU3NzAsLTEyNjMzNDM4MTQsLTEzNzM3MTgzNS
-wtMTI4Mjg5ODAyNSw0OTcyODc2OTIsLTI5NDA0MTA3NCwxOTE5
-MzE3MDAyXX0=
+eyJoaXN0b3J5IjpbODIzMDcwODc5LC0xMTc5MjcyMDExLC0xNT
+YxODc3NzIsLTEyMTg5MTU5Niw1ODgzMDMzMzUsLTEwODI3MTQ2
+MzUsMTAyNjEzNTc3MCwtMTI2MzM0MzgxNCwtMTM3MzcxODM1LC
+0xMjgyODk4MDI1LDQ5NzI4NzY5MiwtMjk0MDQxMDc0LDE5MTkz
+MTcwMDJdfQ==
 -->
