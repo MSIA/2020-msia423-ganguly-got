@@ -60,9 +60,7 @@ Enter `vi .mysqlconfig`
 	- Set `MYSQL_HOST` to be 3306
 	- Set `DATABASE_NAME` to be the name of the database created
 
-**To only query from the RDS database *already created* by the developer, refer to 
-
-> Step 6: Verifying database creation
+**To only query from the RDS database *already created* by the developer, refer to **Step 6: Verifying database creation**
 
  - Set the environment variables in your ~/.bashrc,
 
@@ -266,8 +264,8 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzODE3NDA0NiwtMTU2MTg3NzcyLC0xMj
-E4OTE1OTYsNTg4MzAzMzM1LC0xMDgyNzE0NjM1LDEwMjYxMzU3
-NzAsLTEyNjMzNDM4MTQsLTEzNzM3MTgzNSwtMTI4Mjg5ODAyNS
-w0OTcyODc2OTIsLTI5NDA0MTA3NCwxOTE5MzE3MDAyXX0=
+eyJoaXN0b3J5IjpbLTQ3NDA4NDc2LC0xNTYxODc3NzIsLTEyMT
+g5MTU5Niw1ODgzMDMzMzUsLTEwODI3MTQ2MzUsMTAyNjEzNTc3
+MCwtMTI2MzM0MzgxNCwtMTM3MzcxODM1LC0xMjgyODk4MDI1LD
+Q5NzI4NzY5MiwtMjk0MDQxMDc0LDE5MTkzMTcwMDJdfQ==
 -->
