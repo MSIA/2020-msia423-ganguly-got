@@ -62,11 +62,9 @@ Enter `vi .mysqlconfig`
 
 **To only query from the RDS database *already created* by the developer, refer to **Step 6: Verifying database creation**
 
- - Set the environment variables in your ~/.bashrc,
+ - Set the environment variables in .mysqlconfig,
 
-     `echo 'source .mysqlconfig'>>~/.bashrc`
-    
-     `source ~/.bashrc`
+     `source .mysqlconfig`
 
 ### Step 3. Build docker image
 
@@ -77,7 +75,7 @@ Run the following command with your AWS credentials
 
     docker run -e AWS_ACCESS_KEY_ID=<aws_key> -e AWS_SECRET_ACCESS_KEY=<aws_secret_key> got_image src/write_to_s3.py
 
-The file character-death.csv is now written to the S3 bucket!
+The file character-deaths.csv is now written to the S3 bucket!
 
 ### Step 5. Creating database for model serving
  -  Case 1: `CREATE_DB_LOCALLY=True` (creating local SQLite database)
@@ -90,7 +88,7 @@ sh run_docker.sh
 ```
 The database with the 'prediction' table has been created in SQLite/RDS with a dummy row.
 
-***Note: If recreating the database add --t at the end of option1 and in run_docker.sh file for option2 to avoid IntegrityErrors due to duplicate records*
+***Note: If recreating the database add --t at the end of option1 and inside run_docker.sh file for option2 to avoid IntegrityErrors due to duplicate records*
 
 ### Step 6: Verifying database creation
 If database is created in local SQLite, the same can be viewed/queried through applications like `DB Browser for SQLite`
@@ -264,8 +262,8 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3NDA4NDc2LC0xNTYxODc3NzIsLTEyMT
-g5MTU5Niw1ODgzMDMzMzUsLTEwODI3MTQ2MzUsMTAyNjEzNTc3
-MCwtMTI2MzM0MzgxNCwtMTM3MzcxODM1LC0xMjgyODk4MDI1LD
-Q5NzI4NzY5MiwtMjk0MDQxMDc0LDE5MTkzMTcwMDJdfQ==
+eyJoaXN0b3J5IjpbLTExMTc2Mjg2NjUsLTE1NjE4Nzc3MiwtMT
+IxODkxNTk2LDU4ODMwMzMzNSwtMTA4MjcxNDYzNSwxMDI2MTM1
+NzcwLC0xMjYzMzQzODE0LC0xMzczNzE4MzUsLTEyODI4OTgwMj
+UsNDk3Mjg3NjkyLC0yOTQwNDEwNzQsMTkxOTMxNzAwMl19
 -->
