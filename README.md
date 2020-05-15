@@ -51,6 +51,7 @@ User will have to create an RDS instance and database in their AWS account to ca
 
 **To only query from the RDS database *already created* by the developer, skip to **Step 6: Verifying database creation**
 
+To create RDS database,
  - update the AWS RDS details in `.mysqlconfig` as follows, 
 
 Enter `vi .mysqlconfig`
@@ -262,9 +263,9 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3MzM0MDQwLC0xMTc5MjcyMDExLC0xNT
-YxODc3NzIsLTEyMTg5MTU5Niw1ODgzMDMzMzUsLTEwODI3MTQ2
-MzUsMTAyNjEzNTc3MCwtMTI2MzM0MzgxNCwtMTM3MzcxODM1LC
-0xMjgyODk4MDI1LDQ5NzI4NzY5MiwtMjk0MDQxMDc0LDE5MTkz
-MTcwMDJdfQ==
+eyJoaXN0b3J5IjpbLTE3MzYwMjA2NjMsLTExNzkyNzIwMTEsLT
+E1NjE4Nzc3MiwtMTIxODkxNTk2LDU4ODMwMzMzNSwtMTA4Mjcx
+NDYzNSwxMDI2MTM1NzcwLC0xMjYzMzQzODE0LC0xMzczNzE4Mz
+UsLTEyODI4OTgwMjUsNDk3Mjg3NjkyLC0yOTQwNDEwNzQsMTkx
+OTMxNzAwMl19
 -->
