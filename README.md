@@ -27,7 +27,7 @@
 
 ## Running the data ingestion pipeline
 ### Step 1. Acquire data
-Download the data from the following location
+Data can be downloaded from the following location
 
 - Data source:  https://www.kaggle.com/mylesoneill/game-of-thrones
 - Filename: character-deaths.csv
@@ -37,7 +37,7 @@ The file has been downloaded and stored in `data/external` folder. User can choo
 **NOTE: You will need to be on the Northwestern VPN for the subsequent steps*
 
 ### Step 2. Updating src/config.py
-`src/config.py` contains all the configurable details about the data ingestion pipeline. All options can be used as is with their default values or user can choose to update them as needed.
+`src/config.py` contains all the configurable details about the data ingestion pipeline. Please update the following items
 
  - `S3_BUCKET` - specify the name of the S3 bucket for storing the csv file
  - `CREATE_DB_LOCALLY` - specify `False` to create RDS database, `True` to create local SQLite database. Defaulted to `False`
@@ -263,8 +263,8 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjE4Nzc3MiwtMTIxODkxNTk2LDU4OD
-MwMzMzNSwtMTA4MjcxNDYzNSwxMDI2MTM1NzcwLC0xMjYzMzQz
-ODE0LC0xMzczNzE4MzUsLTEyODI4OTgwMjUsNDk3Mjg3NjkyLC
-0yOTQwNDEwNzQsMTkxOTMxNzAwMl19
+eyJoaXN0b3J5IjpbLTE2MTg3Nzc4NzIsLTE1NjE4Nzc3MiwtMT
+IxODkxNTk2LDU4ODMwMzMzNSwtMTA4MjcxNDYzNSwxMDI2MTM1
+NzcwLC0xMjYzMzQzODE0LC0xMzczNzE4MzUsLTEyODI4OTgwMj
+UsNDk3Mjg3NjkyLC0yOTQwNDEwNzQsMTkxOTMxNzAwMl19
 -->
