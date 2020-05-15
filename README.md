@@ -58,9 +58,9 @@ Enter `vi .mysqlconfig`
 	- Set `MYSQL_PASSWORD` to the “master password” that you used to create the database server
 	- Set `MYSQL_HOST` to be the RDS instance endpoint from the console
 	- Set `MYSQL_HOST` to be 3306
-	- Set `DATABASE_NAME` to be the desired name of the database create
+	- Set `DATABASE_NAME` to be the name of the database created
 
-Again all the variables are given default values which can be left unchanged.
+**To only query from the RDS database already created by the developer, refer to the 
 
  - Set the environment variables in your ~/.bashrc,
 
@@ -264,8 +264,8 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg5NDA5MjU1LC0xNTYxODc3NzIsLTEyMT
-g5MTU5Niw1ODgzMDMzMzUsLTEwODI3MTQ2MzUsMTAyNjEzNTc3
-MCwtMTI2MzM0MzgxNCwtMTM3MzcxODM1LC0xMjgyODk4MDI1LD
-Q5NzI4NzY5MiwtMjk0MDQxMDc0LDE5MTkzMTcwMDJdfQ==
+eyJoaXN0b3J5IjpbMTQ3NDA2MDkzNCwtMTU2MTg3NzcyLC0xMj
+E4OTE1OTYsNTg4MzAzMzM1LC0xMDgyNzE0NjM1LDEwMjYxMzU3
+NzAsLTEyNjMzNDM4MTQsLTEzNzM3MTgzNSwtMTI4Mjg5ODAyNS
+w0OTcyODc2OTIsLTI5NDA0MTA3NCwxOTE5MzE3MDAyXX0=
 -->
