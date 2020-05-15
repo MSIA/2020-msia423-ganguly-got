@@ -48,6 +48,9 @@ The file has been downloaded and stored in `data/external` folder. User can choo
 
  If `CREATE_DB_LOCALLY=False`, 
 User will have to create an RDS instance and database in their AWS account to carry out the following steps.
+
+**To only query from the RDS database *already created* by the developer, skip to **Step 6: Verifying database creation**
+
  - update the AWS RDS details in `.mysqlconfig` as follows, 
 
 Enter `vi .mysqlconfig`
@@ -57,8 +60,6 @@ Enter `vi .mysqlconfig`
 	- Set `MYSQL_HOST` to be the RDS instance endpoint from the console
 	- Set `MYSQL_HOST` to be 3306
 	- Set `DATABASE_NAME` to be the name of the database created
-
-**To only query from the RDS database *already created* by the developer, refer to **Step 6: Verifying database creation**
 
  - Set the environment variables in .mysqlconfig,
 
@@ -261,7 +262,7 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODIzMDcwODc5LC0xMTc5MjcyMDExLC0xNT
+eyJoaXN0b3J5IjpbLTM3MzM0MDQwLC0xMTc5MjcyMDExLC0xNT
 YxODc3NzIsLTEyMTg5MTU5Niw1ODgzMDMzMzUsLTEwODI3MTQ2
 MzUsMTAyNjEzNTc3MCwtMTI2MzM0MzgxNCwtMTM3MzcxODM1LC
 0xMjgyODk4MDI1LDQ5NzI4NzY5MiwtMjk0MDQxMDc0LDE5MTkz
