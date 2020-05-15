@@ -27,8 +27,6 @@
 
 ## Running the data ingestion pipeline
 ### Step 1. Acquire data
-Data can be downloaded from the following location
-
 - Data source:  https://www.kaggle.com/mylesoneill/game-of-thrones
 - Filename: character-deaths.csv
 
@@ -263,7 +261,7 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwNTQzMzY0MCwtMTE3OTI3MjAxMSwtMT
+eyJoaXN0b3J5IjpbLTEzMjU1MzA1MywtMTE3OTI3MjAxMSwtMT
 U2MTg3NzcyLC0xMjE4OTE1OTYsNTg4MzAzMzM1LC0xMDgyNzE0
 NjM1LDEwMjYxMzU3NzAsLTEyNjMzNDM4MTQsLTEzNzM3MTgzNS
 wtMTI4Mjg5ODAyNSw0OTcyODc2OTIsLTI5NDA0MTA3NCwxOTE5
