@@ -95,7 +95,7 @@ If database is created in local SQLite, the same can be viewed/queried through a
 
 If the database is created in RDS, it can be queried as follows,
 
- - Enter suitable `MYSQL_USER` and MYSQL_PASSWORD in .mysqlconfig 
+ - Enter suitable `MYSQL_USER` and `MYSQL_PASSWORD` in `.mysqlconfig` (
  - Start MySQL client
  `sh run_mysql_client.sh` 
 - To show databases
@@ -263,7 +263,7 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjAyMjYxMzksLTE1NjE4Nzc3MiwtMT
+eyJoaXN0b3J5IjpbLTExNzkyNzIwMTEsLTE1NjE4Nzc3MiwtMT
 IxODkxNTk2LDU4ODMwMzMzNSwtMTA4MjcxNDYzNSwxMDI2MTM1
 NzcwLC0xMjYzMzQzODE0LC0xMzczNzE4MzUsLTEyODI4OTgwMj
 UsNDk3Mjg3NjkyLC0yOTQwNDEwNzQsMTkxOTMxNzAwMl19
