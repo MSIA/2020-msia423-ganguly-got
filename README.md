@@ -6,6 +6,7 @@
 
 <!-- toc -->
 
+- [Data Ingestion Pipeline](#Running-the-data-ingestion-pipeline)
 - [Project Charter](#project-charter)
 - [Project Backlog](#project-backlog)
 - [Directory structure](#directory-structure)
@@ -263,7 +264,7 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzYwMjA2NjMsLTExNzkyNzIwMTEsLT
+eyJoaXN0b3J5IjpbLTE4NDk2MjcxMTYsLTExNzkyNzIwMTEsLT
 E1NjE4Nzc3MiwtMTIxODkxNTk2LDU4ODMwMzMzNSwtMTA4Mjcx
 NDYzNSwxMDI2MTM1NzcwLC0xMjYzMzQzODE0LC0xMzczNzE4Mz
 UsLTEyODI4OTgwMjUsNDk3Mjg3NjkyLC0yOTQwNDEwNzQsMTkx
