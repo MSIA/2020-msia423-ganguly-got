@@ -6,6 +6,7 @@
 
 <!-- toc -->
 
+- [Data Ingestion Pipeline](#Running-the-data-ingestion-pipeline)
 - [Project Charter](#project-charter)
 - [Project Backlog](#project-backlog)
 - [Directory structure](#directory-structure)
@@ -27,8 +28,6 @@
 
 ## Running the data ingestion pipeline
 ### Step 1. Acquire data
-Download the data from the following location
-
 - Data source:  https://www.kaggle.com/mylesoneill/game-of-thrones
 - Filename: character-deaths.csv
 
@@ -36,8 +35,8 @@ The file has been downloaded and stored in `data/external` folder. User can choo
 
 **NOTE: You will need to be on the Northwestern VPN for the subsequent steps*
 
-### Step 1. Updating src/config.py
-`src/config.py` contains all the configurable details about the data ingestion pipeline. All options can be used as is with their default values or user can choose to update them as needed.
+### Step 2. Updating src/config.py
+`src/config.py` contains all the configurable details about the data ingestion pipeline. Please update the following items
 
  - `S3_BUCKET` - specify the name of the S3 bucket for storing the csv file
  - `CREATE_DB_LOCALLY` - specify `False` to create RDS database, `True` to create local SQLite database. Defaulted to `False`
@@ -46,9 +45,14 @@ The file has been downloaded and stored in `data/external` folder. User can choo
  
  - `DATABASE_PATH` - location where SQLite database must be stored. Defaulted to `/app/data/msia423_project_db.db`
 
-Proceed to Step 2.
+**Proceed to Step 3**
 
  If `CREATE_DB_LOCALLY=False`, 
+User will have to create an RDS instance and database in their AWS account to carry out the following steps.
+
+**To only query from the RDS database *already created* by the developer, skip to **Step 6: Verifying database creation**
+
+To create RDS database,
  - update the AWS RDS details in `.mysqlconfig` as follows, 
 
 Enter `vi .mysqlconfig`
@@ -57,27 +61,24 @@ Enter `vi .mysqlconfig`
 	- Set `MYSQL_PASSWORD` to the “master password” that you used to create the database server
 	- Set `MYSQL_HOST` to be the RDS instance endpoint from the console
 	- Set `MYSQL_HOST` to be 3306
-	- Set `DATABASE_NAME` to be the desired name for the database
+	- Set `DATABASE_NAME` to be the name of the database created
 
-Again all the variables are given default values which can be left unchanged.
+ - Set the environment variables in .mysqlconfig,
 
- - Set the environment variables in your ~/.bashrc,
+     `source .mysqlconfig`
 
-     `echo 'source .mysqlconfig'>>~/.bashrc`
-     `source ~/.bashrc`
-
-### Step 2. Build docker image
+### Step 3. Build docker image
 
     docker build -t got_image .
 
-### Step 3. Write raw data to S3 bucket
+### Step 4. Write raw data to S3 bucket
 Run the following command with your AWS credentials
 
     docker run -e AWS_ACCESS_KEY_ID=<aws_key> -e AWS_SECRET_ACCESS_KEY=<aws_secret_key> got_image src/write_to_s3.py
 
-The file character-death.csv is now written to the S3 bucket!
+The file character-deaths.csv is now written to the S3 bucket!
 
-### Step 4. Creating database for model serving
+### Step 5. Creating database for model serving
  -  Case 1: `CREATE_DB_LOCALLY=True` (creating local SQLite database)
 ```bash
 docker run --mount type=bind,source="$(pwd)"/data,target=/app/data got_image src/createDB_RDS.py
@@ -88,13 +89,14 @@ sh run_docker.sh
 ```
 The database with the 'prediction' table has been created in SQLite/RDS with a dummy row.
 
-***Note: If recreating the database add --t at the end of option1 and in run_docker.sh file for option2 to avoid IntegrityErrors due to duplicate records*
+***Note: If recreating the database add --t at the end of option1 and inside run_docker.sh file for option2, to avoid IntegrityErrors due to duplicate records*
 
-### Verifying database creation
+### Step 6: Verifying database creation
 If database is created in local SQLite, the same can be viewed/queried through applications like `DB Browser for SQLite`
 
 If the database is created in RDS, it can be queried as follows,
 
+ - Enter suitable `MYSQL_USER` and `MYSQL_PASSWORD` in `.mysqlconfig` (for users created for MSIA423 instructors and QA)
  - Start MySQL client
  `sh run_mysql_client.sh` 
 - To show databases
@@ -262,8 +264,9 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTg5MTU5Niw1ODgzMDMzMzUsLTEwOD
-I3MTQ2MzUsMTAyNjEzNTc3MCwtMTI2MzM0MzgxNCwtMTM3Mzcx
-ODM1LC0xMjgyODk4MDI1LDQ5NzI4NzY5MiwtMjk0MDQxMDc0LD
-E5MTkzMTcwMDJdfQ==
+eyJoaXN0b3J5IjpbMTEyMDk2ODExNSwtMTg0OTYyNzExNiwtMT
+E3OTI3MjAxMSwtMTU2MTg3NzcyLC0xMjE4OTE1OTYsNTg4MzAz
+MzM1LC0xMDgyNzE0NjM1LDEwMjYxMzU3NzAsLTEyNjMzNDM4MT
+QsLTEzNzM3MTgzNSwtMTI4Mjg5ODAyNSw0OTcyODc2OTIsLTI5
+NDA0MTA3NCwxOTE5MzE3MDAyXX0=
 -->
