@@ -149,6 +149,7 @@ In case the location to store the offline score has been changed above, please m
 
   -Build docker image
   `docker build -f app/Dockerfile -t got_app .`
+  
  -Run application
    `docker run -p 5000:5000 --name test got_app`
  
@@ -309,11 +310,11 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjUxOTExNTgsMTk4NTgxMzIzNywxOT
-c1OTk3NDc1LC0yNzQ0MTkyNzMsLTU3NDIyMjA5MSw1MTcwNjky
-MTEsLTM5NDk1MDEyOCwtNTQ0OTY5MjczLC0xODk3NDI1ODQsND
-g1ODY0NzI0LDE2NDU1MTUwNzEsLTYwOTA5NDY3OSwxMTIwOTY4
-MTE1LC0xODQ5NjI3MTE2LC0xMTc5MjcyMDExLC0xNTYxODc3Nz
-IsLTEyMTg5MTU5Niw1ODgzMDMzMzUsLTEwODI3MTQ2MzUsMTAy
-NjEzNTc3MF19
+eyJoaXN0b3J5IjpbLTYzMDg2MDEwNCwxOTg1ODEzMjM3LDE5Nz
+U5OTc0NzUsLTI3NDQxOTI3MywtNTc0MjIyMDkxLDUxNzA2OTIx
+MSwtMzk0OTUwMTI4LC01NDQ5NjkyNzMsLTE4OTc0MjU4NCw0OD
+U4NjQ3MjQsMTY0NTUxNTA3MSwtNjA5MDk0Njc5LDExMjA5Njgx
+MTUsLTE4NDk2MjcxMTYsLTExNzkyNzIwMTEsLTE1NjE4Nzc3Mi
+wtMTIxODkxNTk2LDU4ODMwMzMzNSwtMTA4MjcxNDYzNSwxMDI2
+MTM1NzcwXX0=
 -->
