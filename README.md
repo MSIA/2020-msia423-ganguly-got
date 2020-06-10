@@ -138,7 +138,7 @@ By default creates offline score base and saves in `data/model_data [MODEL_DATA]
 
 ### To connect application to RDS database
 
- - Define the following environment variables
+ - Define the following environment variables a
 
 >  -	`export MYSQL_USER=<“master username” used to create the database server>` 
 > 	- `export MYSQL_PASSWORD=<“master password” used to create the database server>` 
@@ -328,11 +328,11 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyMjAzODYxMCwtMTI4NzI4ODg3NCwtMT
-I4NzI4ODg3NCwtOTE3NjA1MTgzLDEzNjM4MzcxNDYsMjM4NTU1
-MTAyLDQ1OTMyOTk2OSwxOTg1ODEzMjM3LDE5NzU5OTc0NzUsLT
-I3NDQxOTI3MywtNTc0MjIyMDkxLDUxNzA2OTIxMSwtMzk0OTUw
-MTI4LC01NDQ5NjkyNzMsLTE4OTc0MjU4NCw0ODU4NjQ3MjQsMT
-Y0NTUxNTA3MSwtNjA5MDk0Njc5LDExMjA5NjgxMTUsLTE4NDk2
-MjcxMTZdfQ==
+eyJoaXN0b3J5IjpbLTE4Mjc3ODM0MzksMTEyMjAzODYxMCwtMT
+I4NzI4ODg3NCwtMTI4NzI4ODg3NCwtOTE3NjA1MTgzLDEzNjM4
+MzcxNDYsMjM4NTU1MTAyLDQ1OTMyOTk2OSwxOTg1ODEzMjM3LD
+E5NzU5OTc0NzUsLTI3NDQxOTI3MywtNTc0MjIyMDkxLDUxNzA2
+OTIxMSwtMzk0OTUwMTI4LC01NDQ5NjkyNzMsLTE4OTc0MjU4NC
+w0ODU4NjQ3MjQsMTY0NTUxNTA3MSwtNjA5MDk0Njc5LDExMjA5
+NjgxMTVdfQ==
 -->
