@@ -101,10 +101,11 @@ By default creates offline score base and saves in `data/model_data` Picks expor
 >  - `export MYSQL_PORT=<RDS instance port 3306>` 
 >  - `export DATABASE_NAME=<name of the database created>`   
 
-- Create and populate the RDS database with offline scored base -  `make database_rds`
+ - Create and populate the RDS database with offline scored base -  `make database_rds`
 In case the location to store the offline score has been changed above, please mention the same here 
 `make database_rds MODEL_DATA=<local file path>`
 
+ - 
 
 **To only query from the RDS database *already created* by the developer, skip to **Step 6: Verifying database creation**
 
@@ -320,11 +321,11 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzQ3Mjc0MzksLTM5NDk1MDEyOCwtNT
-Q0OTY5MjczLC0xODk3NDI1ODQsNDg1ODY0NzI0LDE2NDU1MTUw
-NzEsLTYwOTA5NDY3OSwxMTIwOTY4MTE1LC0xODQ5NjI3MTE2LC
-0xMTc5MjcyMDExLC0xNTYxODc3NzIsLTEyMTg5MTU5Niw1ODgz
-MDMzMzUsLTEwODI3MTQ2MzUsMTAyNjEzNTc3MCwtMTI2MzM0Mz
-gxNCwtMTM3MzcxODM1LC0xMjgyODk4MDI1LDQ5NzI4NzY5Miwt
-Mjk0MDQxMDc0XX0=
+eyJoaXN0b3J5IjpbLTM0Njc5Mzk4NiwtMzk0OTUwMTI4LC01ND
+Q5NjkyNzMsLTE4OTc0MjU4NCw0ODU4NjQ3MjQsMTY0NTUxNTA3
+MSwtNjA5MDk0Njc5LDExMjA5NjgxMTUsLTE4NDk2MjcxMTYsLT
+ExNzkyNzIwMTEsLTE1NjE4Nzc3MiwtMTIxODkxNTk2LDU4ODMw
+MzMzNSwtMTA4MjcxNDYzNSwxMDI2MTM1NzcwLC0xMjYzMzQzOD
+E0LC0xMzczNzE4MzUsLTEyODI4OTgwMjUsNDk3Mjg3NjkyLC0y
+OTQwNDEwNzRdfQ==
 -->
