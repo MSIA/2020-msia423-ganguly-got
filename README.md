@@ -157,9 +157,9 @@ In case the location to store the offline score has been changed above, please m
  
  
 ### Other model pipeline configurations
-All model pipeline related configurations are stored in config/model_like,
+All model pipeline related configurations are stored in `config/model_config.yaml` Some examples are as follows
 
- - List item
+ - S3_BUCKET - S3 bucket name
 
 ## Project Charter
 ### Vision
@@ -316,11 +316,11 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1NzI4NjUwNCwtOTE3NjA1MTgzLDEzNj
-M4MzcxNDYsMjM4NTU1MTAyLDQ1OTMyOTk2OSwxOTg1ODEzMjM3
-LDE5NzU5OTc0NzUsLTI3NDQxOTI3MywtNTc0MjIyMDkxLDUxNz
-A2OTIxMSwtMzk0OTUwMTI4LC01NDQ5NjkyNzMsLTE4OTc0MjU4
-NCw0ODU4NjQ3MjQsMTY0NTUxNTA3MSwtNjA5MDk0Njc5LDExMj
-A5NjgxMTUsLTE4NDk2MjcxMTYsLTExNzkyNzIwMTEsLTE1NjE4
-Nzc3Ml19
+eyJoaXN0b3J5IjpbNDA2OTEyMjQxLC05MTc2MDUxODMsMTM2Mz
+gzNzE0NiwyMzg1NTUxMDIsNDU5MzI5OTY5LDE5ODU4MTMyMzcs
+MTk3NTk5NzQ3NSwtMjc0NDE5MjczLC01NzQyMjIwOTEsNTE3MD
+Y5MjExLC0zOTQ5NTAxMjgsLTU0NDk2OTI3MywtMTg5NzQyNTg0
+LDQ4NTg2NDcyNCwxNjQ1NTE1MDcxLC02MDkwOTQ2NzksMTEyMD
+k2ODExNSwtMTg0OTYyNzExNiwtMTE3OTI3MjAxMSwtMTU2MTg3
+NzcyXX0=
 -->
