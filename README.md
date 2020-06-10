@@ -17,10 +17,9 @@
 ### To run the model pipeline and application with default settings
 **Things to ensure before proceeding**
 
- - [ ] You are on Northwestern VPN and Docker app is running
- - [ ] AWS credentials have been set as environment variables via  the following commands
- 
-  `export AWS_ACCESS_KEY_ID=<your key>`
+ - You are on Northwestern VPN and Docker app is running
+ - AWS credentials have been set as environment variables via  the following commands
+`export AWS_ACCESS_KEY_ID=<your key>`
   
   `export AWS_SECRET_ACCESS_KEY=<your secret key>`
 
@@ -276,11 +275,11 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzUwMTExMzksLTU3NDIyMjA5MSw1MT
-cwNjkyMTEsLTM5NDk1MDEyOCwtNTQ0OTY5MjczLC0xODk3NDI1
-ODQsNDg1ODY0NzI0LDE2NDU1MTUwNzEsLTYwOTA5NDY3OSwxMT
-IwOTY4MTE1LC0xODQ5NjI3MTE2LC0xMTc5MjcyMDExLC0xNTYx
-ODc3NzIsLTEyMTg5MTU5Niw1ODgzMDMzMzUsLTEwODI3MTQ2Mz
-UsMTAyNjEzNTc3MCwtMTI2MzM0MzgxNCwtMTM3MzcxODM1LC0x
-MjgyODk4MDI1XX0=
+eyJoaXN0b3J5IjpbMjkzNDExNDM3LC01NzQyMjIwOTEsNTE3MD
+Y5MjExLC0zOTQ5NTAxMjgsLTU0NDk2OTI3MywtMTg5NzQyNTg0
+LDQ4NTg2NDcyNCwxNjQ1NTE1MDcxLC02MDkwOTQ2NzksMTEyMD
+k2ODExNSwtMTg0OTYyNzExNiwtMTE3OTI3MjAxMSwtMTU2MTg3
+NzcyLC0xMjE4OTE1OTYsNTg4MzAzMzM1LC0xMDgyNzE0NjM1LD
+EwMjYxMzU3NzAsLTEyNjMzNDM4MTQsLTEzNzM3MTgzNSwtMTI4
+Mjg5ODAyNV19
 -->
