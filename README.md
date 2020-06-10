@@ -27,8 +27,9 @@
  - [ ] The SQL Alchemy database connection has been set up as,
  `export SQLALCHEMY_DATABASE_URI=`
 > For example,
-> relative path: sqlite:///data/got_simulator.db
-> absolute path: sqlite:////User/
+> relative path to local DB: sqlite:///data/got_simulator.db
+> absolute path to local DB: sqlite://///Users/cmawer/Repos/2020-MSIA423-template-repository/data/tracks.db
+> RDS DB: 
 
 If you are 
 The file has been downloaded and stored in `data/external` folder. User can choose to use the same file for the subsequent steps, in which case there is no need to download again. Otherwise the file needs to be downloaded and placed in `data/external`. Please do not change the file name.
@@ -264,7 +265,7 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2NDMyMzM5MiwtNjA5MDk0Njc5LDExMj
+eyJoaXN0b3J5IjpbMTY0NTUxNTA3MSwtNjA5MDk0Njc5LDExMj
 A5NjgxMTUsLTE4NDk2MjcxMTYsLTExNzkyNzIwMTEsLTE1NjE4
 Nzc3MiwtMTIxODkxNTk2LDU4ODMwMzMzNSwtMTA4MjcxNDYzNS
 wxMDI2MTM1NzcwLC0xMjYzMzQzODE0LC0xMzczNzE4MzUsLTEy
