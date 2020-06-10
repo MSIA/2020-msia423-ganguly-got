@@ -61,7 +61,8 @@ As mentioned before, if using your own S3 bucket, please mention the bucket name
  - Download raw data from S3 -  `make s3_download`
  By default this saves downloaded data in `data/raw_data`. To change this location use,  `make s3_download S3_DOWNLOAD_PATH=<local file path>`
  - Clean data - `make clean_base`
- Again, this
+ Again, this creates `clean_base.csv` and saves in `data/model_data`. To use an alternate location use  `make clean_base MODEL_DATA=<loacl file path>`
+ - Create features and EDA plots - `make clean_base`
 
  - `S3_BUCKET` - specify the name of the S3 bucket for storing the csv file
  - `CREATE_DB_LOCALLY` - specify `False` to create RDS database, `True` to create local SQLite database. Defaulted to `False`
@@ -289,7 +290,7 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5MjA3MjU3OCwxNjQ1NTE1MDcxLC02MD
+eyJoaXN0b3J5IjpbLTgwOTAxMjI1MSwxNjQ1NTE1MDcxLC02MD
 kwOTQ2NzksMTEyMDk2ODExNSwtMTg0OTYyNzExNiwtMTE3OTI3
 MjAxMSwtMTU2MTg3NzcyLC0xMjE4OTE1OTYsNTg4MzAzMzM1LC
 0xMDgyNzE0NjM1LDEwMjYxMzU3NzAsLTEyNjMzNDM4MTQsLTEz
