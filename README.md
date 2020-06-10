@@ -71,7 +71,7 @@ Click on the url to be directed to the application web page. Enjoy playing aroun
 
  *To stop the already running application docker container, execute `docker kill test` and `docker rm test` in a different terminal
 
-### To execute the model pipeline step by step with configurable inputss
+### To execute the model pipeline step by step with configurable inputs
 Docker image to be built same as above, i.e.,
 `docker build -t got_make .`
 
@@ -306,11 +306,11 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4NTgxMzIzNywxOTc1OTk3NDc1LC0yNz
-Q0MTkyNzMsLTU3NDIyMjA5MSw1MTcwNjkyMTEsLTM5NDk1MDEy
-OCwtNTQ0OTY5MjczLC0xODk3NDI1ODQsNDg1ODY0NzI0LDE2ND
-U1MTUwNzEsLTYwOTA5NDY3OSwxMTIwOTY4MTE1LC0xODQ5NjI3
-MTE2LC0xMTc5MjcyMDExLC0xNTYxODc3NzIsLTEyMTg5MTU5Ni
-w1ODgzMDMzMzUsLTEwODI3MTQ2MzUsMTAyNjEzNTc3MCwtMTI2
-MzM0MzgxNF19
+eyJoaXN0b3J5IjpbMTA4MzA3NTY3NiwxOTg1ODEzMjM3LDE5Nz
+U5OTc0NzUsLTI3NDQxOTI3MywtNTc0MjIyMDkxLDUxNzA2OTIx
+MSwtMzk0OTUwMTI4LC01NDQ5NjkyNzMsLTE4OTc0MjU4NCw0OD
+U4NjQ3MjQsMTY0NTUxNTA3MSwtNjA5MDk0Njc5LDExMjA5Njgx
+MTUsLTE4NDk2MjcxMTYsLTExNzkyNzIwMTEsLTE1NjE4Nzc3Mi
+wtMTIxODkxNTk2LDU4ODMwMzMzNSwtMTA4MjcxNDYzNSwxMDI2
+MTM1NzcwXX0=
 -->
