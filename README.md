@@ -54,11 +54,12 @@ Click on the link to be directed to the application web page. Enjoy playing arou
 Docker image to be built same as above, i.e.,
 `docker build -t got_make .`
  - Upload raw data to S3 - `make s3_upload`
-By default this pulls *all files* from `data/external`. To change this location use,  `make s3_upload S3_UPLOAD_PATH=<local path>`
+By default this pulls *all files* from `data/external`. To change this location use,  `make s3_upload S3_UPLOAD_PATH=<local file path>`
 As mentioned before, if using your own S3 bucket, please mention the bucket name in `config/model_config.yaml`
 `src/config.py`
  - Download raw data from S3 -  `make s3_download`
- By default this saves downloaded data in `data/raw_data`. To change this location use,  `make s3_upload S3_UPLOAD_PATH=<local path>`
+ By default this saves downloaded data in `data/raw_data`. To change this location use,  `make s3_download S3_DOWNLOAD_PATH=<local file path>`
+ - Clean data - `make clean_base`
 
  - `S3_BUCKET` - specify the name of the S3 bucket for storing the csv file
  - `CREATE_DB_LOCALLY` - specify `False` to create RDS database, `True` to create local SQLite database. Defaulted to `False`
@@ -286,10 +287,10 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjUyMzI1MzMsMTY0NTUxNTA3MSwtNj
-A5MDk0Njc5LDExMjA5NjgxMTUsLTE4NDk2MjcxMTYsLTExNzky
-NzIwMTEsLTE1NjE4Nzc3MiwtMTIxODkxNTk2LDU4ODMwMzMzNS
-wtMTA4MjcxNDYzNSwxMDI2MTM1NzcwLC0xMjYzMzQzODE0LC0x
-MzczNzE4MzUsLTEyODI4OTgwMjUsNDk3Mjg3NjkyLC0yOTQwND
-EwNzQsMTkxOTMxNzAwMl19
+eyJoaXN0b3J5IjpbLTc1NDg0NjUyNywxNjQ1NTE1MDcxLC02MD
+kwOTQ2NzksMTEyMDk2ODExNSwtMTg0OTYyNzExNiwtMTE3OTI3
+MjAxMSwtMTU2MTg3NzcyLC0xMjE4OTE1OTYsNTg4MzAzMzM1LC
+0xMDgyNzE0NjM1LDEwMjYxMzU3NzAsLTEyNjMzNDM4MTQsLTEz
+NzM3MTgzNSwtMTI4Mjg5ODAyNSw0OTcyODc2OTIsLTI5NDA0MT
+A3NCwxOTE5MzE3MDAyXX0=
 -->
