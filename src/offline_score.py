@@ -44,7 +44,8 @@ def scoring(model_pkl_path, model_pkl_file=None, target_mapping=None, input_feat
     2. Scores offline base with fit model
 
     Arguments:
-        model_pkl: pickle object of trained model
+        model_pkl_path: location of model_artifacts
+        model_pkl_file: name pickle object of trained model
         target_mapping: dictionary defining mapping of predicted class: target category
         input_features: list of independent variables in the model
         remarks: dictionary to provide user interesting insight from model prediction
