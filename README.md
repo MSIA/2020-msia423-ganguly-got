@@ -71,13 +71,17 @@ Click on the url to be directed to the application web page. Enjoy playing aroun
 
  *To stop the already running application docker container, execute `docker kill test` and `docker rm test` in a different terminal
 
-### To execute the model pipeline step by step with configurable inputs
+### To execute the model pipeline step by step with configurable inputss
 Docker image to be built same as above, i.e.,
 `docker build -t got_make .`
+
 If desired, all previous results and artifacts can be cleaned by running `make clean`
+
  - Upload raw data to S3 - **`make s3_upload`**
 
-By default this pulls *all files* from `data/external`. To change this location use,  `make s3_upload S3_UPLOAD_PATH=<local file path>`
+Configurable path - upload data location
+ `make s3_upload S3_UPLOAD_PATH=<local file path>`
+By default this pulls *all files* from `data/external`.
 As mentioned before, if using your own S3 bucket, please mention the bucket name in `config/model_config.yaml`
 `src/config.py`
  - Download raw data from S3 -  **`make s3_download`**
@@ -285,11 +289,11 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0ODMxOTEyNiwtMjc0NDE5MjczLC01Nz
-QyMjIwOTEsNTE3MDY5MjExLC0zOTQ5NTAxMjgsLTU0NDk2OTI3
-MywtMTg5NzQyNTg0LDQ4NTg2NDcyNCwxNjQ1NTE1MDcxLC02MD
-kwOTQ2NzksMTEyMDk2ODExNSwtMTg0OTYyNzExNiwtMTE3OTI3
-MjAxMSwtMTU2MTg3NzcyLC0xMjE4OTE1OTYsNTg4MzAzMzM1LC
-0xMDgyNzE0NjM1LDEwMjYxMzU3NzAsLTEyNjMzNDM4MTQsLTEz
-NzM3MTgzNV19
+eyJoaXN0b3J5IjpbNzg0OTIwNDUxLC0yNzQ0MTkyNzMsLTU3ND
+IyMjA5MSw1MTcwNjkyMTEsLTM5NDk1MDEyOCwtNTQ0OTY5Mjcz
+LC0xODk3NDI1ODQsNDg1ODY0NzI0LDE2NDU1MTUwNzEsLTYwOT
+A5NDY3OSwxMTIwOTY4MTE1LC0xODQ5NjI3MTE2LC0xMTc5Mjcy
+MDExLC0xNTYxODc3NzIsLTEyMTg5MTU5Niw1ODgzMDMzMzUsLT
+EwODI3MTQ2MzUsMTAyNjEzNTc3MCwtMTI2MzM0MzgxNCwtMTM3
+MzcxODM1XX0=
 -->
