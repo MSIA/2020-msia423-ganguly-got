@@ -41,8 +41,8 @@ def test_happy_chapters_survived():
 
 def test_unhappy_chapters_survived():
     """
-    Testing 'unhappy path' for chapters_survived
-    :return: True if chapters_survived is correctly computed
+    Testing 'unhappy path' for chapters_survived - missing key in dictionary
+    :return: True if raises SystemExit
     """
     missing_key_dict = {1: 72, 3: 80, 4: 45, 5: 71}
     input_df = pd.DataFrame(happy_path)
@@ -81,8 +81,8 @@ def test_happy_target_class():
 
 def test_unhappy_target_class():
     """
-    Testing 'happy path' for target_class
-    :return: True if unique values of target column are as expected
+    Testing 'unhappy path' for target_class - missing column
+    :return: True if raises SystemExit
     """
     input_df = pd.DataFrame({'Allegiances': ['Lannister', 'House Frey', 'House Targaryen', 'House Greyjoy', 'Lannister',
                                              'Baratheon', "Night's Watch", 'House Frey', 'House Greyjoy',
