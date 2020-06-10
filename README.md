@@ -65,6 +65,10 @@ The terminal should now display
 
 Click on the url to be directed to the application web page. Enjoy playing around!
 
+> Some interesting inputs to play with - 
+> 1. Allegiance=Night's Watch
+> 2. Nobility=1, Allegiance=Lannister
+
 **Run Unit Tests**
 
 `make tests`
@@ -129,7 +133,7 @@ Configurable paths - intermediate model data location, model artifacts location
 
 By default creates offline score base and saves in `data/model_data [MODEL_DATA]` Picks exported model object from `models [MODEL_ARTIFACTS]`
 
-If using different file paths than the defaults, please ensure correct input and output locations are provided for chained steps:  `clean_base -> features -> model -> score`
+*If using different file paths than the defaults, please ensure correct input and output locations are provided for chained steps:*  `clean_base -> features -> model -> score`
 
 ### To connect application to RDS database
 
@@ -155,7 +159,18 @@ In case the location to store the offline score has been changed above, please m
  -Run application
    `docker run -p 5000:5000 --name test got_app`
  
+ 
+### Other model pipeline configurations
+All model pipeline related configurations are stored in `config/model_config.yaml` Some examples are as follows
 
+ - `S3_BUCKET` - S3 bucket name
+ - `s3_download: FILE_NAMES` - files to be downloaded from S3
+ - `featurize: eda_plot_features` - features chosen for creating EDA plots
+ - `model: feature_set` - independent variables
+ - `model: parameters` - hyper parameters of Random Forest
+ - `score: model_pkl_file` - exported model object
+ - `score: target_mapping` - prediction to target class mapping
+ - `database: LOCAL_DATABASE_URI` - default location to create SQLite database if user does not provide any inputs
 
 ## Project Charter
 ### Vision
@@ -312,11 +327,11 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxNzYwNTE4MywxMzYzODM3MTQ2LDIzOD
-U1NTEwMiw0NTkzMjk5NjksMTk4NTgxMzIzNywxOTc1OTk3NDc1
-LC0yNzQ0MTkyNzMsLTU3NDIyMjA5MSw1MTcwNjkyMTEsLTM5ND
-k1MDEyOCwtNTQ0OTY5MjczLC0xODk3NDI1ODQsNDg1ODY0NzI0
-LDE2NDU1MTUwNzEsLTYwOTA5NDY3OSwxMTIwOTY4MTE1LC0xOD
-Q5NjI3MTE2LC0xMTc5MjcyMDExLC0xNTYxODc3NzIsLTEyMTg5
-MTU5Nl19
+eyJoaXN0b3J5IjpbLTEyODcyODg4NzQsLTkxNzYwNTE4MywxMz
+YzODM3MTQ2LDIzODU1NTEwMiw0NTkzMjk5NjksMTk4NTgxMzIz
+NywxOTc1OTk3NDc1LC0yNzQ0MTkyNzMsLTU3NDIyMjA5MSw1MT
+cwNjkyMTEsLTM5NDk1MDEyOCwtNTQ0OTY5MjczLC0xODk3NDI1
+ODQsNDg1ODY0NzI0LDE2NDU1MTUwNzEsLTYwOTA5NDY3OSwxMT
+IwOTY4MTE1LC0xODQ5NjI3MTE2LC0xMTc5MjcyMDExLC0xNTYx
+ODc3NzJdfQ==
 -->
