@@ -34,7 +34,7 @@ def test_happy_check_df():
 
 def test_unhappy_check_df():
     """
-    Test unhappy path for check_df()
+    Test unhappy path for check_df() - None object
     Returns: Pass if raises SystemExit
     """
     input_df = None
