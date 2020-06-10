@@ -138,7 +138,7 @@ By default creates offline score base and saves in `data/model_data [MODEL_DATA]
 
 ### To connect application to RDS database
 
- - Define the following environment variables a
+ - Define the following environment variables and *remove* `SQLALCHEMY_DATABASE_URI` from the environment, if already defined
 
 >  -	`export MYSQL_USER=<“master username” used to create the database server>` 
 > 	- `export MYSQL_PASSWORD=<“master password” used to create the database server>` 
@@ -146,7 +146,7 @@ By default creates offline score base and saves in `data/model_data [MODEL_DATA]
 >  - `export MYSQL_PORT=<RDS instance port 3306>` 
 >  - `export DATABASE_NAME=<name of the database created>`   
 
- - Create and populate the RDS database with offline scored base -  `make database_rds`
+ - Create and populate the RDS database with offline scored base -  `make database`
 
 In case the location to store the offline score has been changed above, please mention the same here 
 
@@ -328,11 +328,11 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Mjc3ODM0MzksMTEyMjAzODYxMCwtMT
-I4NzI4ODg3NCwtMTI4NzI4ODg3NCwtOTE3NjA1MTgzLDEzNjM4
-MzcxNDYsMjM4NTU1MTAyLDQ1OTMyOTk2OSwxOTg1ODEzMjM3LD
-E5NzU5OTc0NzUsLTI3NDQxOTI3MywtNTc0MjIyMDkxLDUxNzA2
-OTIxMSwtMzk0OTUwMTI4LC01NDQ5NjkyNzMsLTE4OTc0MjU4NC
-w0ODU4NjQ3MjQsMTY0NTUxNTA3MSwtNjA5MDk0Njc5LDExMjA5
-NjgxMTVdfQ==
+eyJoaXN0b3J5IjpbLTIyOTc1MzU2NywxMTIyMDM4NjEwLC0xMj
+g3Mjg4ODc0LC0xMjg3Mjg4ODc0LC05MTc2MDUxODMsMTM2Mzgz
+NzE0NiwyMzg1NTUxMDIsNDU5MzI5OTY5LDE5ODU4MTMyMzcsMT
+k3NTk5NzQ3NSwtMjc0NDE5MjczLC01NzQyMjIwOTEsNTE3MDY5
+MjExLC0zOTQ5NTAxMjgsLTU0NDk2OTI3MywtMTg5NzQyNTg0LD
+Q4NTg2NDcyNCwxNjQ1NTE1MDcxLC02MDkwOTQ2NzksMTEyMDk2
+ODExNV19
 -->
