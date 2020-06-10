@@ -26,7 +26,8 @@
   
  - [ ] The SQL Alchemy database connection has been set up as,
  `export SQLALCHEMY_DATABASE_URI=`
-> relative path: 
+> relative path: sqlite:///<path_to_db>
+> absolute path: sqlite:////User/
 
 If you are 
 The file has been downloaded and stored in `data/external` folder. User can choose to use the same file for the subsequent steps, in which case there is no need to download again. Otherwise the file needs to be downloaded and placed in `data/external`. Please do not change the file name.
@@ -262,7 +263,7 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzMzMzY4MzMwLC02MDkwOTQ2NzksMTEyMD
+eyJoaXN0b3J5IjpbNTE3Nzg1ODkxLC02MDkwOTQ2NzksMTEyMD
 k2ODExNSwtMTg0OTYyNzExNiwtMTE3OTI3MjAxMSwtMTU2MTg3
 NzcyLC0xMjE4OTE1OTYsNTg4MzAzMzM1LC0xMDgyNzE0NjM1LD
 EwMjYxMzU3NzAsLTEyNjMzNDM4MTQsLTEzNzM3MTgzNSwtMTI4
