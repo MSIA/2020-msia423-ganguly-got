@@ -1,0 +1,82 @@
+s3_upload:
+  S3_BUCKET: msia423-project
+
+s3_download:
+  FILE_NAMES:
+    - character-deaths.csv
+    - character-profile.csv
+  S3_BUCKET: msia423-project
+
+clean:
+  book_chapter:
+    1: 72
+    2: 69
+    3: 80
+    4: 45
+    5: 71
+
+featurize:
+  book_chapter:
+    1: 72
+    2: 69
+    3: 80
+    4: 45
+    5: 71
+  target_column: survive_class_id
+  eda_plot_features:
+    - Allegiance
+    - Gender
+    - Nobility
+    - boolDeadRelations
+    - isPopular
+    - isMarried
+
+model:
+  target_column: survive_class_id
+  test_size: 0.3
+  random_seed: 123
+  feature_set:
+    - Gender
+    - Nobility
+    - boolDeadRelations
+    - isPopular
+    - isMarried
+    - HouseBaratheon
+    - HouseLannister
+    - HouseStark
+    - HouseTargaryen
+    - NightsWatch
+    - Wildling
+  n_estimators: 10
+  criterion:  'entropy'
+  max_depth:  2
+  max_features: 3
+  class_weight: 'balanced'
+  model_pickle_file: pickle_model.pkl
+  performance_metrics_txt: model_performance_on_test.txt
+
+score:
+  model_pkl_file: pickle_model.pkl
+  target_mapping:
+    0: over 200
+    1: less than 100
+    2: 101 to 200
+  remarks:
+    0: You will survive the Night King probably to be burnt down by dragons!
+    1: You live to see King Jeoffrey die!
+    2: You see the rise of the Mother of Dragons!
+  input_features:
+    - Gender
+    - Nobility
+    - boolDeadRelations
+    - isPopular
+    - isMarried
+    - HouseBaratheon
+    - HouseLannister
+    - HouseStark
+    - HouseTargaryen
+    - NightsWatch
+    - Wildling
+
+database:
+  LOCAL_DATABASE_URI:  sqlite:///data/msia423_project.db
