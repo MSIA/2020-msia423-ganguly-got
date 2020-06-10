@@ -67,7 +67,7 @@ Click on the url to be directed to the application web page. Enjoy playing aroun
 
 > Some interesting inputs to play with - 
 > 1. Allegiance=Night's Watch
-> 2. 
+> 2. Nobility=1, Allegiance=Lannister
 
 **Run Unit Tests**
 
@@ -327,11 +327,11 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3MDM3MTEwNiwtOTE3NjA1MTgzLDEzNj
-M4MzcxNDYsMjM4NTU1MTAyLDQ1OTMyOTk2OSwxOTg1ODEzMjM3
-LDE5NzU5OTc0NzUsLTI3NDQxOTI3MywtNTc0MjIyMDkxLDUxNz
-A2OTIxMSwtMzk0OTUwMTI4LC01NDQ5NjkyNzMsLTE4OTc0MjU4
-NCw0ODU4NjQ3MjQsMTY0NTUxNTA3MSwtNjA5MDk0Njc5LDExMj
-A5NjgxMTUsLTE4NDk2MjcxMTYsLTExNzkyNzIwMTEsLTE1NjE4
-Nzc3Ml19
+eyJoaXN0b3J5IjpbLTEyODcyODg4NzQsLTkxNzYwNTE4MywxMz
+YzODM3MTQ2LDIzODU1NTEwMiw0NTkzMjk5NjksMTk4NTgxMzIz
+NywxOTc1OTk3NDc1LC0yNzQ0MTkyNzMsLTU3NDIyMjA5MSw1MT
+cwNjkyMTEsLTM5NDk1MDEyOCwtNTQ0OTY5MjczLC0xODk3NDI1
+ODQsNDg1ODY0NzI0LDE2NDU1MTUwNzEsLTYwOTA5NDY3OSwxMT
+IwOTY4MTE1LC0xODQ5NjI3MTE2LC0xMTc5MjcyMDExLC0xNTYx
+ODc3NzJdfQ==
 -->
