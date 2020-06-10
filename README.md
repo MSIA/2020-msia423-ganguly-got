@@ -21,11 +21,12 @@
   `export AWS_ACCESS_KEY_ID=<your key>`
   `export AWS_SECRET_ACCESS_KEY=<your secret key>`
 
-> If you are someone I have given access to my S3 bucket, you are good to go. If not, you will have to create and provide a valid S3 Bucket name in `config/model_config.yaml` both for `s3_upload` and `s3_download`. You would then have to execute the step to upload the data from data/external
+> If you are someone I have given access to my S3 bucket, you are good to go. If not, you will have to create and provide a valid S3 Bucket name in `config/model_config.yaml` both for `s3_upload` and `s3_download`. You would then have to execute the S3 data upload step as mentioned later in the document
 
   
  - [ ] The SQL Alchemy database connection has been set up as,
  `export SQLALCHEMY_DATABASE_URI=`
+> relative path: 
 
 If you are 
 The file has been downloaded and stored in `data/external` folder. User can choose to use the same file for the subsequent steps, in which case there is no need to download again. Otherwise the file needs to be downloaded and placed in `data/external`. Please do not change the file name.
@@ -261,10 +262,10 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDc5NDY2MDEsLTYwOTA5NDY3OSwxMT
-IwOTY4MTE1LC0xODQ5NjI3MTE2LC0xMTc5MjcyMDExLC0xNTYx
-ODc3NzIsLTEyMTg5MTU5Niw1ODgzMDMzMzUsLTEwODI3MTQ2Mz
-UsMTAyNjEzNTc3MCwtMTI2MzM0MzgxNCwtMTM3MzcxODM1LC0x
-MjgyODk4MDI1LDQ5NzI4NzY5MiwtMjk0MDQxMDc0LDE5MTkzMT
-cwMDJdfQ==
+eyJoaXN0b3J5IjpbMzMzMzY4MzMwLC02MDkwOTQ2NzksMTEyMD
+k2ODExNSwtMTg0OTYyNzExNiwtMTE3OTI3MjAxMSwtMTU2MTg3
+NzcyLC0xMjE4OTE1OTYsNTg4MzAzMzM1LC0xMDgyNzE0NjM1LD
+EwMjYxMzU3NzAsLTEyNjMzNDM4MTQsLTEzNzM3MTgzNSwtMTI4
+Mjg5ODAyNSw0OTcyODc2OTIsLTI5NDA0MTA3NCwxOTE5MzE3MD
+AyXX0=
 -->
