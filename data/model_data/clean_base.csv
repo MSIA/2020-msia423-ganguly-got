@@ -1,0 +1,460 @@
+Name,Allegiances,Death Year,Book of Death,Death Chapter,Book Intro Chapter,Gender,Nobility,GoT,CoK,SoS,FfC,DwD,book_intro,Allegiance
+Addam Marbrand,HouseLannister,,,,56.0,1,1,1,1,1,1,0,1,HouseLannister
+Aegon Targaryen,HouseTargaryen,,,,5.0,1,1,0,0,0,0,1,5,HouseTargaryen
+Aemon Costayne,HouseLannister,,,,40.0,1,1,0,0,1,0,0,3,HouseLannister
+Aemon Estermont,HouseBaratheon,,,,34.5,1,1,0,1,1,0,0,2,HouseBaratheon
+Aemon Targaryen (son of Maekar I),NightsWatch,300.0,4.0,35.0,21.0,1,1,1,0,1,1,0,1,NightsWatch
+Aethan,NightsWatch,,,,0.0,1,0,0,0,1,0,0,3,NightsWatch
+Aggo,HouseTargaryen,,,,54.0,1,0,1,1,1,0,1,1,HouseTargaryen
+Alan of Rosby,NightsWatch,300.0,5.0,4.0,18.0,1,1,0,1,1,0,1,2,NightsWatch
+Albett,NightsWatch,,,,26.0,1,0,1,0,0,0,0,1,NightsWatch
+Alebelly,HouseStark,299.0,2.0,46.0,4.0,1,0,0,1,0,0,0,2,HouseStark
+Alesander Staedmon,HouseBaratheon,,,,65.0,1,1,0,1,0,0,0,2,HouseBaratheon
+Alester Florent,HouseBaratheon,300.0,4.0,22.5,36.0,1,1,0,1,1,0,0,2,HouseBaratheon
+Allard Seaworth,HouseBaratheon,299.0,2.0,10.0,10.0,1,1,0,1,0,0,0,2,HouseBaratheon
+Alliser Thorne,NightsWatch,,,,19.0,1,0,1,1,1,0,1,1,NightsWatch
+Alyn,HouseStark,298.0,3.0,34.0,12.0,1,0,1,0,0,0,0,1,HouseStark
+Alyn Estermont,HouseBaratheon,,,,34.5,1,1,0,1,1,0,0,2,HouseBaratheon
+Alyn Stackspear,HouseLannister,,,,16.0,1,1,0,0,0,1,0,4,HouseLannister
+Alys Karstark,HouseStark,,,,44.0,0,1,0,0,0,0,1,5,HouseStark
+Amory Lorch,HouseLannister,299.0,2.0,47.0,14.0,1,1,0,1,0,0,0,2,HouseLannister
+Andrew Estermont,HouseBaratheon,,,,36.0,1,1,0,0,1,0,0,3,HouseBaratheon
+Antario Jast,HouseLannister,,,,32.0,1,1,0,1,0,0,0,2,HouseLannister
+Ardrian Celtigar,HouseBaratheon,,,,10.0,1,1,0,1,1,0,0,2,HouseBaratheon
+Arneld,HouseLannister,,,,59.0,1,0,0,1,0,0,0,2,HouseLannister
+Arnolf Karstark,HouseStark,,,,3.0,1,1,0,0,0,0,1,5,HouseStark
+Aron Santagar,HouseLannister,299.0,2.0,41.0,18.0,1,1,1,1,0,0,0,1,HouseLannister
+Arron,NightsWatch,,,,75.0,1,0,0,0,1,0,1,3,NightsWatch
+Arson,Wildling,,,,26.0,1,0,0,0,1,0,0,3,Wildling
+Arthor Karstark,HouseStark,,,,62.0,1,1,0,0,0,0,1,5,HouseStark
+Arya Stark,HouseStark,,,,2.0,0,1,1,1,1,1,1,1,HouseStark
+Arys Oakheart,HouseLannister,300.0,4.0,21.0,57.0,1,1,1,1,0,1,0,1,HouseLannister
+Aurane Waters,HouseLannister,,,,65.0,1,0,0,1,0,1,0,2,HouseLannister
+Axell Florent,HouseBaratheon,,,,0.0,1,1,0,1,1,0,1,2,HouseBaratheon
+Ballabar,HouseLannister,,,,4.0,1,0,0,1,0,0,0,2,HouseLannister
+Balon Swann,HouseLannister,,,,29.0,1,1,1,1,1,1,1,1,HouseLannister
+Bannen,NightsWatch,299.0,3.0,33.0,0.0,1,0,0,0,1,0,0,3,NightsWatch
+Barbrey Dustin,HouseStark,,,,26.0,0,1,0,0,0,0,1,5,HouseStark
+Barristan Selmy,HouseTargaryen,,,,15.0,1,1,1,1,1,0,1,1,HouseTargaryen
+Barth (brewer),HouseStark,,,,50.0,1,0,0,1,0,0,0,2,HouseStark
+Bass,NightsWatch,,,,52.0,1,0,1,0,0,0,0,1,NightsWatch
+Bearded Ben,NightsWatch,,,,22.5,1,0,0,0,0,1,0,4,NightsWatch
+Bedwyck,NightsWatch,,,,13.0,1,0,0,1,1,0,1,2,NightsWatch
+Belwas,HouseTargaryen,,,,63.0,1,0,0,1,1,0,1,2,HouseTargaryen
+Benfred Tallhart,HouseStark,299.0,2.0,37.0,16.0,1,1,0,1,0,0,0,2,HouseStark
+Benjen Stark,NightsWatch,298.0,1.0,24.0,5.0,1,1,1,0,0,0,0,1,NightsWatch
+Bessa (Winterfell),HouseStark,,,,37.0,0,0,1,0,0,0,0,1,HouseStark
+Beth Cassel,HouseStark,,,,7.0,0,1,1,1,0,0,0,1,HouseStark
+Big Boil,Wildling,,,,41.0,1,0,0,0,1,0,0,3,Wildling
+Black Bernarr,NightsWatch,,,,18.0,1,0,0,0,1,0,1,3,NightsWatch
+Blane,NightsWatch,,,,23.0,1,0,0,1,0,0,0,2,NightsWatch
+Bonifer Hasty,HouseLannister,,,,65.0,1,1,0,1,0,1,0,2,HouseLannister
+Borcas,NightsWatch,,,,48.0,1,0,1,0,0,0,0,1,NightsWatch
+Boros Blount,HouseBaratheon,,,,8.0,1,1,1,1,1,1,1,1,HouseBaratheon
+Borroq,Wildling,,,,0.0,1,0,0,0,0,0,1,5,Wildling
+Bowen Marsh,NightsWatch,,,,21.0,1,0,1,0,1,0,1,1,NightsWatch
+Bran Stark,HouseStark,,,,1.0,1,1,1,1,1,0,1,1,HouseStark
+Brandon Norrey,HouseStark,,,,49.0,1,1,0,0,0,0,1,5,HouseStark
+Brienne of Tarth,HouseStark,,,,22.0,0,1,0,1,1,1,1,2,HouseStark
+Bronn,HouseLannister,,,,28.0,1,1,1,1,1,0,0,1,HouseLannister
+Brown Bernarr,NightsWatch,299.0,3.0,33.0,23.0,1,0,0,1,1,0,0,2,NightsWatch
+Bryan Fossoway,HouseBaratheon,299.0,2.0,62.0,42.0,1,1,1,1,0,0,0,1,HouseBaratheon
+Bryce Caron,HouseBaratheon,299.0,2.0,65.0,29.0,1,1,1,1,0,0,0,1,HouseBaratheon
+Bryen Farring,HouseBaratheon,300.0,5.0,62.0,10.0,1,1,0,1,0,0,1,2,HouseBaratheon
+Brynden Rivers,HouseTargaryen,,,,34.0,1,1,0,0,0,0,1,5,HouseTargaryen
+Burton Crakehall,HouseLannister,299.0,2.0,7.0,55.0,1,1,1,1,0,0,0,1,HouseLannister
+Byam Flint,NightsWatch,299.0,3.0,33.0,33.0,1,0,0,0,1,0,0,3,NightsWatch
+Cadwyn,HouseLannister,,,,47.0,1,0,0,1,0,0,0,2,HouseLannister
+Catelyn Tully,HouseStark,299.0,3.0,51.0,2.0,0,1,1,1,1,0,0,1,HouseStark
+Cayn,HouseStark,298.0,1.0,49.0,4.0,1,0,1,0,0,0,0,1,HouseStark
+Cellador,NightsWatch,,,,48.0,1,0,1,0,1,0,1,1,NightsWatch
+Cersei Lannister,HouseLannister,,,,4.0,0,1,1,1,1,1,1,1,HouseLannister
+Chayle,HouseStark,299.0,2.0,50.0,9.0,1,0,1,1,0,0,0,1,HouseStark
+Chella,HouseLannister,,,,56.0,0,0,1,1,1,0,0,1,HouseLannister
+Chett,NightsWatch,299.0,3.0,46.0,41.0,1,0,1,1,1,0,0,1,NightsWatch
+Chiggen,HouseLannister,298.0,1.0,42.0,31.0,1,0,1,0,0,0,0,1,HouseLannister
+Clayton Suggs,HouseBaratheon,,,,17.0,1,0,0,0,0,0,1,5,HouseBaratheon
+Cley Cerwyn,HouseStark,299.0,2.0,66.0,16.0,1,1,0,1,0,0,0,2,HouseStark
+Clubfoot Karl,NightsWatch,300.0,5.0,4.0,0.0,1,0,0,0,1,0,1,3,NightsWatch
+Clydas,NightsWatch,,,,41.0,1,0,1,0,1,1,1,1,NightsWatch
+Colen of Greenpools,HouseBaratheon,,,,22.0,1,1,0,1,0,0,0,2,HouseBaratheon
+Conn,HouseLannister,298.0,1.0,62.0,42.0,1,0,1,0,0,0,0,1,HouseLannister
+Conwy,NightsWatch,,,,6.0,1,0,0,1,0,0,0,2,NightsWatch
+Corliss Penny,HouseBaratheon,,,,26.0,1,0,0,0,0,0,1,5,HouseBaratheon
+Cortnay Penrose,HouseBaratheon,299.0,2.0,42.0,31.0,1,1,0,1,0,0,0,2,HouseBaratheon
+Cotter Pyke,NightsWatch,,,,48.0,1,0,0,0,1,0,0,3,NightsWatch
+Cregan Karstark,HouseStark,,,,44.0,1,1,0,0,0,0,1,5,HouseStark
+Cressen,HouseBaratheon,299.0,1.0,0.0,0.0,1,0,0,1,0,0,0,2,HouseBaratheon
+Cuger,NightsWatch,,,,36.0,1,0,1,0,0,0,0,1,NightsWatch
+Daario Naharis,HouseTargaryen,,,,42.0,1,0,0,0,1,0,1,3,HouseTargaryen
+Daenerys Targaryen,HouseTargaryen,,,,3.0,0,1,1,1,1,0,1,1,HouseTargaryen
+Dalbridge,NightsWatch,299.0,2.0,53.0,43.0,1,0,0,1,0,0,0,2,NightsWatch
+Dale Seaworth,HouseBaratheon,299.0,2.0,58.0,10.0,1,1,0,1,0,0,0,2,HouseBaratheon
+Dalla,Wildling,300.0,3.0,76.0,73.0,0,1,0,0,1,0,0,3,Wildling
+Dalla (Dragonstone),HouseBaratheon,,,,0.0,0,0,0,1,0,0,0,2,HouseBaratheon
+Dareon,NightsWatch,300.0,4.0,34.0,19.0,1,0,1,0,0,1,0,1,NightsWatch
+Daryn Hornwood,HouseStark,298.0,1.0,63.0,63.0,1,1,1,0,0,0,0,1,HouseStark
+Daven Lannister,HouseLannister,,,,12.0,1,1,0,0,0,1,0,4,HouseLannister
+Davos Seaworth,HouseBaratheon,,,,0.0,1,1,0,1,1,0,1,2,HouseBaratheon
+Del,Wildling,299.0,3.0,41.0,41.0,1,0,0,0,1,0,0,3,Wildling
+Denys Mallister,NightsWatch,,,,48.0,1,1,0,0,1,0,0,3,NightsWatch
+Dermot,HouseBaratheon,,,,65.0,1,0,0,1,0,1,0,2,HouseBaratheon
+Desmond,HouseStark,298.0,1.0,50.0,1.0,1,0,1,0,0,0,0,1,HouseStark
+Devan Seaworth,HouseBaratheon,,,,10.0,1,1,0,1,1,0,1,2,HouseBaratheon
+Dick Follard,NightsWatch,299.0,3.0,55.0,41.0,1,0,0,0,1,0,0,3,NightsWatch
+Dirk,NightsWatch,300.0,5.0,4.0,0.0,1,0,0,0,1,0,1,3,NightsWatch
+Donal Noye,NightsWatch,300.0,3.0,64.0,19.0,1,0,1,1,1,0,0,1,NightsWatch
+Donella Hornwood,HouseStark,299.0,2.0,35.0,16.0,0,1,0,1,0,0,0,2,HouseStark
+Donnel Hill,NightsWatch,,,,0.0,1,0,0,0,1,0,1,3,NightsWatch
+Donnel Locke,HouseStark,299.0,3.0,51.0,25.0,1,1,0,1,1,0,0,2,HouseStark
+Donnis,HouseStark,,,,7.0,1,0,1,0,0,0,0,1,HouseStark
+Doreah,HouseTargaryen,299.0,2.0,12.0,11.0,0,0,1,1,0,0,0,1,HouseTargaryen
+Dornish Dilly,NightsWatch,299.0,3.0,55.0,55.0,1,0,0,0,1,0,0,3,NightsWatch
+Drogo,HouseTargaryen,298.0,1.0,64.0,3.0,1,1,1,0,0,0,0,1,HouseTargaryen
+Dudley,HouseStark,299.0,3.0,34.0,34.0,1,0,0,0,1,0,0,3,HouseStark
+Duram Bar Emmon,HouseBaratheon,,,,0.0,1,1,0,1,0,0,0,2,HouseBaratheon
+Dywen,NightsWatch,,,,48.0,1,0,1,1,1,0,1,1,NightsWatch
+Easy,NightsWatch,300.0,3.0,55.0,55.0,1,0,0,0,1,0,0,3,NightsWatch
+Ebben,NightsWatch,299.0,2.0,68.0,43.0,1,0,0,1,0,0,0,2,NightsWatch
+Eddard Karstark,HouseStark,298.0,1.0,63.0,53.0,1,1,1,0,0,0,0,1,HouseStark
+Eddard Stark,HouseStark,299.0,1.0,65.0,1.0,1,1,1,0,0,0,0,1,HouseStark
+Eddison Tollett,NightsWatch,,,,13.0,1,0,0,1,1,1,1,2,NightsWatch
+Edric Storm,HouseBaratheon,,,,10.0,1,0,0,0,1,0,0,3,HouseBaratheon
+Eleyna Westerling,HouseStark,,,,45.0,0,1,0,0,1,1,0,3,HouseStark
+Elyas Willum,HouseBaratheon,,,,22.0,1,1,0,1,0,0,0,2,HouseBaratheon
+Emmon Cuy,HouseBaratheon,299.0,2.0,42.0,33.0,1,1,0,1,0,0,0,2,HouseBaratheon
+Emrick,NightsWatch,,,,75.0,1,0,0,0,1,0,1,3,NightsWatch
+Endrew Tarth,NightsWatch,299.0,3.0,69.0,60.0,1,0,1,0,1,0,0,1,NightsWatch
+Eroeh,HouseTargaryen,298.0,1.0,68.0,61.0,1,0,1,0,0,0,0,1,HouseTargaryen
+Ezzara,HouseTargaryen,,,,30.0,0,0,0,0,0,0,1,5,HouseTargaryen
+Falyse Stokeworth,HouseLannister,300.0,5.0,36.0,2.0,0,1,0,1,0,1,0,2,HouseLannister
+Farlen,HouseStark,299.0,2.0,56.0,46.0,1,0,0,1,0,0,0,2,HouseStark
+Flement Brax,HouseLannister,,,,56.0,1,1,1,0,1,1,0,1,HouseLannister
+Forley Prester,HouseLannister,,,,33.0,1,1,0,0,0,1,0,4,HouseLannister
+Fornio,NightsWatch,,,,33.0,1,0,0,0,1,0,0,3,NightsWatch
+Frenken,HouseLannister,,,,15.0,1,0,0,1,1,0,0,2,HouseLannister
+Frenya,Wildling,300.0,5.0,69.0,37.0,0,0,0,0,0,0,1,5,Wildling
+Gage,HouseStark,,,,4.0,1,1,0,1,0,0,0,2,HouseStark
+Galbart Glover,HouseStark,,,,55.0,1,1,1,0,1,0,0,1,HouseStark
+Gared,NightsWatch,297.0,1.0,1.0,0.0,1,0,1,0,0,0,0,1,NightsWatch
+Gariss,HouseStark,,,,50.0,1,0,0,1,0,0,0,2,HouseStark
+Garrett Paege,HouseLannister,,,,30.0,1,1,0,0,0,1,0,4,HouseLannister
+Garth Greyfeather,NightsWatch,300.0,5.0,31.0,48.0,1,0,0,0,1,0,1,3,NightsWatch
+Garth of Greenaway,NightsWatch,300.0,5.0,4.0,33.0,1,0,0,0,1,0,1,3,NightsWatch
+Garth of Oldtown,NightsWatch,299.0,3.0,33.0,33.0,1,0,0,0,1,0,0,3,NightsWatch
+Gawen Westerling,HouseStark,,,,33.0,1,1,0,0,0,1,0,4,HouseStark
+Genna Lannister,HouseLannister,,,,33.0,0,1,0,0,0,1,0,4,HouseLannister
+Gerald Gower,HouseBaratheon,,,,54.0,1,1,0,0,1,0,0,3,HouseBaratheon
+Gilly,Wildling,,,,23.0,0,0,0,1,1,1,1,2,Wildling
+Gladden Wylde,HouseStark,298.0,1.0,55.0,43.0,1,1,1,0,0,0,0,1,HouseStark
+Glendon Hewett,NightsWatch,,,,69.0,1,0,0,0,1,0,0,3,NightsWatch
+Goady,NightsWatch,,,,0.0,1,0,0,0,1,0,0,3,NightsWatch
+Godry Farring,HouseBaratheon,,,,3.0,1,1,0,0,0,0,1,5,HouseBaratheon
+Godwyn,HouseLannister,,,,32.0,1,0,1,0,0,0,0,1,HouseLannister
+Gregor Clegane,HouseLannister,300.0,4.0,72.0,29.0,1,1,1,1,1,0,0,1,HouseLannister
+Grenn,NightsWatch,,,,19.0,1,0,1,1,1,1,1,1,NightsWatch
+Grey Worm,HouseTargaryen,,,,42.0,1,0,0,0,1,0,1,3,HouseTargaryen
+Grigg,Wildling,,,,30.0,1,0,0,0,1,0,0,3,Wildling
+Groleo,HouseTargaryen,300.0,5.0,59.0,40.0,1,0,0,0,1,0,1,3,HouseTargaryen
+Grubbs,NightsWatch,300.0,5.0,4.0,0.0,1,0,0,0,1,0,1,3,NightsWatch
+Gueren,NightsWatch,,,,38.0,1,0,1,0,0,0,0,1,NightsWatch
+Guncer Sunglass,HouseBaratheon,299.0,3.0,10.0,0.0,1,1,0,1,1,0,0,2,HouseBaratheon
+Guyard Morrigen,HouseBaratheon,299.0,2.0,62.0,22.0,1,1,0,1,0,0,0,2,HouseBaratheon
+Gyles Rosby,HouseLannister,300.0,4.0,39.0,57.0,1,1,1,1,1,1,0,1,HouseLannister
+Hairy Hal,NightsWatch,300.0,5.0,31.0,55.0,1,0,0,0,1,1,1,3,NightsWatch
+Hake,NightsWatch,299.0,3.0,46.0,52.0,1,0,1,1,1,0,0,1,NightsWatch
+Halder,NightsWatch,,,,19.0,1,0,1,0,1,0,0,1,NightsWatch
+Haldon,HouseTargaryen,,,,8.0,1,0,0,0,0,0,1,5,HouseTargaryen
+Hali,Wildling,298.0,1.0,37.0,37.0,0,0,1,0,0,0,0,1,Wildling
+Hallis Mollen,HouseStark,,,,14.0,1,1,1,1,0,0,0,1,HouseStark
+Hallyne,HouseLannister,,,,17.0,1,0,0,1,0,1,0,2,HouseLannister
+Halys Hornwood,HouseStark,298.0,1.0,62.0,53.0,1,1,1,0,0,0,0,1,HouseStark
+Hareth (Mole's Town),NightsWatch,,,,64.0,1,0,0,0,1,0,1,3,NightsWatch
+Harma,Wildling,300.0,3.0,75.0,0.0,0,1,0,0,1,0,0,3,Wildling
+Harmune,NightsWatch,,,,78.0,1,0,0,0,0,0,1,5,NightsWatch
+Harwood Fell,HouseBaratheon,300.0,5.0,42.0,17.0,1,1,0,0,0,0,1,5,HouseBaratheon
+Harrion Karstark,HouseStark,,,,53.0,1,1,1,1,0,0,0,1,HouseStark
+Harwin,HouseStark,,,,1.0,1,0,1,0,1,1,0,1,HouseStark
+Harwood Stout,HouseStark,,,,32.0,1,1,0,0,0,0,1,5,HouseStark
+Harys Swyft,HouseLannister,,,,69.0,1,1,1,1,1,1,1,1,HouseLannister
+Helman Tallhart,HouseStark,299.0,3.0,37.0,55.0,1,1,1,0,1,0,0,1,HouseStark
+Heward,HouseStark,298.0,1.0,35.0,35.0,1,0,1,0,0,0,0,1,HouseStark
+Hobb,NightsWatch,,,,52.0,1,0,1,0,1,0,1,1,NightsWatch
+Hodor,HouseStark,,,,24.0,1,0,1,1,1,0,1,1,HouseStark
+Holly,Wildling,300.0,5.0,69.0,37.0,0,0,0,0,0,0,1,5,Wildling
+Hop-Robin,NightsWatch,,,,75.0,1,0,0,0,1,0,1,3,NightsWatch
+Hother Umber,HouseStark,,,,16.0,1,1,0,1,0,0,1,2,HouseStark
+Howd Wanderer,Wildling,,,,58.0,1,1,0,0,0,0,1,5,Wildling
+Hubard Rambton,HouseBaratheon,299.0,5.0,10.0,10.0,1,1,0,1,0,0,0,2,HouseBaratheon
+Hullen,HouseStark,298.0,1.0,50.0,1.0,1,0,1,0,0,0,0,1,HouseStark
+Humfrey Swyft,HouseLannister,,,,16.0,1,1,0,0,0,1,0,4,HouseLannister
+Illyrio Mopatis,HouseTargaryen,,,,3.0,1,1,1,0,0,0,1,1,HouseTargaryen
+Ilyn Payne,HouseLannister,,,,15.0,1,1,1,1,1,1,0,1,HouseLannister
+Imry Florent,HouseBaratheon,299.0,3.0,4.0,58.0,1,1,0,1,1,0,0,2,HouseBaratheon
+Iron Emmett,NightsWatch,,,,79.0,1,0,0,0,1,0,1,3,NightsWatch
+Irri,HouseTargaryen,,,,11.0,0,0,1,1,1,0,1,1,HouseTargaryen
+Jacelyn Bywater,HouseLannister,299.0,2.0,19.0,8.0,0,1,0,1,0,0,0,2,HouseLannister
+Jack Bulwer,NightsWatch,300.0,5.0,31.0,64.0,1,0,0,0,1,1,1,3,NightsWatch
+Jacks,HouseStark,,,,22.0,1,0,1,1,0,0,0,1,HouseStark
+Jaime Lannister,HouseLannister,,,,5.0,1,1,1,1,1,1,1,1,HouseLannister
+Jaremy Rykker,NightsWatch,298.0,5.0,60.0,21.0,1,1,1,0,0,0,0,1,NightsWatch
+Jarl,Wildling,299.0,3.0,26.0,7.0,1,0,0,0,1,0,0,3,Wildling
+Jarman Buckwell,NightsWatch,300.0,5.0,21.0,13.0,1,0,0,1,0,0,1,2,NightsWatch
+Jason Mallister,HouseStark,,,,28.0,1,1,1,0,1,0,0,1,HouseStark
+Jate,HouseLannister,,4.0,44.0,44.0,1,0,0,0,0,1,0,4,HouseLannister
+Jate Blackberry,HouseBaratheon,,3.0,10.0,10.0,1,0,0,0,1,0,0,3,HouseBaratheon
+Jeor Mormont,NightsWatch,299.0,3.0,33.0,48.0,1,1,1,1,1,0,0,1,NightsWatch
+Jeren,NightsWatch,,,,19.0,1,0,1,0,0,0,0,1,NightsWatch
+Jeyne Poole,HouseStark,,,,7.0,0,1,1,0,1,0,1,1,HouseStark
+Jeyne Westerling,HouseStark,,,,14.0,0,1,0,0,1,1,0,3,HouseStark
+Jhiqui,HouseTargaryen,,,,11.0,0,0,1,1,1,0,1,1,HouseTargaryen
+Jhogo,HouseTargaryen,,,,23.0,1,0,1,1,1,0,1,1,HouseTargaryen
+Jocelyn Swyft,HouseLannister,,,,3.0,0,1,0,0,0,1,1,4,HouseLannister
+Jodge,HouseLannister,,,,30.0,1,0,0,1,0,0,0,2,HouseLannister
+Jojen Reed,HouseStark,,,,21.0,1,1,0,1,1,0,1,2,HouseStark
+Jommy,HouseBaratheon,,,,0.0,1,0,0,1,0,0,0,2,HouseBaratheon
+Jon Bettley,HouseLannister,,,,16.0,1,1,0,0,0,1,0,4,HouseLannister
+Jon Connington,HouseTargaryen,,,,5.0,1,1,0,0,0,0,1,5,HouseTargaryen
+Jon Fossoway,HouseBaratheon,,,,22.0,1,1,0,1,0,0,0,2,HouseBaratheon
+Jon Snow,NightsWatch,,,,1.0,1,1,1,1,1,1,1,1,NightsWatch
+Jon Umber (Greatjon),HouseStark,,,,51.0,1,1,1,1,1,0,0,1,HouseStark
+Joffrey Baratheon,HouseLannister,300.0,3.0,60.0,5.0,1,1,1,1,1,0,0,1,HouseLannister
+Jon Umber (Smalljon),HouseStark,299.0,3.0,51.0,63.0,1,1,1,0,1,0,0,1,HouseStark
+Jonelle Cerwyn,HouseStark,,,,53.0,0,1,1,0,0,0,0,1,HouseStark
+Jorah Mormont,HouseTargaryen,,,,23.0,1,1,1,1,1,0,1,1,HouseTargaryen
+Jory Cassel,HouseStark,298.0,1.0,35.0,1.0,1,1,1,0,0,0,0,1,HouseStark
+Joseth,HouseStark,,,,37.0,1,0,1,1,0,0,0,1,HouseStark
+Josmyn Peckledon,HouseLannister,,,,65.0,1,0,0,1,1,1,1,2,HouseLannister
+Joss Stilwood,HouseLannister,,,,36.0,1,0,1,0,0,0,0,1,HouseLannister
+Josua Willum,HouseBaratheon,,,,22.0,1,1,0,1,0,0,0,2,HouseBaratheon
+Jothos Slynt,HouseLannister,,,,66.0,1,1,0,0,1,0,0,3,HouseLannister
+Justin Massey,HouseBaratheon,,,,7.0,1,1,0,0,0,0,1,5,HouseBaratheon
+Jyck,HouseLannister,298.0,1.0,31.0,21.0,1,0,1,0,0,0,0,1,HouseLannister
+Kedge Whiteye,NightsWatch,,,,43.0,1,0,0,1,1,1,0,2,NightsWatch
+Kennos of Kayce,HouseLannister,,,,6.0,1,1,0,0,1,1,1,3,HouseLannister
+Ketter,NightsWatch,,,,52.0,1,0,1,0,0,0,0,1,NightsWatch
+Kevan Lannister,HouseLannister,300.0,5.0,35.5,56.0,1,1,1,1,1,1,1,1,HouseLannister
+Koss,NightsWatch,299.0,2.0,14.0,5.0,1,0,0,1,0,0,0,2,NightsWatch
+Kurz,NightsWatch,299.0,2.0,19.0,5.0,1,0,0,1,0,0,0,2,NightsWatch
+Kyra,HouseStark,300.0,5.0,12.0,37.0,0,0,1,1,0,0,1,1,HouseStark
+Lambert Turnberry,HouseLannister,,,,7.0,1,1,0,0,0,1,0,4,HouseLannister
+Lamprey,HouseBaratheon,,,,25.0,1,0,0,0,1,0,0,3,HouseBaratheon
+Lancel Lannister,HouseLannister,,,,47.0,1,1,1,1,1,1,1,1,HouseLannister
+Lark,NightsWatch,299.0,3.0,46.0,23.0,1,0,0,1,1,0,0,2,NightsWatch
+Larraq,HouseTargaryen,,,,59.0,1,0,0,0,0,0,1,5,HouseTargaryen
+Leathers,NightsWatch,,,,35.0,1,0,0,0,0,0,1,5,NightsWatch
+Left Hand Lew,NightsWatch,,,,48.0,1,0,0,0,1,0,1,3,NightsWatch
+Leo Lefford,HouseLannister,299.0,2.0,45.0,62.0,1,1,1,1,0,0,0,1,HouseLannister
+Leobald Tallhart,HouseStark,299.0,2.0,66.0,16.0,1,1,0,1,0,0,0,2,HouseStark
+Leona Woolfield,HouseStark,,,,19.0,0,1,0,0,0,0,1,5,HouseStark
+Lew,HouseStark,,,,7.0,1,0,1,0,0,0,0,1,HouseStark
+Lewys Lydden,HouseLannister,,,,62.0,1,1,1,1,0,0,0,1,HouseLannister
+Lewys Piper,HouseLannister,,,,27.0,1,1,0,0,0,1,0,4,HouseLannister
+Lharys,HouseStark,298.0,1.0,34.0,31.0,1,1,1,0,0,0,0,1,HouseStark
+Lollys Stokeworth,HouseLannister,,,,2.0,0,1,0,1,1,0,0,2,HouseLannister
+Lommy,NightsWatch,299.0,2.0,19.0,1.0,1,0,0,1,0,0,0,2,NightsWatch
+Lord of Bones,Wildling,300.0,5.0,10.0,68.0,1,1,0,1,1,0,1,2,Wildling
+Lorent Caswell,HouseBaratheon,,,,22.0,1,1,0,1,0,0,0,2,HouseBaratheon
+Luke of Longtown,NightsWatch,,,,35.0,1,0,0,0,0,0,1,5,NightsWatch
+Luwin,HouseStark,299.0,2.0,69.0,14.0,1,0,1,1,0,0,0,1,HouseStark
+Lyle Crakehall,HouseLannister,,,,12.0,1,1,0,0,0,1,0,4,HouseLannister
+Mag Mar Tun Doh Weg,Wildling,300.0,3.0,64.0,15.0,1,1,0,0,1,0,0,3,Wildling
+Mallador Locke,NightsWatch,299.0,5.0,18.0,13.0,1,0,0,1,1,0,0,2,NightsWatch
+Malliard,HouseLannister,,,,20.0,1,0,0,1,0,0,0,2,HouseLannister
+Mallor,HouseLannister,,,,63.0,1,0,1,0,0,0,0,1,HouseLannister
+Mance Rayder,Wildling,,,,15.0,1,1,0,0,1,0,1,3,Wildling
+Mandon Moore,HouseBaratheon,299.0,2.0,61.0,51.0,1,1,1,1,0,0,0,1,HouseBaratheon
+Maric Seaworth,HouseBaratheon,299.0,2.0,58.0,10.0,1,1,0,1,0,0,0,2,HouseBaratheon
+Maris,Wildling,,,,58.0,0,0,0,0,0,0,1,5,Wildling
+Marlon Manderly,HouseStark,,,,19.0,1,1,0,0,0,0,1,5,HouseStark
+Maslyn,NightsWatch,299.0,3.0,18.0,0.0,1,0,0,0,1,0,0,3,NightsWatch
+Mathis Rowan,HouseLannister,,,,22.0,1,1,0,1,1,1,0,2,HouseLannister
+Matrice,HouseBaratheon,,,,0.0,0,0,0,1,0,0,0,2,HouseBaratheon
+Matthos Seaworth,HouseBaratheon,299.0,2.0,58.0,10.0,1,1,0,1,0,0,0,2,HouseBaratheon
+Matthar,NightsWatch,,,,41.0,1,0,1,0,0,0,0,1,NightsWatch
+Mawney,NightsWatch,300.0,5.0,4.0,18.0,1,0,0,0,1,0,1,3,NightsWatch
+Medger Cerwyn,HouseStark,299.0,2.0,30.0,53.0,1,1,1,1,0,0,0,1,HouseStark
+Meera Reed,HouseStark,,,,21.0,0,1,0,1,1,0,1,2,HouseStark
+Meha,Wildling,,,,0.0,0,0,0,0,0,0,1,5,Wildling
+Meliana,HouseStark,,,,69.0,0,0,0,0,1,0,0,3,HouseStark
+Melisandre,HouseBaratheon,,,,0.0,0,0,0,1,1,0,1,2,HouseBaratheon
+Merlon Crakehall,HouseLannister,,,,38.0,1,1,0,0,1,0,0,3,HouseLannister
+Meryn Trant,HouseLannister,,,,8.0,1,1,1,1,1,1,1,1,HouseLannister
+Mikken,HouseStark,299.0,2.0,46.0,8.0,1,0,1,1,0,0,0,1,HouseStark
+Missandei,HouseTargaryen,,,,23.0,0,0,0,0,1,0,1,3,HouseTargaryen
+Monford Velaryon,HouseBaratheon,299.0,3.0,25.0,0.0,1,1,0,1,0,0,0,2,HouseBaratheon
+Monster,Wildling,,,,33.0,1,0,0,0,1,1,1,3,Wildling
+Moon Boy,HouseBaratheon,,,,29.0,1,0,1,1,1,1,0,1,HouseBaratheon
+Mordane,HouseStark,298.0,1.0,67.0,7.0,0,0,1,0,0,0,0,1,HouseStark
+Morna White Mask,Wildling,,,,48.0,0,1,0,0,0,0,1,5,Wildling
+Morrec,HouseLannister,298.0,1.0,31.0,13.0,1,0,1,0,0,0,0,1,HouseLannister
+Morros Slynt,HouseLannister,,,,2.0,1,1,0,1,1,0,0,2,HouseLannister
+Mors Umber,HouseStark,,,,21.0,1,1,0,1,0,0,0,2,HouseStark
+Mully,NightsWatch,,,,55.0,1,0,0,0,1,1,1,3,NightsWatch
+Munciter,HouseLannister,,,,20.0,1,0,0,1,0,0,0,2,HouseLannister
+Murch,NightsWatch,,,,9.0,1,0,0,1,0,0,0,2,NightsWatch
+Murch (Winterfell),HouseStark,,,,50.0,1,0,0,1,0,0,0,2,HouseStark
+Mossador,HouseTargaryen,300.0,5.0,11.0,11.0,1,0,0,0,1,0,1,3,HouseTargaryen
+Muttering Bill,NightsWatch,300.0,5.0,4.0,40.0,1,0,0,0,1,0,1,3,NightsWatch
+Mycah,HouseStark,298.0,1.0,16.0,15.0,1,0,1,0,0,0,0,1,HouseStark
+Myrcella Baratheon,HouseLannister,,,,5.0,0,1,1,1,0,1,0,1,HouseLannister
+Myrtle,Wildling,300.0,5.0,69.0,37.0,0,0,0,0,0,0,1,5,Wildling
+Nan,HouseStark,,,,1.0,0,0,1,1,0,0,0,1,HouseStark
+Old Henly,NightsWatch,299.0,3.0,55.0,55.0,1,0,0,0,1,0,0,3,NightsWatch
+Ollo Lophand,NightsWatch,300.0,5.0,4.0,0.0,1,0,0,0,1,0,1,3,NightsWatch
+Ondrew Locke,HouseStark,,,,37.0,1,1,0,0,0,0,1,5,HouseStark
+Orell,Wildling,299.0,2.0,51.0,51.0,1,0,0,1,0,0,0,2,Wildling
+Orphan Oss,NightsWatch,300.0,5.0,4.0,40.0,1,0,0,0,1,0,1,3,NightsWatch
+Orton Merryweather,HouseLannister,,,,11.0,1,1,0,0,1,1,0,3,HouseLannister
+Osfryd Kettleblack,HouseLannister,,,,41.0,1,1,0,1,1,1,0,2,HouseLannister
+Osha,HouseStark,,,,37.0,0,0,1,1,0,0,0,1,HouseStark
+Osmund Kettleblack,HouseLannister,,,,41.0,1,1,0,1,1,1,0,2,HouseLannister
+Osney Kettleblack,HouseLannister,,,,41.0,1,1,0,1,1,1,0,2,HouseLannister
+Othell Yarwyck,NightsWatch,,,,48.0,1,0,1,0,1,0,1,1,NightsWatch
+Ottyn Wythers,NightsWatch,299.0,3.0,48.0,13.0,1,0,0,1,1,0,0,2,NightsWatch
+Owen,NightsWatch,,,,55.0,1,0,0,0,1,0,1,3,NightsWatch
+Palla,HouseStark,,,,46.0,0,0,0,1,0,0,0,2,HouseStark
+Parmen Crane,HouseBaratheon,,,,22.0,1,1,0,1,0,0,0,2,HouseBaratheon
+Patchface,HouseBaratheon,,,,0.0,1,0,0,1,1,0,1,2,HouseBaratheon
+Pate (Night's Watch),NightsWatch,,,,60.0,1,0,1,0,0,0,0,1,NightsWatch
+Patrek of King's Mountain,HouseBaratheon,300.0,5.0,69.0,44.0,1,1,0,0,0,0,1,5,HouseBaratheon
+Philip Foote,HouseLannister,,,,65.0,1,1,0,1,1,0,0,2,HouseLannister
+Podrick Payne,HouseLannister,,,,62.0,1,1,1,1,1,1,0,1,HouseLannister
+Porridge,HouseBaratheon,,,,25.0,1,0,0,0,1,0,0,3,HouseBaratheon
+Porther,HouseStark,299.0,2.0,21.0,22.0,1,0,1,1,0,0,0,1,HouseStark
+Poxy Tym,HouseStark,299.0,2.0,69.0,16.0,1,0,0,1,0,0,0,2,HouseStark
+Preston Greenfield,HouseBaratheon,299.0,2.0,41.0,43.0,1,0,1,1,0,0,0,1,HouseBaratheon
+Pycelle,HouseLannister,300.0,5.0,35.5,20.0,1,0,1,1,1,1,1,1,HouseLannister
+Pylos,HouseBaratheon,,,,0.0,1,0,0,1,1,0,0,2,HouseBaratheon
+Pypar,NightsWatch,,,,19.0,1,0,1,0,1,1,1,1,NightsWatch
+Qhorin Halfhand,NightsWatch,299.0,2.0,68.0,43.0,1,0,0,1,0,0,0,2,NightsWatch
+Quaro,HouseTargaryen,298.0,1.0,64.0,50.0,1,0,1,0,0,0,0,1,HouseTargaryen
+Quent,HouseStark,,,,37.0,1,0,1,0,0,0,0,1,HouseStark
+Quenten Banefort,HouseLannister,,,,16.0,1,1,0,0,0,1,0,4,HouseLannister
+Qyburn,HouseLannister,,,,64.0,1,0,0,1,1,1,1,2,HouseLannister
+Quort,Wildling,299.0,3.0,55.0,41.0,1,0,0,0,1,0,0,3,Wildling
+Qyle,NightsWatch,299.0,2.0,2.0,2.0,1,0,0,1,0,0,0,2,NightsWatch
+Ragwyle,Wildling,,,,68.0,0,0,0,1,0,0,0,2,Wildling
+Rakharo,HouseTargaryen,,,,54.0,1,0,1,1,1,0,1,1,HouseTargaryen
+Rast,NightsWatch,299.0,3.0,26.0,55.0,1,0,1,0,1,0,0,1,NightsWatch
+Raymun Darry,HouseTargaryen,298.0,1.0,55.0,16.0,1,1,1,0,0,0,0,1,HouseTargaryen
+Raynald Westerling,HouseStark,299.0,3.0,44.0,14.0,1,1,0,0,1,1,0,3,HouseStark
+Red Alyn,NightsWatch,300.0,3.0,69.0,55.0,1,0,0,0,1,0,0,3,NightsWatch
+Renly Baratheon,HouseBaratheon,299.0,2.0,33.0,15.0,1,1,1,1,0,0,0,1,HouseBaratheon
+Reysen,NightsWatch,,,,5.0,1,0,0,1,0,0,0,2,NightsWatch
+Richard Horpe,HouseBaratheon,,,,17.0,1,1,0,0,0,0,1,5,HouseBaratheon
+Rickard Karstark,HouseStark,299.0,3.0,20.0,53.0,1,1,1,1,1,0,0,1,HouseStark
+Rickard Ryswell,HouseStark,,,,20.0,1,1,0,0,0,0,1,5,HouseStark
+Rickon Stark,HouseStark,,,,7.0,1,1,1,1,0,0,0,1,HouseStark
+Robar Royce,HouseBaratheon,299.0,2.0,6.0,29.0,1,1,1,1,1,0,0,1,HouseBaratheon
+Robb Stark,HouseStark,299.0,3.0,51.0,1.0,1,1,1,1,1,0,0,1,HouseStark
+Robert Baratheon,HouseBaratheon,298.0,1.0,47.0,4.0,1,1,1,0,0,0,0,1,HouseBaratheon
+Robett Glover,HouseStark,,,,53.0,1,1,1,1,0,0,1,1,HouseStark
+Robin Flint,HouseStark,299.0,3.0,51.0,63.0,1,1,1,1,1,0,0,1,HouseStark
+Robin Moreland,HouseLannister,,,,16.0,1,1,0,0,0,1,0,4,HouseLannister
+Rodrik Cassel,HouseStark,299.0,2.0,66.0,7.0,1,1,1,1,0,0,0,1,HouseStark
+Roger Hogg,HouseLannister,,,,27.0,1,1,0,0,0,1,0,4,HouseLannister
+Roger Ryswell,HouseStark,,,,20.0,1,1,0,0,0,0,1,5,HouseStark
+Roland Crakehall (Lord),HouseLannister,,,,32.0,1,1,0,1,0,0,0,2,HouseLannister
+Rolder,HouseLannister,,,,21.0,1,0,0,0,0,1,0,4,HouseLannister
+Rollam Westerling,HouseStark,,,,14.0,1,1,0,0,1,0,0,3,HouseStark
+Rolley,NightsWatch,299.0,3.0,33.0,0.0,1,0,0,0,1,0,0,3,NightsWatch
+Rolly Duckfield,HouseTargaryen,,,,8.0,1,0,0,0,0,0,1,5,HouseTargaryen
+Rolph Spicer,HouseLannister,,,,14.0,1,1,0,0,1,0,0,3,HouseLannister
+Ronnel Harclay,NightsWatch,,,,48.0,1,1,0,0,1,0,0,3,NightsWatch
+Ronnet Connington,HouseBaratheon,,,,22.0,1,1,0,1,0,1,1,2,HouseBaratheon
+Rowan,Wildling,300.0,5.0,69.0,37.0,1,0,0,0,0,0,1,5,Wildling
+Rudge,NightsWatch,,,,60.0,1,0,1,0,0,0,0,1,NightsWatch
+Rusty Flowers,NightsWatch,,,,7.0,1,0,0,0,0,0,1,5,NightsWatch
+Ryk,Wildling,,,,7.0,1,0,0,0,1,0,0,3,Wildling
+Rupert Brax,HouseLannister,299.0,2.0,32.0,32.0,1,0,0,1,0,0,0,2,HouseLannister
+Salladhor Saan,HouseBaratheon,,,,0.0,1,1,0,1,1,0,0,2,HouseBaratheon
+Samwell Tarly,NightsWatch,,,,70.0,1,1,1,1,1,1,1,1,NightsWatch
+Sansa Stark,HouseStark,,,,7.0,0,1,1,1,1,1,0,1,HouseStark
+Satin,NightsWatch,,,,6.0,1,0,0,1,1,0,1,2,NightsWatch
+Sawwood,NightsWatch,,,,0.0,1,0,0,0,1,0,0,3,NightsWatch
+Selyse Florent,HouseBaratheon,,,,0.0,0,1,0,1,1,0,1,2,HouseBaratheon
+Senelle,HouseLannister,300.0,4.0,24.0,3.0,0,0,0,0,0,1,0,4,HouseLannister
+Shae,HouseLannister,300.0,3.0,77.0,62.0,0,0,1,1,1,0,0,1,HouseLannister
+Shagga,HouseLannister,,,,39.0,1,0,1,1,0,0,0,1,HouseLannister
+Shireen Baratheon,HouseBaratheon,,,,0.0,0,1,0,1,1,0,1,2,HouseBaratheon
+Shyra Errol,HouseBaratheon,300.0,4.0,22.5,42.0,0,1,0,1,0,0,0,2,HouseBaratheon
+Small Paul,NightsWatch,299.0,3.0,18.0,0.0,1,0,0,0,1,0,0,3,NightsWatch
+Softfoot,NightsWatch,299.0,3.0,18.0,0.0,1,0,0,0,1,0,0,3,NightsWatch
+Spare Boot,NightsWatch,,,,55.0,1,0,0,0,1,0,0,3,NightsWatch
+Spotted Pate of Maidenpool,NightsWatch,299.0,3.0,55.0,0.0,1,0,0,0,1,0,0,3,NightsWatch
+Squirrel,Wildling,300.0,5.0,69.0,37.0,0,0,0,0,0,0,1,5,Wildling
+Stalwart Shield,HouseTargaryen,300.0,5.0,2.0,2.0,1,0,0,0,0,0,1,5,HouseTargaryen
+Steffon Swyft,HouseLannister,,,,27.0,1,1,0,0,0,1,0,4,HouseLannister
+Stiv,Wildling,298.0,1.0,37.0,37.0,1,0,1,0,0,0,0,1,Wildling
+Stone Thumbs,Wildling,299.0,3.0,55.0,41.0,1,0,0,0,1,0,0,3,Wildling
+Stonesnake,NightsWatch,,,,43.0,1,0,0,1,0,0,0,2,NightsWatch
+Styr,Wildling,300.0,3.0,26.0,7.0,1,1,0,0,1,0,0,3,Wildling
+Sybell Spicer,HouseLannister,,,,14.0,0,1,0,0,1,1,0,3,HouseLannister
+Sybelle Glover,HouseStark,,,,26.0,0,1,0,0,0,0,1,5,HouseStark
+Symon Silver Tongue,HouseLannister,299.0,3.0,32.0,44.0,1,0,0,1,1,0,0,2,HouseLannister
+Symon Stripeback,HouseTargaryen,,,,70.0,1,0,0,0,0,0,1,5,HouseTargaryen
+Syrio Forel,HouseStark,298.0,1.0,50.0,22.0,1,0,1,0,0,0,0,1,HouseStark
+Taena of Myr,HouseLannister,,,,6.0,0,1,0,0,1,1,0,3,HouseLannister
+Tal Toraq,HouseTargaryen,,,,70.0,1,0,0,0,0,0,1,5,HouseTargaryen
+Tallad,HouseLannister,,,,17.0,1,0,0,1,1,1,0,2,HouseLannister
+Tanda Stokeworth,HouseLannister,300.0,4.0,32.0,2.0,0,1,0,1,1,0,0,2,HouseLannister
+Tanton Fossoway,HouseBaratheon,,,,22.0,1,1,0,1,0,0,0,2,HouseBaratheon
+The Red Lamb,HouseTargaryen,,,,67.0,1,0,0,0,0,0,1,5,HouseTargaryen
+Theodan Wells,HouseStark,,,,43.0,1,1,0,0,0,1,1,4,HouseStark
+Thistle,Wildling,300.0,5.0,0.0,0.0,0,0,0,0,0,0,1,5,Wildling
+Thoren Smallwood,NightsWatch,299.0,3.0,18.0,6.0,1,1,0,1,1,0,0,2,NightsWatch
+Tickler,HouseLannister,300.0,3.0,74.0,26.0,1,0,0,1,1,0,0,2,HouseLannister
+Tim Tangletongue,NightsWatch,,,,69.0,1,0,0,0,1,0,0,3,NightsWatch
+Timett,HouseLannister,,,,56.0,1,0,1,1,0,0,0,1,HouseLannister
+Timon,HouseBaratheon,,,,65.0,1,0,0,1,0,0,0,2,HouseBaratheon
+Todder,NightsWatch,,,,19.0,1,0,1,0,1,0,1,1,NightsWatch
+Tomard,HouseStark,298.0,1.0,49.0,22.0,1,0,1,0,0,0,0,1,HouseStark
+Tormund,Wildling,,,,7.0,1,1,0,0,1,0,1,3,Wildling
+Torrhen Karstark,HouseStark,298.0,1.0,63.0,53.0,1,1,1,0,0,0,0,1,HouseStark
+Tothmure,HouseLannister,299.0,2.0,64.0,30.0,1,0,0,1,0,0,0,2,HouseLannister
+Tregar,HouseLannister,298.0,1.0,39.0,35.0,1,0,1,0,0,0,0,1,HouseLannister
+Triston Sunderland,HouseLannister,,,,9.0,1,1,0,0,0,0,1,5,HouseLannister
+Tumberjon,NightsWatch,,,,0.0,1,0,0,0,1,0,0,3,NightsWatch
+Tumco Lho,HouseTargaryen,,,,67.0,1,0,0,0,0,0,1,5,HouseTargaryen
+Tyrek Lannister,HouseLannister,299.0,2.0,41.0,30.0,1,1,1,1,0,0,0,1,HouseLannister
+Tyrion Lannister,HouseLannister,,,,4.0,1,1,1,1,1,0,1,1,HouseLannister
+Tytos Brax,HouseLannister,,,,63.0,1,1,1,1,0,0,0,1,HouseLannister
+Tywin Lannister,HouseLannister,300.0,3.0,77.0,42.0,1,1,1,1,1,0,0,1,HouseLannister
+Ulf son of Umar,HouseLannister,298.0,1.0,62.0,56.0,1,0,1,0,0,0,0,1,HouseLannister
+Ulmer,NightsWatch,,,,33.0,1,0,0,0,1,0,1,3,NightsWatch
+Urreg,NightsWatch,299.0,2.0,19.0,14.0,1,0,0,1,0,0,0,2,NightsWatch
+Val,Wildling,,,,7.0,0,0,0,0,1,0,1,3,Wildling
+Varamyr,Wildling,300.0,5.0,0.0,15.0,1,0,0,0,1,0,1,3,Wildling
+Varys,HouseTargaryen,,,,25.0,1,0,1,1,1,0,1,1,HouseTargaryen
+Vayon Poole,HouseStark,298.0,1.0,21.0,7.0,1,0,1,1,0,0,0,1,HouseStark
+Viserys Targaryen,HouseTargaryen,298.0,1.0,46.0,3.0,1,1,1,0,0,0,0,1,HouseTargaryen
+Vylarr,HouseLannister,,,,3.0,1,0,0,1,0,0,0,2,HouseLannister
+Wallen,Wildling,298.0,1.0,37.0,37.0,1,0,1,0,0,0,0,1,Wildling
+Watt,NightsWatch,299.0,3.0,75.0,69.0,1,0,0,0,1,0,0,3,NightsWatch
+Waymar Royce,NightsWatch,297.0,1.0,0.0,0.0,1,1,1,0,0,0,0,1,NightsWatch
+Wayn (guard),HouseStark,,,,37.0,1,0,1,0,0,0,0,1,HouseStark
+Weeper,Wildling,,,,7.0,1,1,0,0,1,0,0,3,Wildling
+Weese,HouseLannister,299.0,2.0,38.0,26.0,1,0,0,1,0,0,0,2,HouseLannister
+Wendel Manderly,HouseStark,299.0,3.0,51.0,55.0,1,1,1,1,1,0,0,1,HouseStark
+Wex Pyke,HouseStark,,,,24.0,1,0,0,1,0,0,1,2,HouseStark
+Wilbert,HouseStark,298.0,3.0,29.0,29.0,1,0,0,0,1,0,0,3,HouseStark
+Will,NightsWatch,297.0,1.0,0.0,0.0,1,0,1,0,0,0,0,1,NightsWatch
+Willem Lannister,HouseLannister,299.0,3.0,20.0,19.0,1,1,0,0,1,0,0,3,HouseLannister
+Willit,HouseLannister,,,,65.0,1,0,0,1,0,0,0,2,HouseLannister
+Willow Witch-eye,Wildling,300.0,5.0,69.0,37.0,0,0,0,0,0,0,1,5,Wildling
+Woth,NightsWatch,299.0,2.0,14.0,14.0,1,0,0,1,0,0,0,2,NightsWatch
+Wun Weg Wun Dar Wun,Wildling,,,,35.0,1,0,0,0,0,0,1,5,Wildling
+Wyl (guard),HouseStark,298.0,1.0,35.0,35.0,1,0,1,0,0,0,0,1,HouseStark
+Wylis Manderly,HouseStark,,,,55.0,1,1,1,1,0,1,0,1,HouseStark
+Wylla Manderly,HouseStark,,,,19.0,0,1,0,0,0,0,1,5,HouseStark
+Wyman Manderly,HouseStark,,,,16.0,1,1,0,1,0,0,1,2,HouseStark
+Wynafryd Manderly,HouseStark,,,,19.0,1,1,0,0,0,0,1,5,HouseStark
+Wynton Stout,NightsWatch,,,,41.0,1,0,0,0,1,0,0,3,NightsWatch
+Yandry,HouseTargaryen,,,,8.0,1,0,0,0,0,0,1,5,HouseTargaryen
+Ygritte,Wildling,299.0,3.0,55.0,51.0,0,0,0,1,1,0,0,2,Wildling
+Yoren,NightsWatch,299.0,2.0,19.0,13.0,1,0,1,1,0,0,0,1,NightsWatch
+Young Henly,NightsWatch,299.0,3.0,55.0,55.0,1,0,0,0,1,0,0,3,NightsWatch
+Ysilla,HouseTargaryen,,,,8.0,1,0,0,0,0,0,1,5,HouseTargaryen
+Zei,HouseStark,,,,64.0,0,0,0,0,1,0,0,3,HouseStark
+Torwynd the Tame,Wildling,300.0,5.0,73.0,73.0,1,0,0,0,1,0,0,3,Wildling
