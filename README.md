@@ -102,6 +102,7 @@ By default creates offline score base and saves in `data/model_data` Picks expor
 >  - `export DATABASE_NAME=<name of the database created>`   
 
 - Create and populate the RDS database with offline scored base -  `make database_rds`
+In case the
 
 **To only query from the RDS database *already created* by the developer, skip to **Step 6: Verifying database creation**
 
@@ -317,11 +318,11 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2Nzc4MzA4NiwtMzk0OTUwMTI4LC01ND
-Q5NjkyNzMsLTE4OTc0MjU4NCw0ODU4NjQ3MjQsMTY0NTUxNTA3
-MSwtNjA5MDk0Njc5LDExMjA5NjgxMTUsLTE4NDk2MjcxMTYsLT
-ExNzkyNzIwMTEsLTE1NjE4Nzc3MiwtMTIxODkxNTk2LDU4ODMw
-MzMzNSwtMTA4MjcxNDYzNSwxMDI2MTM1NzcwLC0xMjYzMzQzOD
-E0LC0xMzczNzE4MzUsLTEyODI4OTgwMjUsNDk3Mjg3NjkyLC0y
-OTQwNDEwNzRdfQ==
+eyJoaXN0b3J5IjpbOTE2OTU3OTIwLC0zOTQ5NTAxMjgsLTU0ND
+k2OTI3MywtMTg5NzQyNTg0LDQ4NTg2NDcyNCwxNjQ1NTE1MDcx
+LC02MDkwOTQ2NzksMTEyMDk2ODExNSwtMTg0OTYyNzExNiwtMT
+E3OTI3MjAxMSwtMTU2MTg3NzcyLC0xMjE4OTE1OTYsNTg4MzAz
+MzM1LC0xMDgyNzE0NjM1LDEwMjYxMzU3NzAsLTEyNjMzNDM4MT
+QsLTEzNzM3MTgzNSwtMTI4Mjg5ODAyNSw0OTcyODc2OTIsLTI5
+NDA0MTA3NF19
 -->
