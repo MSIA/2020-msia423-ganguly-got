@@ -101,7 +101,7 @@ def merge_df(base, profile):
 
     Arguments:
         base: base dataFrame from clean_base.csv
-        csv: character-profile.csv
+        profile: profile dataFrame from character-profile.csv
 
     Returns:
         merged dataFrame including profile variables like 'isMarried', 'boolDeadRelations', 'isPopular'
@@ -157,11 +157,15 @@ def featurize(base_df, profile_df, eda_plot_path,
     1. Creates target variable - survive_class_id
     2. Merges features from character-profile.csv
     3. Fills gaps in features with 0
-    4. Creates dummy columns for 'Allegiance'
+    4. Creates EDA plots for model features
+    5. Creates dummy columns for 'Allegiance'
 
     Arguments:
         base_df: dataFrame from clean_base.csv
         profile_df: character-profile.csv
+        eda_plot_path: local file path for storing EDA plots
+        eda_plot_features: model features to create EDA plots for
+        target_column: dependent variable column
         book_chapter: dictionary holding the number of chapters in each of the 5 books {bookNum: numChapters}
 
     Returns:
