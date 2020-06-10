@@ -82,13 +82,15 @@ Creates`features.csv` and a folder `eda_plots` with bivariate feature plots in `
  
  - Train model - **`make model`**
     Configurable paths - intermediate model data location, model artifacts location
-`make model MODEL_DATA=<local file path> MODEL_DATA=<local file path>`
-By default downloaded data saved in `data/raw_data`
-Creates`features.csv` and a folder `eda_plots` with bivariate feature plots in `data/model_data`
- This directive trains the classification model and stores artifacts like test performance metrics and model object in the folder `models`. To use an alternate location use  `make model MODEL_ARTIFACTS=<local file path>`
+`make model MODEL_DATA=<local file path> MODEL_ARTIFACTS=<local file path>`
+By default picks model data saved in `data/model_data`
+This directive trains the classification model and stores artifacts like test performance metrics and model object in the folder `models`
 
 - Score offline base for model serving - **`make score`**
-This directive 
+Configurable paths - intermediate model data location, model artifacts location
+`make score MODEL_DATA=<local file path> MODEL_ARTIFACTS=<local file path>`
+By default picks model data saved in `data/model_data`
+This directive trains the classification model and stores artifacts like test performance metrics and model object in the folder `models`
 
  - `S3_BUCKET` - specify the name of the S3 bucket for storing the csv file
  - `CREATE_DB_LOCALLY` - specify `False` to create RDS database, `True` to create local SQLite database. Defaulted to `False`
@@ -316,10 +318,10 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjk4OTIzOTcsMTY0NTUxNTA3MSwtNj
-A5MDk0Njc5LDExMjA5NjgxMTUsLTE4NDk2MjcxMTYsLTExNzky
-NzIwMTEsLTE1NjE4Nzc3MiwtMTIxODkxNTk2LDU4ODMwMzMzNS
-wtMTA4MjcxNDYzNSwxMDI2MTM1NzcwLC0xMjYzMzQzODE0LC0x
-MzczNzE4MzUsLTEyODI4OTgwMjUsNDk3Mjg3NjkyLC0yOTQwND
-EwNzQsMTkxOTMxNzAwMl19
+eyJoaXN0b3J5IjpbLTQ5Mzc5MDI1OCwxNjQ1NTE1MDcxLC02MD
+kwOTQ2NzksMTEyMDk2ODExNSwtMTg0OTYyNzExNiwtMTE3OTI3
+MjAxMSwtMTU2MTg3NzcyLC0xMjE4OTE1OTYsNTg4MzAzMzM1LC
+0xMDgyNzE0NjM1LDEwMjYxMzU3NzAsLTEyNjMzNDM4MTQsLTEz
+NzM3MTgzNSwtMTI4Mjg5ODAyNSw0OTcyODc2OTIsLTI5NDA0MT
+A3NCwxOTE5MzE3MDAyXX0=
 -->
