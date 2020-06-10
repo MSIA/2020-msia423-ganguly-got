@@ -157,7 +157,7 @@ In case the location to store the offline score has been changed above, please m
   `docker build -f app/Dockerfile -t got_app .`
   
  -Run application
-   `docker run -p 5000:5000 --name test got_app`
+   `make run_flask_app`
  
  
 ### Other model pipeline configurations
@@ -327,11 +327,11 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2NTkxOTcxNCwtMTI4NzI4ODg3NCwtMT
-I4NzI4ODg3NCwtOTE3NjA1MTgzLDEzNjM4MzcxNDYsMjM4NTU1
-MTAyLDQ1OTMyOTk2OSwxOTg1ODEzMjM3LDE5NzU5OTc0NzUsLT
-I3NDQxOTI3MywtNTc0MjIyMDkxLDUxNzA2OTIxMSwtMzk0OTUw
-MTI4LC01NDQ5NjkyNzMsLTE4OTc0MjU4NCw0ODU4NjQ3MjQsMT
-Y0NTUxNTA3MSwtNjA5MDk0Njc5LDExMjA5NjgxMTUsLTE4NDk2
-MjcxMTZdfQ==
+eyJoaXN0b3J5IjpbODUwMzA1NDE0LC0xMjg3Mjg4ODc0LC0xMj
+g3Mjg4ODc0LC05MTc2MDUxODMsMTM2MzgzNzE0NiwyMzg1NTUx
+MDIsNDU5MzI5OTY5LDE5ODU4MTMyMzcsMTk3NTk5NzQ3NSwtMj
+c0NDE5MjczLC01NzQyMjIwOTEsNTE3MDY5MjExLC0zOTQ5NTAx
+MjgsLTU0NDk2OTI3MywtMTg5NzQyNTg0LDQ4NTg2NDcyNCwxNj
+Q1NTE1MDcxLC02MDkwOTQ2NzksMTEyMDk2ODExNSwtMTg0OTYy
+NzExNl19
 -->
