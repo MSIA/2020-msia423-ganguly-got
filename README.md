@@ -110,9 +110,7 @@ In case the location to store the offline score has been changed above, please m
   `docker build -f app/Dockerfile -t got_app .`
  -Run application
    `docker run -p 5000:5000 --name test got_app`
-
-
-` 
+ 
 
 
 ## Project Charter
@@ -270,7 +268,7 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg5MzE2NjAzLC0zOTQ5NTAxMjgsLTU0ND
+eyJoaXN0b3J5IjpbNTE3MDY5MjExLC0zOTQ5NTAxMjgsLTU0ND
 k2OTI3MywtMTg5NzQyNTg0LDQ4NTg2NDcyNCwxNjQ1NTE1MDcx
 LC02MDkwOTQ2NzksMTEyMDk2ODExNSwtMTg0OTYyNzExNiwtMT
 E3OTI3MjAxMSwtMTU2MTg3NzcyLC0xMjE4OTE1OTYsNTg4MzAz
