@@ -79,10 +79,12 @@ Creates`clean_base.csv` and saves in `data/model_data`
 `make features S3_DOWNLOAD_PATH=<local file path> MODEL_DATA=<local file path>`
 By default downloaded data saved in `data/raw_data`
 Creates`features.csv` and a folder `eda_plots` with bivariate feature plots in `data/model_data`
-
- This directive creates `features.csv` and a folder `eda_plots` with bivariate feature plots in `data/model_data`. To use an alternate location use  `make features MODEL_DATA=<local file path>`
  
  - Train model - **`make model`**
+    Configurable paths - intermediate model data location, model artifacts location
+`make model MODEL_DATA=<local file path> MODEL_DATA=<local file path>`
+By default downloaded data saved in `data/raw_data`
+Creates`features.csv` and a folder `eda_plots` with bivariate feature plots in `data/model_data`
  This directive trains the classification model and stores artifacts like test performance metrics and model object in the folder `models`. To use an alternate location use  `make model MODEL_ARTIFACTS=<local file path>`
 
 - Score offline base for model serving - **`make score`**
@@ -314,10 +316,10 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODU2MjUwMTQ3LDE2NDU1MTUwNzEsLTYwOT
-A5NDY3OSwxMTIwOTY4MTE1LC0xODQ5NjI3MTE2LC0xMTc5Mjcy
-MDExLC0xNTYxODc3NzIsLTEyMTg5MTU5Niw1ODgzMDMzMzUsLT
-EwODI3MTQ2MzUsMTAyNjEzNTc3MCwtMTI2MzM0MzgxNCwtMTM3
-MzcxODM1LC0xMjgyODk4MDI1LDQ5NzI4NzY5MiwtMjk0MDQxMD
-c0LDE5MTkzMTcwMDJdfQ==
+eyJoaXN0b3J5IjpbLTIwNjk4OTIzOTcsMTY0NTUxNTA3MSwtNj
+A5MDk0Njc5LDExMjA5NjgxMTUsLTE4NDk2MjcxMTYsLTExNzky
+NzIwMTEsLTE1NjE4Nzc3MiwtMTIxODkxNTk2LDU4ODMwMzMzNS
+wtMTA4MjcxNDYzNSwxMDI2MTM1NzcwLC0xMjYzMzQzODE0LC0x
+MzczNzE4MzUsLTEyODI4OTgwMjUsNDk3Mjg3NjkyLC0yOTQwND
+EwNzQsMTkxOTMxNzAwMl19
 -->
