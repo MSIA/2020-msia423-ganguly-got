@@ -14,9 +14,10 @@
 <!-- tocstop -->
 
 ## Running the data ingestion pipeline
-### To run the model pipeline and 
-- Data source:  https://www.kaggle.com/mylesoneill/game-of-thrones
-- Filename: character-deaths.csv
+### To run the model pipeline and application with default settings
+- Things to ensure before proceeding
+ - [ ] You are on Northwestern VPN and Docker app is running
+ - [ ] 
 
 The file has been downloaded and stored in `data/external` folder. User can choose to use the same file for the subsequent steps, in which case there is no need to download again. Otherwise the file needs to be downloaded and placed in `data/external`. Please do not change the file name.
 
@@ -251,10 +252,10 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwNjc0MzAxMywtNjA5MDk0Njc5LDExMj
-A5NjgxMTUsLTE4NDk2MjcxMTYsLTExNzkyNzIwMTEsLTE1NjE4
-Nzc3MiwtMTIxODkxNTk2LDU4ODMwMzMzNSwtMTA4MjcxNDYzNS
-wxMDI2MTM1NzcwLC0xMjYzMzQzODE0LC0xMzczNzE4MzUsLTEy
-ODI4OTgwMjUsNDk3Mjg3NjkyLC0yOTQwNDEwNzQsMTkxOTMxNz
-AwMl19
+eyJoaXN0b3J5IjpbMjMwOTA3ODU1LC02MDkwOTQ2NzksMTEyMD
+k2ODExNSwtMTg0OTYyNzExNiwtMTE3OTI3MjAxMSwtMTU2MTg3
+NzcyLC0xMjE4OTE1OTYsNTg4MzAzMzM1LC0xMDgyNzE0NjM1LD
+EwMjYxMzU3NzAsLTEyNjMzNDM4MTQsLTEzNzM3MTgzNSwtMTI4
+Mjg5ODAyNSw0OTcyODc2OTIsLTI5NDA0MTA3NCwxOTE5MzE3MD
+AyXX0=
 -->
