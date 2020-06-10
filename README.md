@@ -129,7 +129,7 @@ Configurable paths - intermediate model data location, model artifacts location
 
 By default creates offline score base and saves in `data/model_data [MODEL_DATA]` Picks exported model object from `models [MODEL_ARTIFACTS]`
 
-If using different file paths than the defaults, please ensure correct input and output locations are provided for chained steps:  `clean_base -> features -> model -> score`
+*If using different file paths than the defaults, please ensure correct input and output locations are provided for chained steps:*  `clean_base -> features -> model -> score`
 
 ### To connect application to RDS database
 
@@ -155,6 +155,9 @@ In case the location to store the offline score has been changed above, please m
  -Run application
    `docker run -p 5000:5000 --name test got_app`
  
+ 
+### Other model configurations
+All model 
 
 
 ## Project Charter
@@ -312,11 +315,11 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxNzYwNTE4MywxMzYzODM3MTQ2LDIzOD
-U1NTEwMiw0NTkzMjk5NjksMTk4NTgxMzIzNywxOTc1OTk3NDc1
-LC0yNzQ0MTkyNzMsLTU3NDIyMjA5MSw1MTcwNjkyMTEsLTM5ND
-k1MDEyOCwtNTQ0OTY5MjczLC0xODk3NDI1ODQsNDg1ODY0NzI0
-LDE2NDU1MTUwNzEsLTYwOTA5NDY3OSwxMTIwOTY4MTE1LC0xOD
-Q5NjI3MTE2LC0xMTc5MjcyMDExLC0xNTYxODc3NzIsLTEyMTg5
-MTU5Nl19
+eyJoaXN0b3J5IjpbLTEyNDU4NzY0MjIsLTkxNzYwNTE4MywxMz
+YzODM3MTQ2LDIzODU1NTEwMiw0NTkzMjk5NjksMTk4NTgxMzIz
+NywxOTc1OTk3NDc1LC0yNzQ0MTkyNzMsLTU3NDIyMjA5MSw1MT
+cwNjkyMTEsLTM5NDk1MDEyOCwtNTQ0OTY5MjczLC0xODk3NDI1
+ODQsNDg1ODY0NzI0LDE2NDU1MTUwNzEsLTYwOTA5NDY3OSwxMT
+IwOTY4MTE1LC0xODQ5NjI3MTE2LC0xMTc5MjcyMDExLC0xNTYx
+ODc3NzJdfQ==
 -->
