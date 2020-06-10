@@ -27,6 +27,9 @@ database:
 database_rds:
 	docker run -e MYSQL_USER -e MYSQL_PASSWORD -e MYSQL_PORT -e DATABASE_NAME -e MYSQL_HOST --mount type=bind,source="`pwd`",target=/app/ got_make run.py create_db -i=${MODEL_DATA}/offline_score.csv -c=config/model_config.yaml -t
 
+run_flask_app:
+	docker run -e SQLALCHEMY_DATABASE_URI -e MYSQL_USER -e MYSQL_PASSWORD -e MYSQL_PORT -e DATABASE_NAME -e MYSQL_HOST -p 5000:5000 --name test got_app
+
 tests:
 	python3 -m pytest test/*
 
