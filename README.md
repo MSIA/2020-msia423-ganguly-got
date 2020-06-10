@@ -21,7 +21,7 @@
   `export AWS_ACCESS_KEY_ID=<your key>`
   `export AWS_SECRET_ACCESS_KEY=<your secret key>`
 
-> If you are someone I have given access to my S3 bucket, you are good to go. If not, you must create and provide a valid S3 Bucket name in `config/model_config.yaml` both for `s3_upload` and `s3_download`. You would then have to execute the S3 data upload step as mentioned later in the document, *before* proceeding with the model pipeline
+> If user has been given access to my S3 bucket, we are good to go. If not, user must create and provide a valid S3 Bucket name in `config/model_config.yaml` both for `s3_upload` and `s3_download`. They would then have to execute the S3 data upload step as mentioned later in the document, *before* proceeding with the model pipeline
 
   
  - [ ] The *local* SQL Alchemy database connection string has been set up as,
@@ -92,6 +92,8 @@ Configurable paths - intermediate model data location, model artifacts location
 By default creates offline score base and saves in `data/model_data` Picks exported model object from `models`
 
 ### To connect application to RDS database
+
+ - List item
 
  - `S3_BUCKET` - specify the name of the S3 bucket for storing the csv file
  - `CREATE_DB_LOCALLY` - specify `False` to create RDS database, `True` to create local SQLite database. Defaulted to `False`
@@ -319,7 +321,7 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDU3OTM5MzEsMTY0NTUxNTA3MSwtNj
+eyJoaXN0b3J5IjpbLTE2NDc1OTU1OTIsMTY0NTUxNTA3MSwtNj
 A5MDk0Njc5LDExMjA5NjgxMTUsLTE4NDk2MjcxMTYsLTExNzky
 NzIwMTEsLTE1NjE4Nzc3MiwtMTIxODkxNTk2LDU4ODMwMzMzNS
 wtMTA4MjcxNDYzNSwxMDI2MTM1NzcwLC0xMjYzMzQzODE0LC0x
