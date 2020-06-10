@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>How long will you play the Game of Thrones?</title>
+  </head>
+  <body>
+    <h3>
+        <div style="margin-left:250px">
+         <img src="https://github.com/MSIA/2020-msia423-ganguly-got/blob/development/app/templates/background_2.jpg?raw=true" width="940" height="400">
+         <a href = "{{ url_for('index') }}"></a>
+        </div>
+    </h3>
+    <hr/>
+    <h2 style="color: maroon; margin-left: 400px">How long will you play the Game of Thrones?</h2>
+    <table>
+         <thead>
+            <tr>
+               <h3 style="margin-left:490px">Number of chapters you will survive!</h3>
+            </tr>
+         </thead>
+
+         <tbody>
+            {% for prediction in predictions %}
+               <tr>
+                   <h3 style="margin-left:650px">{{ prediction.prediction }}</h3>
+                   <h3 style="margin-left:250px">{{ prediction.remarks }}</h3>
+               </tr>
+            {% endfor %}
+         </tbody>
+      </table>
+    <form action="{{ url_for('add_entry') }}" method='POST' class=add-entry>
+  <div class="form-group" style="margin-left:250px; margin-right:250px">
+    <label for="Gender" style="font-weight:bold">Gender[1-male, 0-female]</label>
+    <select class="form-control" id="Gender" name=Gender>
+      <option>0</option>
+      <option>1</option>
+    </select>
+  </div>
+  <div class="form-group" style="margin-left:250px; margin-right:250px">
+    <label for="Nobility" style="font-weight:bold">Nobility(1) or Commoner(0)?</label>
+    <select class="form-control" id="Nobility"  name=Nobility>
+      <option>0</option>
+      <option>1</option>
+    </select>
+  </div>
+  <div class="form-group" style="margin-left:250px; margin-right:250px">
+    <label for="boolDeadRelations" style="font-weight:bold">Do you seek vengeance for the death of kin?</label>
+    <select class="form-control" id="boolDeadRelations" name=boolDeadRelations>
+      <option>0</option>
+      <option>1</option>
+    </select>
+  </div>
+  <div class="form-group" style="margin-left:250px; margin-right:250px">
+    <label for="isPopular" style="font-weight:bold">Are you popular in the seven kingdoms?</label>
+    <select class="form-control" id="isPopular" name=isPopular>
+      <option>0</option>
+      <option>1</option>
+    </select>
+  </div>
+  <div class="form-group" style="margin-left:250px; margin-right:250px">
+    <label for="isMarried" style="font-weight:bold">Are you married?</label>
+    <select class="form-control" id="isMarried" name=isMarried>
+      <option>0</option>
+      <option>1</option>
+    </select>
+  </div>
+  <div class="form-group" style="margin-left:250px; margin-right:250px">
+    <label for="Allegiance" style="font-weight:bold">To which house have you pledged allegiance?</label>
+    <select class="form-control" id="Allegiance" name=Allegiance>
+      <option>Baratheon</option>
+      <option>Lannister</option>
+        <option>Stark</option>
+        <option>Targaryen</option>
+        <option>Night's Watch</option>
+        <option>Wildling</option>
+    </select>
+  </div>
+  <button type="submit" style="margin-left:1100px" class="btn btn-primary mb-2">Predict</button>
+</form>
+    <hr/>
+  </body>
+</html>
