@@ -28,7 +28,9 @@
 
   
  - [ ] The *local* SQL Alchemy database connection string has been set up as,
- `export SQLALCHEMY_DATABASE_URI=`
+
+ `export SQLALCHEMY_DATABASE_URI=<path to DB>`
+ 
 > For example,
 > relative path to local DB: sqlite:///data/got_simulator.db
 > absolute path to local DB: sqlite://///Users/cmawer/Repos/2020-MSIA423-template-repository/data/tracks.db
@@ -271,7 +273,7 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0MzcyNzExMyw1MTcwNjkyMTEsLTM5ND
+eyJoaXN0b3J5IjpbLTU3NDIyMjA5MSw1MTcwNjkyMTEsLTM5ND
 k1MDEyOCwtNTQ0OTY5MjczLC0xODk3NDI1ODQsNDg1ODY0NzI0
 LDE2NDU1MTUwNzEsLTYwOTA5NDY3OSwxMTIwOTY4MTE1LC0xOD
 Q5NjI3MTE2LC0xMTc5MjcyMDExLC0xNTYxODc3NzIsLTEyMTg5
