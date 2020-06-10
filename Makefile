@@ -28,7 +28,7 @@ run_flask_app:
 	docker run -e SQLALCHEMY_DATABASE_URI -e MYSQL_USER -e MYSQL_PASSWORD -e MYSQL_PORT -e DATABASE_NAME -e MYSQL_HOST -p 5000:5000 --name test got_app
 
 tests:
-	python3 -m pytest test/*
+	docker run got_make -m pytest test/*
 
 clean:
 	rm -rf models/*
