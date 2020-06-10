@@ -23,7 +23,7 @@ if __name__ == '__main__':
                                                                    'eda', 'model', 'score', 'create_db'])
     parser.add_argument('--input', '-i', default=None, help='Path to input data')
     parser.add_argument('--input_profile', '-i_p', default=None, help='Path to profile data')
-    parser.add_argument('--lfp', default=None, help='Local file path to store artifacts')
+    parser.add_argument('--lfp', default=None, help='Local file path to store or retrieve artifacts')
     parser.add_argument('--config', '-c', help='Path to configuration file')
     parser.add_argument('--output', '-o', default=None, help='Path to save output CSV (optional, default = None)')
     parser.add_argument('--truncate', '-t', default=False, action="store_true",
@@ -37,11 +37,11 @@ if __name__ == '__main__':
             config = yaml.load(f, Loader=yaml.FullLoader)
         except FileNotFoundError as e:
             logger.error('Config file %s not found', args.config)
-            raise SystemExit("Provide valid path!")
+            raise SystemExit("Provide valid configuration file path!")
 
     logger.info("Configuration file loaded from %s" % args.config)
 
-    if args.input is not None and args.step != 'upload':
+    if args.input is not None:
         try:
             input = pd.read_csv(args.input)
             logger.info('Input data loaded from %s', args.input)
@@ -58,7 +58,7 @@ if __name__ == '__main__':
             raise SystemExit("Provide valid path!")
 
     if args.step == 'upload':
-        upload_to_s3(args.input, **config['s3_upload'])
+        upload_to_s3(args.lfp, **config['s3_upload'])
     if args.step == 'download':
         download_from_s3(args.lfp, **config['s3_download'])
     elif args.step == 'clean':
