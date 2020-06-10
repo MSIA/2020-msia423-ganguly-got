@@ -113,14 +113,20 @@ By default downloaded data saved in `data/raw_data`
 Creates`features.csv` and a folder `eda_plots` with bivariate feature plots in `data/model_data`
  
  - Train model - **`make model`**
-    Configurable paths - intermediate model data location, model artifacts location
+
+Configurable paths - intermediate model data location, model artifacts location
+
 `make model MODEL_DATA=<local file path> MODEL_ARTIFACTS=<local file path>`
+
 By default picks model data saved in `data/model_data`
 This directive trains the classification model and stores artifacts like test performance metrics and model object in the folder `models`
 
 - Score offline base for model serving - **`make score`**
+
 Configurable paths - intermediate model data location, model artifacts location
+
 `make score MODEL_DATA=<local file path> MODEL_ARTIFACTS=<local file path>`
+
 By default creates offline score base and saves in `data/model_data` Picks exported model object from `models`
 
 ### To connect application to RDS database
@@ -300,11 +306,11 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTc4MTQ5OTY5LDE5NzU5OTc0NzUsLTI3ND
-QxOTI3MywtNTc0MjIyMDkxLDUxNzA2OTIxMSwtMzk0OTUwMTI4
-LC01NDQ5NjkyNzMsLTE4OTc0MjU4NCw0ODU4NjQ3MjQsMTY0NT
-UxNTA3MSwtNjA5MDk0Njc5LDExMjA5NjgxMTUsLTE4NDk2Mjcx
-MTYsLTExNzkyNzIwMTEsLTE1NjE4Nzc3MiwtMTIxODkxNTk2LD
-U4ODMwMzMzNSwtMTA4MjcxNDYzNSwxMDI2MTM1NzcwLC0xMjYz
-MzQzODE0XX0=
+eyJoaXN0b3J5IjpbMTk4NTgxMzIzNywxOTc1OTk3NDc1LC0yNz
+Q0MTkyNzMsLTU3NDIyMjA5MSw1MTcwNjkyMTEsLTM5NDk1MDEy
+OCwtNTQ0OTY5MjczLC0xODk3NDI1ODQsNDg1ODY0NzI0LDE2ND
+U1MTUwNzEsLTYwOTA5NDY3OSwxMTIwOTY4MTE1LC0xODQ5NjI3
+MTE2LC0xMTc5MjcyMDExLC0xNTYxODc3NzIsLTEyMTg5MTU5Ni
+w1ODgzMDMzMzUsLTEwODI3MTQ2MzUsMTAyNjEzNTc3MCwtMTI2
+MzM0MzgxNF19
 -->
