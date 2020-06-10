@@ -20,10 +20,14 @@
  - [ ] AWS credentials have been set as environment variables via  the following commands
   `export AWS_ACCESS_KEY_ID=<your key>`
   `export AWS_SECRET_ACCESS_KEY=<your secret key>`
+
+> If you are someone I have given access to my S3 bucket, you ar
+
   
  - [ ] The SQL Alchemy database connection has been set up as,
- - [ ]   `export AWS_ACCESS_KEY_ID=<your key>`
+ `export SQLALCHEMY_DATABASE_URI=`
 
+If you are 
 The file has been downloaded and stored in `data/external` folder. User can choose to use the same file for the subsequent steps, in which case there is no need to download again. Otherwise the file needs to be downloaded and placed in `data/external`. Please do not change the file name.
 
 **NOTE: You will need to be on the Northwestern VPN for the subsequent steps*
@@ -257,10 +261,10 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzc1MDU0MDAsLTYwOTA5NDY3OSwxMT
-IwOTY4MTE1LC0xODQ5NjI3MTE2LC0xMTc5MjcyMDExLC0xNTYx
-ODc3NzIsLTEyMTg5MTU5Niw1ODgzMDMzMzUsLTEwODI3MTQ2Mz
-UsMTAyNjEzNTc3MCwtMTI2MzM0MzgxNCwtMTM3MzcxODM1LC0x
-MjgyODk4MDI1LDQ5NzI4NzY5MiwtMjk0MDQxMDc0LDE5MTkzMT
-cwMDJdfQ==
+eyJoaXN0b3J5IjpbMTgzNDQ0MzkyOCwtNjA5MDk0Njc5LDExMj
+A5NjgxMTUsLTE4NDk2MjcxMTYsLTExNzkyNzIwMTEsLTE1NjE4
+Nzc3MiwtMTIxODkxNTk2LDU4ODMwMzMzNSwtMTA4MjcxNDYzNS
+wxMDI2MTM1NzcwLC0xMjYzMzQzODE0LC0xMzczNzE4MzUsLTEy
+ODI4OTgwMjUsNDk3Mjg3NjkyLC0yOTQwNDEwNzQsMTkxOTMxNz
+AwMl19
 -->
