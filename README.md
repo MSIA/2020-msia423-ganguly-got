@@ -55,7 +55,7 @@ Click on the url to be directed to the application web page. Enjoy playing aroun
  - [ ] `make tests`
  *To stop the already running application docker container, execute `docker kill test` and `docker rm test` in a different terminal
 
-### To execute step by step with configurable inputs
+### To execute the model pipeline step by step with configurable inputs
 Docker image to be built same as above, i.e.,
 `docker build -t got_make .`
 If desired, all previous results and artifacts can be cleaned by running `make clean`
@@ -76,9 +76,9 @@ Creates`clean_base.csv` and saves in `data/model_data`
 
  - Create features and EDA plots - **`make features`**
    Configurable paths - download data location, intermediate model data location
-`make clean_base S3_DOWNLOAD_PATH=<local file path> MODEL_DATA=<local file path>`
+`make features S3_DOWNLOAD_PATH=<local file path> MODEL_DATA=<local file path>`
 By default downloaded data saved in `data/raw_data`
-Creates`clean_base.csv` and saves in `data/model_data`
+Creates`features.csv` and a folder `eda_plots` with bivariate feature plots in `data/model_data`
 
  This directive creates `features.csv` and a folder `eda_plots` with bivariate feature plots in `data/model_data`. To use an alternate location use  `make features MODEL_DATA=<local file path>`
  
@@ -314,10 +314,10 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzI1OTUyMzAsMTY0NTUxNTA3MSwtNj
-A5MDk0Njc5LDExMjA5NjgxMTUsLTE4NDk2MjcxMTYsLTExNzky
-NzIwMTEsLTE1NjE4Nzc3MiwtMTIxODkxNTk2LDU4ODMwMzMzNS
-wtMTA4MjcxNDYzNSwxMDI2MTM1NzcwLC0xMjYzMzQzODE0LC0x
-MzczNzE4MzUsLTEyODI4OTgwMjUsNDk3Mjg3NjkyLC0yOTQwND
-EwNzQsMTkxOTMxNzAwMl19
+eyJoaXN0b3J5IjpbODU2MjUwMTQ3LDE2NDU1MTUwNzEsLTYwOT
+A5NDY3OSwxMTIwOTY4MTE1LC0xODQ5NjI3MTE2LC0xMTc5Mjcy
+MDExLC0xNTYxODc3NzIsLTEyMTg5MTU5Niw1ODgzMDMzMzUsLT
+EwODI3MTQ2MzUsMTAyNjEzNTc3MCwtMTI2MzM0MzgxNCwtMTM3
+MzcxODM1LC0xMjgyODk4MDI1LDQ5NzI4NzY5MiwtMjk0MDQxMD
+c0LDE5MTkzMTcwMDJdfQ==
 -->
