@@ -101,7 +101,7 @@ By default creates offline score base and saves in `data/model_data` Picks expor
 >  - `export MYSQL_PORT=<RDS instance port 3306>` 
 >  - `export DATABASE_NAME=<name of the database created>`   
 
-
+- 
  
  If `CREATE_DB_LOCALLY=True`, update the following in `src/config.py`
  
@@ -326,11 +326,11 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0MzUxNjc1MSwtNTQ0OTY5MjczLC0xOD
-k3NDI1ODQsNDg1ODY0NzI0LDE2NDU1MTUwNzEsLTYwOTA5NDY3
-OSwxMTIwOTY4MTE1LC0xODQ5NjI3MTE2LC0xMTc5MjcyMDExLC
-0xNTYxODc3NzIsLTEyMTg5MTU5Niw1ODgzMDMzMzUsLTEwODI3
-MTQ2MzUsMTAyNjEzNTc3MCwtMTI2MzM0MzgxNCwtMTM3MzcxOD
-M1LC0xMjgyODk4MDI1LDQ5NzI4NzY5MiwtMjk0MDQxMDc0LDE5
-MTkzMTcwMDJdfQ==
+eyJoaXN0b3J5IjpbLTE2OTI4NTgzMDYsLTU0NDk2OTI3MywtMT
+g5NzQyNTg0LDQ4NTg2NDcyNCwxNjQ1NTE1MDcxLC02MDkwOTQ2
+NzksMTEyMDk2ODExNSwtMTg0OTYyNzExNiwtMTE3OTI3MjAxMS
+wtMTU2MTg3NzcyLC0xMjE4OTE1OTYsNTg4MzAzMzM1LC0xMDgy
+NzE0NjM1LDEwMjYxMzU3NzAsLTEyNjMzNDM4MTQsLTEzNzM3MT
+gzNSwtMTI4Mjg5ODAyNSw0OTcyODc2OTIsLTI5NDA0MTA3NCwx
+OTE5MzE3MDAyXX0=
 -->
