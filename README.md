@@ -101,7 +101,7 @@ By default creates offline score base and saves in `data/model_data` Picks expor
 >  - `export MYSQL_PORT=<RDS instance port 3306>` 
 >  - `export DATABASE_NAME=<name of the database created>`   
 
-- 
+- Create and populate the RDS database 
  
  If `CREATE_DB_LOCALLY=True`, update the following in `src/config.py`
  
@@ -326,7 +326,7 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTI4NTgzMDYsLTU0NDk2OTI3MywtMT
+eyJoaXN0b3J5IjpbLTE1NjMwMTIxNzYsLTU0NDk2OTI3MywtMT
 g5NzQyNTg0LDQ4NTg2NDcyNCwxNjQ1NTE1MDcxLC02MDkwOTQ2
 NzksMTEyMDk2ODExNSwtMTg0OTYyNzExNiwtMTE3OTI3MjAxMS
 wtMTU2MTg3NzcyLC0xMjE4OTE1OTYsNTg4MzAzMzM1LC0xMDgy
