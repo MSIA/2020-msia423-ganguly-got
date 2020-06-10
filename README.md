@@ -54,7 +54,8 @@ Click on the link to be directed to the application web page. Enjoy playing arou
 Docker image to be built same as above, i.e.,
 `docker build -t got_make .`
  - Upload raw data to S3 - `make s3_upload`
-By default this pulls all files from `data/external`. To change this location 
+By default this pulls all files from `data/external`. To change this location use,  `make s3_upload S3_UPLOAD_PATH=<local path>`
+As mentioned before, if using your own S3 bucket, please mention the same in config/model_config.yaml
 `src/config.py` contains all the configurable details about the data ingestion pipeline. Please update the following items
 
  - `S3_BUCKET` - specify the name of the S3 bucket for storing the csv file
@@ -283,7 +284,7 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODYxOTkxMzksMTY0NTUxNTA3MSwtNj
+eyJoaXN0b3J5IjpbLTExODkwMDk1MTcsMTY0NTUxNTA3MSwtNj
 A5MDk0Njc5LDExMjA5NjgxMTUsLTE4NDk2MjcxMTYsLTExNzky
 NzIwMTEsLTE1NjE4Nzc3MiwtMTIxODkxNTk2LDU4ODMwMzMzNS
 wtMTA4MjcxNDYzNSwxMDI2MTM1NzcwLC0xMjYzMzQzODE0LC0x
