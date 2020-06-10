@@ -92,7 +92,7 @@ As mentioned before, if using your own S3 bucket, please mention the bucket name
  
  `make s3_download S3_DOWNLOAD_PATH=<local file path>`
  
- By default downloaded data saved in `data/raw_data`
+ By default downloaded data saved in `data/raw_data [S3_DOWNLOAD_PATH]`
  
  - Clean data - **`make clean_base`**
 
@@ -100,8 +100,8 @@ Configurable paths - download data location, intermediate model data location
 
 `make clean_base S3_DOWNLOAD_PATH=<local file path> MODEL_DATA=<local file path>`
 
-By default downloaded data saved in `data/raw_data`. 
-Creates`clean_base.csv` and saves in `data/model_data`
+By default downloaded data saved in `data/raw_data [S3_DOWNLOAD_PATH]`. 
+Creates`clean_base.csv` and saves in `data/model_data [MODEL_DATA]`
 
  - Create features and EDA plots - **`make features`**
 
@@ -109,8 +109,8 @@ Configurable paths - download data location, intermediate model data location
 
 `make features S3_DOWNLOAD_PATH=<local file path> MODEL_DATA=<local file path>`
 
-By default downloaded data saved in `data/raw_data`
-Creates`features.csv` and a folder `eda_plots` with bivariate feature plots in `data/model_data`
+By default downloaded data saved in `data/raw_data [S3_DOWNLOAD_PATH]`
+Creates`features.csv` and a folder `eda_plots` with bivariate feature plots in `data/model_data [MODEL_DATA]`
  
  - Train model - **`make model`**
 
@@ -118,8 +118,8 @@ Configurable paths - intermediate model data location, model artifacts location
 
 `make model MODEL_DATA=<local file path> MODEL_ARTIFACTS=<local file path>`
 
-By default picks model data saved in `data/model_data`
-This directive trains the classification model and stores artifacts like test performance metrics and model object in the folder `models`
+By default picks model data saved in `data/model_data [MODEL_DATA]`
+This directive trains the classification model and stores artifacts like test performance metrics and model object in the folder `models [MODEL_ARTIFACTS]`
 
 - Score offline base for model serving - **`make score`**
 
@@ -127,7 +127,7 @@ Configurable paths - intermediate model data location, model artifacts location
 
 `make score MODEL_DATA=<local file path> MODEL_ARTIFACTS=<local file path>`
 
-By default creates offline score base and saves in `data/model_data` Picks exported model object from `models`
+By default creates offline score base and saves in `data/model_data [MODEL_DATA]` Picks exported model object from `models [MODEL_ARTIFACTS]`
 
 ### To connect application to RDS database
 
@@ -310,11 +310,11 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczNjEyMzMzNyw0NTkzMjk5NjksMTk4NT
-gxMzIzNywxOTc1OTk3NDc1LC0yNzQ0MTkyNzMsLTU3NDIyMjA5
-MSw1MTcwNjkyMTEsLTM5NDk1MDEyOCwtNTQ0OTY5MjczLC0xOD
-k3NDI1ODQsNDg1ODY0NzI0LDE2NDU1MTUwNzEsLTYwOTA5NDY3
-OSwxMTIwOTY4MTE1LC0xODQ5NjI3MTE2LC0xMTc5MjcyMDExLC
-0xNTYxODc3NzIsLTEyMTg5MTU5Niw1ODgzMDMzMzUsLTEwODI3
-MTQ2MzVdfQ==
+eyJoaXN0b3J5IjpbMjM4NTU1MTAyLDQ1OTMyOTk2OSwxOTg1OD
+EzMjM3LDE5NzU5OTc0NzUsLTI3NDQxOTI3MywtNTc0MjIyMDkx
+LDUxNzA2OTIxMSwtMzk0OTUwMTI4LC01NDQ5NjkyNzMsLTE4OT
+c0MjU4NCw0ODU4NjQ3MjQsMTY0NTUxNTA3MSwtNjA5MDk0Njc5
+LDExMjA5NjgxMTUsLTE4NDk2MjcxMTYsLTExNzkyNzIwMTEsLT
+E1NjE4Nzc3MiwtMTIxODkxNTk2LDU4ODMwMzMzNSwtMTA4Mjcx
+NDYzNV19
 -->
