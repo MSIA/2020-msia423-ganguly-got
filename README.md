@@ -80,6 +80,7 @@ If desired, all previous results and artifacts can be cleaned by running `make c
  - Upload raw data to S3 - **`make s3_upload`**
 
 Configurable path - upload data location
+
 `make s3_upload S3_UPLOAD_PATH=<local file path>`
 
 By default this pulls *all files* from `data/external`.
@@ -290,7 +291,7 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxOTIxOTgxMSwxOTc1OTk3NDc1LC0yNz
+eyJoaXN0b3J5IjpbLTI5NDg5ODM3OSwxOTc1OTk3NDc1LC0yNz
 Q0MTkyNzMsLTU3NDIyMjA5MSw1MTcwNjkyMTEsLTM5NDk1MDEy
 OCwtNTQ0OTY5MjczLC0xODk3NDI1ODQsNDg1ODY0NzI0LDE2ND
 U1MTUwNzEsLTYwOTA5NDY3OSwxMTIwOTY4MTE1LC0xODQ5NjI3
