@@ -140,10 +140,13 @@ By default creates offline score base and saves in `data/model_data` Picks expor
 >  - `export DATABASE_NAME=<name of the database created>`   
 
  - Create and populate the RDS database with offline scored base -  `make database_rds`
+
 In case the location to store the offline score has been changed above, please mention the same here 
+
 `make database_rds MODEL_DATA=<local file path>`
 
  - Run application same as above - 
+
   -Build docker image
   `docker build -f app/Dockerfile -t got_app .`
  -Run application
@@ -306,11 +309,11 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4MzA3NTY3NiwxOTg1ODEzMjM3LDE5Nz
-U5OTc0NzUsLTI3NDQxOTI3MywtNTc0MjIyMDkxLDUxNzA2OTIx
-MSwtMzk0OTUwMTI4LC01NDQ5NjkyNzMsLTE4OTc0MjU4NCw0OD
-U4NjQ3MjQsMTY0NTUxNTA3MSwtNjA5MDk0Njc5LDExMjA5Njgx
-MTUsLTE4NDk2MjcxMTYsLTExNzkyNzIwMTEsLTE1NjE4Nzc3Mi
-wtMTIxODkxNTk2LDU4ODMwMzMzNSwtMTA4MjcxNDYzNSwxMDI2
-MTM1NzcwXX0=
+eyJoaXN0b3J5IjpbLTIwNjUxOTExNTgsMTk4NTgxMzIzNywxOT
+c1OTk3NDc1LC0yNzQ0MTkyNzMsLTU3NDIyMjA5MSw1MTcwNjky
+MTEsLTM5NDk1MDEyOCwtNTQ0OTY5MjczLC0xODk3NDI1ODQsND
+g1ODY0NzI0LDE2NDU1MTUwNzEsLTYwOTA5NDY3OSwxMTIwOTY4
+MTE1LC0xODQ5NjI3MTE2LC0xMTc5MjcyMDExLC0xNTYxODc3Nz
+IsLTEyMTg5MTU5Niw1ODgzMDMzMzUsLTEwODI3MTQ2MzUsMTAy
+NjEzNTc3MF19
 -->
