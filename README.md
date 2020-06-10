@@ -48,11 +48,7 @@
 
 The terminal should now display  
 `* Running on http://0.0.0.0:5000/` 
-Click on the link to be directed to the application web page. 
-If you are 
-The file has been downloaded and stored in `data/external` folder. User can choose to use the same file for the subsequent steps, in which case there is no need to download again. Otherwise the file needs to be downloaded and placed in `data/external`. Please do not change the file name.
-
-**NOTE: You will need to be on the Northwestern VPN for the subsequent steps*
+Click on the link to be directed to the application web page. Enjoy playing around!
 
 ### Step 1. Updating src/config.py
 `src/config.py` contains all the configurable details about the data ingestion pipeline. Please update the following items
@@ -283,7 +279,7 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxNDA0NzM1MCwxNjQ1NTE1MDcxLC02MD
+eyJoaXN0b3J5IjpbMTI3OTE2NDYwNywxNjQ1NTE1MDcxLC02MD
 kwOTQ2NzksMTEyMDk2ODExNSwtMTg0OTYyNzExNiwtMTE3OTI3
 MjAxMSwtMTU2MTg3NzcyLC0xMjE4OTE1OTYsNTg4MzAzMzM1LC
 0xMDgyNzE0NjM1LDEwMjYxMzU3NzAsLTEyNjMzNDM4MTQsLTEz
