@@ -11,9 +11,12 @@ def download_from_s3(RAW_DATA_DIR, FILE_NAMES=None, S3_BUCKET=None):
     Downloads raw data from S3 bucket and stores in 'RAW_DATA_DIR' as defined in config/model_config.yaml
 
     Arguments:
-        RAW_DATA_DIR: local directory to store raw data downloaded from S3
+        RAW_DATA_DIR: local file path to store raw data downloaded from S3
         FILE_NAMES: files to download from S3 bucket
         S3_BUCKET: S3 bucket to download from
+
+    Returns:
+        None
     """
 
     try:
