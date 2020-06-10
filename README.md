@@ -91,6 +91,8 @@ Configurable paths - intermediate model data location, model artifacts location
 `make score MODEL_DATA=<local file path> MODEL_ARTIFACTS=<local file path>`
 By default creates offline score base and saves in `data/model_data` Picks exported model object from `models`
 
+### To connect application to RDS database
+
  - `S3_BUCKET` - specify the name of the S3 bucket for storing the csv file
  - `CREATE_DB_LOCALLY` - specify `False` to create RDS database, `True` to create local SQLite database. Defaulted to `False`
  
@@ -317,10 +319,10 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4MjA3MjMzMCwxNjQ1NTE1MDcxLC02MD
-kwOTQ2NzksMTEyMDk2ODExNSwtMTg0OTYyNzExNiwtMTE3OTI3
-MjAxMSwtMTU2MTg3NzcyLC0xMjE4OTE1OTYsNTg4MzAzMzM1LC
-0xMDgyNzE0NjM1LDEwMjYxMzU3NzAsLTEyNjMzNDM4MTQsLTEz
-NzM3MTgzNSwtMTI4Mjg5ODAyNSw0OTcyODc2OTIsLTI5NDA0MT
-A3NCwxOTE5MzE3MDAyXX0=
+eyJoaXN0b3J5IjpbLTEzMDU3OTM5MzEsMTY0NTUxNTA3MSwtNj
+A5MDk0Njc5LDExMjA5NjgxMTUsLTE4NDk2MjcxMTYsLTExNzky
+NzIwMTEsLTE1NjE4Nzc3MiwtMTIxODkxNTk2LDU4ODMwMzMzNS
+wtMTA4MjcxNDYzNSwxMDI2MTM1NzcwLC0xMjYzMzQzODE0LC0x
+MzczNzE4MzUsLTEyODI4OTgwMjUsNDk3Mjg3NjkyLC0yOTQwND
+EwNzQsMTkxOTMxNzAwMl19
 -->
