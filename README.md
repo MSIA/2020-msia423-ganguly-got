@@ -71,7 +71,7 @@ As mentioned before, if using your own S3 bucket, please mention the bucket name
  This directive creates `features.csv` and a folder `eda_plots` with bivariate feature plots in `data/model_data`. To use an alternate location use  `make features MODEL_DATA=<local file path>`
  
  - Train model - **`make model`**
- This directive trains the classification model and stores artifacts like test performance metrics and m `features.csv` and a folder `eda_plots` with bivariate feature plots in `data/model_data`. To use an alternate location use  `make features MODEL_DATA=<local file path>`
+ This directive trains the classification model and stores artifacts like test performance metrics and model object in the folder `models`. To use an alternate location use  `make model MODEL_ARTIFACTS=<local file path>`
 
  - `S3_BUCKET` - specify the name of the S3 bucket for storing the csv file
  - `CREATE_DB_LOCALLY` - specify `False` to create RDS database, `True` to create local SQLite database. Defaulted to `False`
@@ -299,7 +299,7 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODkxNTU3MzM2LDE2NDU1MTUwNzEsLTYwOT
+eyJoaXN0b3J5IjpbMzQ4NTM2MDQ1LDE2NDU1MTUwNzEsLTYwOT
 A5NDY3OSwxMTIwOTY4MTE1LC0xODQ5NjI3MTE2LC0xMTc5Mjcy
 MDExLC0xNTYxODc3NzIsLTEyMTg5MTU5Niw1ODgzMDMzMzUsLT
 EwODI3MTQ2MzUsMTAyNjEzNTc3MCwtMTI2MzM0MzgxNCwtMTM3
