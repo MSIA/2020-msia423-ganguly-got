@@ -79,4 +79,4 @@ score:
     - Wildling
 
 database:
-  LOCAL_DATABASE_URI:  sqlite:///data/msia423_project.db
+  LOCAL_DATABASE_URI:  sqlite:///data/msia423_project_db.db
