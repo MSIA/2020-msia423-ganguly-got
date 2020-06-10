@@ -19,16 +19,18 @@
 
  - You are on Northwestern VPN and Docker app is running
  - AWS credentials have been set as environment variables via  the following commands
+
 `export AWS_ACCESS_KEY_ID=<your key>`
   
-  `export AWS_SECRET_ACCESS_KEY=<your secret key>`
+`export AWS_SECRET_ACCESS_KEY=<your secret key>`
 
 > If user has been given access to my S3 bucket, we are good to go. If not, user must create and provide a valid S3 Bucket name in `config/model_config.yaml` both for `s3_upload` and `s3_download`. They would then have to execute the S3 data upload step as mentioned later in the document, *before* proceeding with the model pipeline
 
   
- - [ ] The *local* SQL Alchemy database connection string has been set up as,
 
- `export SQLALCHEMY_DATABASE_URI=<path to DB>`
+ - The *local* SQL Alchemy database connection string has been set up as,
+
+`export SQLALCHEMY_DATABASE_URI=<path to DB>`
  
 > For example,
 > relative path to local DB: sqlite:///data/got_simulator.db
@@ -36,18 +38,20 @@
 
 **Reproduce Model Pipeline**
 
- - [ ] Build docker image
+ - Build docker image
 
 `docker build -t got_make .`
-  
- - [ ] Run model pipeline (download data from S3 bucket, clean, make features, train model and score offline base)
+
+ - Run model pipeline (download data from S3 bucket, clean, make features, train model and score offline base)
 
 `make pipeline`
 
 **Run Application**
 
- - [ ] Store model serving data in `SQLALCHEMY_DATABASE_URI` defined above
-  `make database`
+ - Store model serving data in `SQLALCHEMY_DATABASE_URI` defined above
+
+`make database`
+
  - [ ] Build docker image
   `docker build -f app/Dockerfile -t got_app .`
  - [ ] Run application
@@ -275,7 +279,7 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjkzNDExNDM3LC01NzQyMjIwOTEsNTE3MD
+eyJoaXN0b3J5IjpbODcwOTk5NTk1LC01NzQyMjIwOTEsNTE3MD
 Y5MjExLC0zOTQ5NTAxMjgsLTU0NDk2OTI3MywtMTg5NzQyNTg0
 LDQ4NTg2NDcyNCwxNjQ1NTE1MDcxLC02MDkwOTQ2NzksMTEyMD
 k2ODExNSwtMTg0OTYyNzExNiwtMTE3OTI3MjAxMSwtMTU2MTg3
