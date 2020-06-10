@@ -62,6 +62,7 @@
 
 The terminal should now display  
 `* Running on http://0.0.0.0:5000/` 
+
 Click on the url to be directed to the application web page. Enjoy playing around!
 
 **Run Unit Tests**
@@ -282,11 +283,11 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3NDQxOTI3MywtNTc0MjIyMDkxLDUxNz
-A2OTIxMSwtMzk0OTUwMTI4LC01NDQ5NjkyNzMsLTE4OTc0MjU4
-NCw0ODU4NjQ3MjQsMTY0NTUxNTA3MSwtNjA5MDk0Njc5LDExMj
-A5NjgxMTUsLTE4NDk2MjcxMTYsLTExNzkyNzIwMTEsLTE1NjE4
-Nzc3MiwtMTIxODkxNTk2LDU4ODMwMzMzNSwtMTA4MjcxNDYzNS
-wxMDI2MTM1NzcwLC0xMjYzMzQzODE0LC0xMzczNzE4MzUsLTEy
-ODI4OTgwMjVdfQ==
+eyJoaXN0b3J5IjpbMTYzOTk1MjA5LC0yNzQ0MTkyNzMsLTU3ND
+IyMjA5MSw1MTcwNjkyMTEsLTM5NDk1MDEyOCwtNTQ0OTY5Mjcz
+LC0xODk3NDI1ODQsNDg1ODY0NzI0LDE2NDU1MTUwNzEsLTYwOT
+A5NDY3OSwxMTIwOTY4MTE1LC0xODQ5NjI3MTE2LC0xMTc5Mjcy
+MDExLC0xNTYxODc3NzIsLTEyMTg5MTU5Niw1ODgzMDMzMzUsLT
+EwODI3MTQ2MzUsMTAyNjEzNTc3MCwtMTI2MzM0MzgxNCwtMTM3
+MzcxODM1XX0=
 -->
