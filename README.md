@@ -29,14 +29,14 @@ Things to ensure before proceeding
 > For example,
 > relative path to local DB: sqlite:///data/got_simulator.db
 > absolute path to local DB: sqlite://///Users/cmawer/Repos/2020-MSIA423-template-repository/data/tracks.db
-> RDS DB: 
+
 
 If you are 
 The file has been downloaded and stored in `data/external` folder. User can choose to use the same file for the subsequent steps, in which case there is no need to download again. Otherwise the file needs to be downloaded and placed in `data/external`. Please do not change the file name.
 
 **NOTE: You will need to be on the Northwestern VPN for the subsequent steps*
 
-### Step 2. Updating src/config.py
+### Step 1. Updating src/config.py
 `src/config.py` contains all the configurable details about the data ingestion pipeline. Please update the following items
 
  - `S3_BUCKET` - specify the name of the S3 bucket for storing the csv file
@@ -265,10 +265,10 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1Nzk0NTIxMSwxNjQ1NTE1MDcxLC02MD
-kwOTQ2NzksMTEyMDk2ODExNSwtMTg0OTYyNzExNiwtMTE3OTI3
-MjAxMSwtMTU2MTg3NzcyLC0xMjE4OTE1OTYsNTg4MzAzMzM1LC
-0xMDgyNzE0NjM1LDEwMjYxMzU3NzAsLTEyNjMzNDM4MTQsLTEz
-NzM3MTgzNSwtMTI4Mjg5ODAyNSw0OTcyODc2OTIsLTI5NDA0MT
-A3NCwxOTE5MzE3MDAyXX0=
+eyJoaXN0b3J5IjpbODQyMjQyNDAxLDE2NDU1MTUwNzEsLTYwOT
+A5NDY3OSwxMTIwOTY4MTE1LC0xODQ5NjI3MTE2LC0xMTc5Mjcy
+MDExLC0xNTYxODc3NzIsLTEyMTg5MTU5Niw1ODgzMDMzMzUsLT
+EwODI3MTQ2MzUsMTAyNjEzNTc3MCwtMTI2MzM0MzgxNCwtMTM3
+MzcxODM1LC0xMjgyODk4MDI1LDQ5NzI4NzY5MiwtMjk0MDQxMD
+c0LDE5MTkzMTcwMDJdfQ==
 -->
