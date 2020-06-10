@@ -87,19 +87,28 @@ By default this pulls *all files* from `data/external`.
 As mentioned before, if using your own S3 bucket, please mention the bucket name in `config/model_config.yaml`
 
  - Download raw data from S3 -  **`make s3_download`**
+ 
  Configurable path - download data location
+ 
  `make s3_download S3_DOWNLOAD_PATH=<local file path>`
+ 
  By default downloaded data saved in `data/raw_data`
  
  - Clean data - **`make clean_base`**
-  Configurable paths - download data location, intermediate model data location
+
+Configurable paths - download data location, intermediate model data location
+
 `make clean_base S3_DOWNLOAD_PATH=<local file path> MODEL_DATA=<local file path>`
-By default downloaded data saved in `data/raw_data`
+
+By default downloaded data saved in `data/raw_data`. 
 Creates`clean_base.csv` and saves in `data/model_data`
 
  - Create features and EDA plots - **`make features`**
-   Configurable paths - download data location, intermediate model data location
+
+Configurable paths - download data location, intermediate model data location
+
 `make features S3_DOWNLOAD_PATH=<local file path> MODEL_DATA=<local file path>`
+
 By default downloaded data saved in `data/raw_data`
 Creates`features.csv` and a folder `eda_plots` with bivariate feature plots in `data/model_data`
  
@@ -291,11 +300,11 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5NDg5ODM3OSwxOTc1OTk3NDc1LC0yNz
-Q0MTkyNzMsLTU3NDIyMjA5MSw1MTcwNjkyMTEsLTM5NDk1MDEy
-OCwtNTQ0OTY5MjczLC0xODk3NDI1ODQsNDg1ODY0NzI0LDE2ND
-U1MTUwNzEsLTYwOTA5NDY3OSwxMTIwOTY4MTE1LC0xODQ5NjI3
-MTE2LC0xMTc5MjcyMDExLC0xNTYxODc3NzIsLTEyMTg5MTU5Ni
-w1ODgzMDMzMzUsLTEwODI3MTQ2MzUsMTAyNjEzNTc3MCwtMTI2
-MzM0MzgxNF19
+eyJoaXN0b3J5IjpbOTc4MTQ5OTY5LDE5NzU5OTc0NzUsLTI3ND
+QxOTI3MywtNTc0MjIyMDkxLDUxNzA2OTIxMSwtMzk0OTUwMTI4
+LC01NDQ5NjkyNzMsLTE4OTc0MjU4NCw0ODU4NjQ3MjQsMTY0NT
+UxNTA3MSwtNjA5MDk0Njc5LDExMjA5NjgxMTUsLTE4NDk2Mjcx
+MTYsLTExNzkyNzIwMTEsLTE1NjE4Nzc3MiwtMTIxODkxNTk2LD
+U4ODMwMzMzNSwtMTA4MjcxNDYzNSwxMDI2MTM1NzcwLC0xMjYz
+MzQzODE0XX0=
 -->
