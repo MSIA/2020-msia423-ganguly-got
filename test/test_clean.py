@@ -140,7 +140,7 @@ def test_happy_clean_allegiance():
 def test_unhappy_clean_allegiance():
     """
     Testing 'unhappy path' for clean_allegiance
-    :return: True if length of filtered data and unique values of cleaned columns are as expected
+    :return: True if raises SystemExit
     """
     input_df = pd.DataFrame(happy_path)
     input_df.rename(columns={'Allegiances': 'Alegiance'}, inplace=True)
