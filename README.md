@@ -95,12 +95,10 @@ By default creates offline score base and saves in `data/model_data` Picks expor
 
  - Define the following environment variables
 
-> 	`export MYSQL_USER=<“master username” used to create the database server>` 
-> 	`export MYSQL_PASSWORD=<“master password” used to create the database server>` 
-> 	`export MYSQL_HOST=<RDS instance endpoint from the console>` 
-
-> 	- Set `MYSQL_HOST` to be 3306
-> 	- Set `DATABASE_NAME` to be the name of the database created
+>  -	`export MYSQL_USER=<“master username” used to create the database server>` 
+> 	- `export MYSQL_PASSWORD=<“master password” used to create the database server>` 
+>  - `export MYSQL_HOST=<RDS instance endpoint from the console>` 
+>  - `export DATABASE_NAME=<name of the database created>`   
 
  - `S3_BUCKET` - specify the name of the S3 bucket for storing the csv file
  - `CREATE_DB_LOCALLY` - specify `False` to create RDS database, `True` to create local SQLite database. Defaulted to `False`
@@ -328,11 +326,11 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0NDk2OTI3MywtMTg5NzQyNTg0LDQ4NT
-g2NDcyNCwxNjQ1NTE1MDcxLC02MDkwOTQ2NzksMTEyMDk2ODEx
-NSwtMTg0OTYyNzExNiwtMTE3OTI3MjAxMSwtMTU2MTg3NzcyLC
-0xMjE4OTE1OTYsNTg4MzAzMzM1LC0xMDgyNzE0NjM1LDEwMjYx
-MzU3NzAsLTEyNjMzNDM4MTQsLTEzNzM3MTgzNSwtMTI4Mjg5OD
-AyNSw0OTcyODc2OTIsLTI5NDA0MTA3NCwxOTE5MzE3MDAyXX0=
-
+eyJoaXN0b3J5IjpbLTIwNzAxNTk0MDQsLTU0NDk2OTI3MywtMT
+g5NzQyNTg0LDQ4NTg2NDcyNCwxNjQ1NTE1MDcxLC02MDkwOTQ2
+NzksMTEyMDk2ODExNSwtMTg0OTYyNzExNiwtMTE3OTI3MjAxMS
+wtMTU2MTg3NzcyLC0xMjE4OTE1OTYsNTg4MzAzMzM1LC0xMDgy
+NzE0NjM1LDEwMjYxMzU3NzAsLTEyNjMzNDM4MTQsLTEzNzM3MT
+gzNSwtMTI4Mjg5ODAyNSw0OTcyODc2OTIsLTI5NDA0MTA3NCwx
+OTE5MzE3MDAyXX0=
 -->
