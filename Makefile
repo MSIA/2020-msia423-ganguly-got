@@ -4,7 +4,7 @@ MODEL_DATA=data/model_data
 MODEL_ARTIFACTS=models
 
 s3_upload: config/model_config.yaml
-	docker run -e AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY --mount type=bind,source="`pwd`",target=/app/ got_make run.py upload -c=config/model_config.yaml -i=${S3_UPLOAD_PATH}
+	docker run -e AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY --mount type=bind,source="`pwd`",target=/app/ got_make run.py upload -c=config/model_config.yaml --lfp=${S3_UPLOAD_PATH}
 
 s3_download: config/model_config.yaml
 	docker run -e AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY --mount type=bind,source="`pwd`",target=/app/ got_make run.py download -c=config/model_config.yaml --lfp=${S3_DOWNLOAD_PATH}
