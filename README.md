@@ -51,6 +51,8 @@ The terminal should now display
 Click on the link to be directed to the application web page. Enjoy playing around!
 
 ### To execute step by step with configurable inputs
+Docker image to be built same as above, i.e., 
+ - Upload raw data to S3
 
 `src/config.py` contains all the configurable details about the data ingestion pipeline. Please update the following items
 
@@ -280,10 +282,10 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk3OTI5OTksMTY0NTUxNTA3MSwtNjA5MD
-k0Njc5LDExMjA5NjgxMTUsLTE4NDk2MjcxMTYsLTExNzkyNzIw
-MTEsLTE1NjE4Nzc3MiwtMTIxODkxNTk2LDU4ODMwMzMzNSwtMT
-A4MjcxNDYzNSwxMDI2MTM1NzcwLC0xMjYzMzQzODE0LC0xMzcz
-NzE4MzUsLTEyODI4OTgwMjUsNDk3Mjg3NjkyLC0yOTQwNDEwNz
-QsMTkxOTMxNzAwMl19
+eyJoaXN0b3J5IjpbNjg5NDA0ODE2LDE2NDU1MTUwNzEsLTYwOT
+A5NDY3OSwxMTIwOTY4MTE1LC0xODQ5NjI3MTE2LC0xMTc5Mjcy
+MDExLC0xNTYxODc3NzIsLTEyMTg5MTU5Niw1ODgzMDMzMzUsLT
+EwODI3MTQ2MzUsMTAyNjEzNTc3MCwtMTI2MzM0MzgxNCwtMTM3
+MzcxODM1LC0xMjgyODk4MDI1LDQ5NzI4NzY5MiwtMjk0MDQxMD
+c0LDE5MTkzMTcwMDJdfQ==
 -->
