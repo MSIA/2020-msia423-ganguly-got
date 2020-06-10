@@ -6,7 +6,7 @@
 
 <!-- toc -->
 
-- [Data Ingestion Pipeline](#Running-the-data-ingestion-pipeline)
+- [Running Model Pipeline and Application](#Running-model-pipeline-and-application)
 - [Project Charter](#project-charter)
 - [Project Backlog](#project-backlog)
 - [Directory structure](#directory-structure)
@@ -14,7 +14,7 @@
 <!-- tocstop -->
 
 ## Running the data ingestion pipeline
-### Step 1. Acquire data
+### To run the model pipeline and 
 - Data source:  https://www.kaggle.com/mylesoneill/game-of-thrones
 - Filename: character-deaths.csv
 
@@ -251,9 +251,10 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwOTA5NDY3OSwxMTIwOTY4MTE1LC0xOD
-Q5NjI3MTE2LC0xMTc5MjcyMDExLC0xNTYxODc3NzIsLTEyMTg5
-MTU5Niw1ODgzMDMzMzUsLTEwODI3MTQ2MzUsMTAyNjEzNTc3MC
-wtMTI2MzM0MzgxNCwtMTM3MzcxODM1LC0xMjgyODk4MDI1LDQ5
-NzI4NzY5MiwtMjk0MDQxMDc0LDE5MTkzMTcwMDJdfQ==
+eyJoaXN0b3J5IjpbMTgwNjc0MzAxMywtNjA5MDk0Njc5LDExMj
+A5NjgxMTUsLTE4NDk2MjcxMTYsLTExNzkyNzIwMTEsLTE1NjE4
+Nzc3MiwtMTIxODkxNTk2LDU4ODMwMzMzNSwtMTA4MjcxNDYzNS
+wxMDI2MTM1NzcwLC0xMjYzMzQzODE0LC0xMzczNzE4MzUsLTEy
+ODI4OTgwMjUsNDk3Mjg3NjkyLC0yOTQwNDEwNzQsMTkxOTMxNz
+AwMl19
 -->
