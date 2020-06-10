@@ -136,8 +136,8 @@ def create_score_db(score_df, truncate, LOCAL_DATABASE_URI=None):
             session.close()
             logger.info("prediction truncated.")
         except Exception as e:
-            logger.error("Error occurred while attempting to truncate prediction table.")
-            logger.error(e)
+            logger.warning("Error occurred while attempting to truncate prediction table.")
+            logger.warning(e)
         finally:
             session.close()
 
