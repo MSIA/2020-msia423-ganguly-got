@@ -101,6 +101,7 @@ def model(df, save_loaction, test_size=None, target_column=None, feature_set=Non
     """Fitting model and testing performance on test data
 
     :param df: dataFrame with all model input features
+    :param save_loaction: local file path to store model artifacts
     :param test_size: proportion of train:test split
     :param target_column: variable storing survival class
     :param feature_set: model independent variables
