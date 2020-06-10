@@ -21,7 +21,14 @@ def book_intro(df):
 
 
 def fill_death_chapter(row, dict):
-    """If book of death is known and chapter of death is not, assume character died in the middle of the book"""
+    """If book of death is known and chapter of death is not, assume character died in the middle of the book
+    Arguments:
+        row: each row of base data
+        dict: dictionary defining each book and the number of chapters in it
+
+    Returns:
+        0.5 * Number of Chapters in 'Book of Death', if 'Death Chapter' is empty
+    """
     try:
         if pd.notna(row['Book of Death']) and pd.isna(row['Death Chapter']):
             return dict[row['Book of Death']] / 2
@@ -37,7 +44,14 @@ def fill_death_chapter(row, dict):
 
 def fill_intro_chapter(row, dict):
     """If book of intro is known and chapter of intro is not, assume character was introduced in the middle of the
-    book """
+    book
+    Arguments:
+        row: each row of base data
+        dict: dictionary defining each book and the number of chapters in it
+
+    Returns:
+        0.5 * Number of Chapters in 'book_intro', if 'Book Intro Chapter' is empty
+    """
     try:
         if pd.notna(row['book_intro']) and pd.isna(row['Book Intro Chapter']):
             return dict[row['book_intro']] / 2
@@ -52,7 +66,10 @@ def fill_intro_chapter(row, dict):
 
 
 def clean_allegiance(df):
-    """Clean up 'Allegiance' column to have only the 6 major houses to reduce number of dummy variables"""
+    """
+    1. Clean up 'Allegiance' column to have uniformity in the strings
+    2. Retain characters pertaining to only the 6 major houses to reduce number of dummy variables
+    """
     try:
         df['Allegiances'] = np.where(df['Allegiances'] == 'Lannister', 'House Lannister',
                             np.where(df['Allegiances'] == 'Targaryen', 'House Targaryen',
