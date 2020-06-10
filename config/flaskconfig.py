@@ -17,7 +17,7 @@ password = os.environ.get("MYSQL_PASSWORD")
 host = os.environ.get("MYSQL_HOST")
 port = os.environ.get("MYSQL_PORT")
 database = os.environ.get("DATABASE_NAME")
-SQLALCHEMY_DATABASE_URI = os.environ.get("SQLALCHEMY_DB_URI")
+SQLALCHEMY_DATABASE_URI = os.environ.get("SQLALCHEMY_DATABASE_URI")
 
 if SQLALCHEMY_DATABASE_URI is not None:
     pass
