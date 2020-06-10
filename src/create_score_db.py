@@ -114,7 +114,6 @@ def create_score_db(score_df, truncate, LOCAL_DATABASE_URI=None):
     port = os.environ.get("MYSQL_PORT")
     database = os.environ.get("DATABASE_NAME")
     SQLALCHEMY_DATABASE_URI = os.environ.get("SQLALCHEMY_DATABASE_URI")
-    print(SQLALCHEMY_DATABASE_URI)
 
     if SQLALCHEMY_DATABASE_URI is not None:
         pass
@@ -127,7 +126,6 @@ def create_score_db(score_df, truncate, LOCAL_DATABASE_URI=None):
 
     # truncate existing table 'got_prediction' if -t specified in docker run command
     if truncate == 1:
-        logger.info("truncate loop entered")
         engine = sql.create_engine(SQLALCHEMY_DATABASE_URI)
         Session = sessionmaker(bind=engine)
         session = Session()
@@ -148,7 +146,7 @@ def create_score_db(score_df, truncate, LOCAL_DATABASE_URI=None):
 
     # add rows to table 'got_prediction'
     try:
-        logger.info("Database creation initiated. Expected time to finish: 1-2 minutes.")
+        logger.info("Database creation initiated. Expected time to finish: less than 1 minute")
         engine = sql.create_engine(SQLALCHEMY_DATABASE_URI)
         Session = sessionmaker(bind=engine)
         session = Session()
