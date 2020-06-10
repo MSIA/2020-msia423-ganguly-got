@@ -13,7 +13,7 @@
 
 <!-- tocstop -->
 
-## Running the data ingestion pipeline
+## Running Model Pipeline and Application
 ### To run the model pipeline and application with default settings
 **Things to ensure before proceeding**
 
@@ -310,11 +310,11 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzMDg2MDEwNCwxOTg1ODEzMjM3LDE5Nz
-U5OTc0NzUsLTI3NDQxOTI3MywtNTc0MjIyMDkxLDUxNzA2OTIx
-MSwtMzk0OTUwMTI4LC01NDQ5NjkyNzMsLTE4OTc0MjU4NCw0OD
-U4NjQ3MjQsMTY0NTUxNTA3MSwtNjA5MDk0Njc5LDExMjA5Njgx
-MTUsLTE4NDk2MjcxMTYsLTExNzkyNzIwMTEsLTE1NjE4Nzc3Mi
-wtMTIxODkxNTk2LDU4ODMwMzMzNSwtMTA4MjcxNDYzNSwxMDI2
-MTM1NzcwXX0=
+eyJoaXN0b3J5IjpbNDU5MzI5OTY5LDE5ODU4MTMyMzcsMTk3NT
+k5NzQ3NSwtMjc0NDE5MjczLC01NzQyMjIwOTEsNTE3MDY5MjEx
+LC0zOTQ5NTAxMjgsLTU0NDk2OTI3MywtMTg5NzQyNTg0LDQ4NT
+g2NDcyNCwxNjQ1NTE1MDcxLC02MDkwOTQ2NzksMTEyMDk2ODEx
+NSwtMTg0OTYyNzExNiwtMTE3OTI3MjAxMSwtMTU2MTg3NzcyLC
+0xMjE4OTE1OTYsNTg4MzAzMzM1LC0xMDgyNzE0NjM1LDEwMjYx
+MzU3NzBdfQ==
 -->
