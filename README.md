@@ -64,6 +64,8 @@ By default this pulls *all files* from `data/external`. To change this location 
 As mentioned before, if using your own S3 bucket, please mention the bucket name in `config/model_config.yaml`
 `src/config.py`
  - Download raw data from S3 -  **`make s3_download`**
+ Configurable path - 
+ 
  By default this saves downloaded data in `data/raw_data`. To change this location use,  `make s3_download S3_DOWNLOAD_PATH=<local file path>`
  - Clean data - **`make clean_base`**
  Again, this creates `clean_base.csv` and saves in `data/model_data`. To use an alternate location use  `make clean_base MODEL_DATA=<local file path>`
@@ -302,10 +304,10 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQ4NzkzMjk0LDE2NDU1MTUwNzEsLTYwOT
-A5NDY3OSwxMTIwOTY4MTE1LC0xODQ5NjI3MTE2LC0xMTc5Mjcy
-MDExLC0xNTYxODc3NzIsLTEyMTg5MTU5Niw1ODgzMDMzMzUsLT
-EwODI3MTQ2MzUsMTAyNjEzNTc3MCwtMTI2MzM0MzgxNCwtMTM3
-MzcxODM1LC0xMjgyODk4MDI1LDQ5NzI4NzY5MiwtMjk0MDQxMD
-c0LDE5MTkzMTcwMDJdfQ==
+eyJoaXN0b3J5IjpbLTk4NjQ4OTkzMSwxNjQ1NTE1MDcxLC02MD
+kwOTQ2NzksMTEyMDk2ODExNSwtMTg0OTYyNzExNiwtMTE3OTI3
+MjAxMSwtMTU2MTg3NzcyLC0xMjE4OTE1OTYsNTg4MzAzMzM1LC
+0xMDgyNzE0NjM1LDEwMjYxMzU3NzAsLTEyNjMzNDM4MTQsLTEz
+NzM3MTgzNSwtMTI4Mjg5ODAyNSw0OTcyODc2OTIsLTI5NDA0MT
+A3NCwxOTE5MzE3MDAyXX0=
 -->
