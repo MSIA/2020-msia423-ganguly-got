@@ -69,11 +69,8 @@ As mentioned before, if using your own S3 bucket, please mention the bucket name
  By default downloaded data saved in `data/raw_data`
  - Clean data - **`make clean_base`**
   Configurable path - raw data location, intermediate model data location
+`make clean_base S3_DOWNLOAD_PATH=<local file path> MODEL_DATA=<local file path>`
 
-     make clean_base S3_DOWNLOAD_PATH=<local file path> MODEL_DATA=<local file path>
-
- 
- `make clean_base S3_DOWNLOAD_PATH=<local file path>  MODEL_DATA=<local file path>`
  By default downloaded data saved in `data/raw_data`
  Again, this creates `clean_base.csv` and saves in `data/model_data`. To use an alternate location use 
  - Create features and EDA plots - **`make features`**
@@ -311,7 +308,7 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTYxOTcyNCwxNjQ1NTE1MDcxLC02MD
+eyJoaXN0b3J5IjpbLTgxODM1NDI0NCwxNjQ1NTE1MDcxLC02MD
 kwOTQ2NzksMTEyMDk2ODExNSwtMTg0OTYyNzExNiwtMTE3OTI3
 MjAxMSwtMTU2MTg3NzcyLC0xMjE4OTE1OTYsNTg4MzAzMzM1LC
 0xMDgyNzE0NjM1LDEwMjYxMzU3NzAsLTEyNjMzNDM4MTQsLTEz
