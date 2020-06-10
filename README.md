@@ -39,9 +39,10 @@
 
 **Run Application**
 
- - [ ] Store model 
+ - [ ] Store model serving data in `SQLALCHEMY_DATABASE_URI` defined above (if not using my RDS 
+  `make database`
  - [ ] Build docker image
-  `docker build -t got_make .`
+  `docker build -f app/Dockerfile -t got_app .`
  - [ ] Run model pipeline
    `make pipeline`
 If you are 
@@ -278,10 +279,10 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjkwMTU1NDUsMTY0NTUxNTA3MSwtNj
-A5MDk0Njc5LDExMjA5NjgxMTUsLTE4NDk2MjcxMTYsLTExNzky
-NzIwMTEsLTE1NjE4Nzc3MiwtMTIxODkxNTk2LDU4ODMwMzMzNS
-wtMTA4MjcxNDYzNSwxMDI2MTM1NzcwLC0xMjYzMzQzODE0LC0x
-MzczNzE4MzUsLTEyODI4OTgwMjUsNDk3Mjg3NjkyLC0yOTQwND
-EwNzQsMTkxOTMxNzAwMl19
+eyJoaXN0b3J5IjpbNDExNzAzMjkyLDE2NDU1MTUwNzEsLTYwOT
+A5NDY3OSwxMTIwOTY4MTE1LC0xODQ5NjI3MTE2LC0xMTc5Mjcy
+MDExLC0xNTYxODc3NzIsLTEyMTg5MTU5Niw1ODgzMDMzMzUsLT
+EwODI3MTQ2MzUsMTAyNjEzNTc3MCwtMTI2MzM0MzgxNCwtMTM3
+MzcxODM1LC0xMjgyODk4MDI1LDQ5NzI4NzY5MiwtMjk0MDQxMD
+c0LDE5MTkzMTcwMDJdfQ==
 -->
