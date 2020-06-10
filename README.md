@@ -177,7 +177,7 @@ All model pipeline related configurations are stored in `config/model_config.yam
 
 ## Project Charter
 ### Vision
-To provide fans of the hit TV series Game of Thrones(GoT), based on the equally famous book series "A Song of Fire and Ice" by George RR Martin, a platform to interact with its vastly complicated and perilous fantasy world
+To provide fans of the hit TV series Game of Thrones (GoT), based on the equally famous book series "A Song of Fire and Ice" by George RR Martin, a platform to interact with its vastly complicated and perilous fantasy world
 
 ### Mission
 Develop an application that allows user to build his/her own character in the fantasy series GoT, by choosing responses to a set of questions. The application then outputs the expected life span of the user's character considering the survival of similar existing characters in the series.
@@ -329,12 +329,3 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── run.py                            <- Simplifies the execution of one or more of the src scripts  
 ├── requirements.txt                  <- Python package dependencies 
 ```
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3MTE3NzYyNyw5OTY5NTM0MzksMTEyMj
-AzODYxMCwtMTI4NzI4ODg3NCwtMTI4NzI4ODg3NCwtOTE3NjA1
-MTgzLDEzNjM4MzcxNDYsMjM4NTU1MTAyLDQ1OTMyOTk2OSwxOT
-g1ODEzMjM3LDE5NzU5OTc0NzUsLTI3NDQxOTI3MywtNTc0MjIy
-MDkxLDUxNzA2OTIxMSwtMzk0OTUwMTI4LC01NDQ5NjkyNzMsLT
-E4OTc0MjU4NCw0ODU4NjQ3MjQsMTY0NTUxNTA3MSwtNjA5MDk0
-Njc5XX0=
--->
