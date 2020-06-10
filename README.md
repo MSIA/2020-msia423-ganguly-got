@@ -54,16 +54,16 @@ Click on the link to be directed to the application web page. Enjoy playing arou
 Docker image to be built same as above, i.e.,
 `docker build -t got_make .`
 If desired, all previous results and artifacts can be cleaned by running `make clean`
- - Upload raw data to S3 - `make s3_upload`
+ - Upload raw data to S3 - **`make s3_upload`**
 By default this pulls *all files* from `data/external`. To change this location use,  `make s3_upload S3_UPLOAD_PATH=<local file path>`
 As mentioned before, if using your own S3 bucket, please mention the bucket name in `config/model_config.yaml`
 `src/config.py`
- - Download raw data from S3 -  `make s3_download`
+ - Download raw data from S3 -  **`make s3_download`**
  By default this saves downloaded data in `data/raw_data`. To change this location use,  `make s3_download S3_DOWNLOAD_PATH=<local file path>`
- - Clean data - `make clean_base`
- Again, this creates `clean_base.csv` and saves in `data/model_data`. To use an alternate location use  `make clean_base MODEL_DATA=<loacl file path>`
+ - Clean data - **`make clean_base`**
+ Again, this creates `clean_base.csv` and saves in `data/model_data`. To use an alternate location use  `make clean_base MODEL_DATA=<local file path>`
  - Create features and EDA plots - `make features`
- This directive creates `features.csv` and a folder eda_plots with bivariate feature plots
+ This directive creates `features.csv` and a folder `eda_plots` with bivariate feature plots in `data/model_data`. To use an alternate location use  `make features MODEL_DATA=<local file path>`
 
  - `S3_BUCKET` - specify the name of the S3 bucket for storing the csv file
  - `CREATE_DB_LOCALLY` - specify `False` to create RDS database, `True` to create local SQLite database. Defaulted to `False`
@@ -291,7 +291,7 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0MzE4OTE0MiwxNjQ1NTE1MDcxLC02MD
+eyJoaXN0b3J5IjpbMTk2MzM5MDE3MywxNjQ1NTE1MDcxLC02MD
 kwOTQ2NzksMTEyMDk2ODExNSwtMTg0OTYyNzExNiwtMTE3OTI3
 MjAxMSwtMTU2MTg3NzcyLC0xMjE4OTE1OTYsNTg4MzAzMzM1LC
 0xMDgyNzE0NjM1LDEwMjYxMzU3NzAsLTEyNjMzNDM4MTQsLTEz
