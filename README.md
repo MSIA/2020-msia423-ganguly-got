@@ -16,6 +16,7 @@
 ## Running the data ingestion pipeline
 ### To run the model pipeline and application with default settings
 **Things to ensure before proceeding**
+
  - [ ] You are on Northwestern VPN and Docker app is running
  - [ ] AWS credentials have been set as environment variables via  the following commands
   `export AWS_ACCESS_KEY_ID=<your key>`
@@ -268,11 +269,11 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTE3MDY5MjExLC0zOTQ5NTAxMjgsLTU0ND
-k2OTI3MywtMTg5NzQyNTg0LDQ4NTg2NDcyNCwxNjQ1NTE1MDcx
-LC02MDkwOTQ2NzksMTEyMDk2ODExNSwtMTg0OTYyNzExNiwtMT
-E3OTI3MjAxMSwtMTU2MTg3NzcyLC0xMjE4OTE1OTYsNTg4MzAz
-MzM1LC0xMDgyNzE0NjM1LDEwMjYxMzU3NzAsLTEyNjMzNDM4MT
-QsLTEzNzM3MTgzNSwtMTI4Mjg5ODAyNSw0OTcyODc2OTIsLTI5
-NDA0MTA3NF19
+eyJoaXN0b3J5IjpbLTk3OTk1NzMwMyw1MTcwNjkyMTEsLTM5ND
+k1MDEyOCwtNTQ0OTY5MjczLC0xODk3NDI1ODQsNDg1ODY0NzI0
+LDE2NDU1MTUwNzEsLTYwOTA5NDY3OSwxMTIwOTY4MTE1LC0xOD
+Q5NjI3MTE2LC0xMTc5MjcyMDExLC0xNTYxODc3NzIsLTEyMTg5
+MTU5Niw1ODgzMDMzMzUsLTEwODI3MTQ2MzUsMTAyNjEzNTc3MC
+wtMTI2MzM0MzgxNCwtMTM3MzcxODM1LC0xMjgyODk4MDI1LDQ5
+NzI4NzY5Ml19
 -->
