@@ -160,6 +160,9 @@ In case the location to store the offline score has been changed above, please m
 All model pipeline related configurations are stored in `config/model_config.yaml` Some examples are as follows
 
  - S3_BUCKET - S3 bucket name
+ - s3_download: FILE_NAMES - files to be downloaded from S3
+ - featurin: eda_plot_features - features chosen for creating EDA plots
+ - 
 
 ## Project Charter
 ### Vision
@@ -316,11 +319,11 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDA2OTEyMjQxLC05MTc2MDUxODMsMTM2Mz
-gzNzE0NiwyMzg1NTUxMDIsNDU5MzI5OTY5LDE5ODU4MTMyMzcs
-MTk3NTk5NzQ3NSwtMjc0NDE5MjczLC01NzQyMjIwOTEsNTE3MD
-Y5MjExLC0zOTQ5NTAxMjgsLTU0NDk2OTI3MywtMTg5NzQyNTg0
-LDQ4NTg2NDcyNCwxNjQ1NTE1MDcxLC02MDkwOTQ2NzksMTEyMD
-k2ODExNSwtMTg0OTYyNzExNiwtMTE3OTI3MjAxMSwtMTU2MTg3
-NzcyXX0=
+eyJoaXN0b3J5IjpbLTE0MjczMDQzMDksLTkxNzYwNTE4MywxMz
+YzODM3MTQ2LDIzODU1NTEwMiw0NTkzMjk5NjksMTk4NTgxMzIz
+NywxOTc1OTk3NDc1LC0yNzQ0MTkyNzMsLTU3NDIyMjA5MSw1MT
+cwNjkyMTEsLTM5NDk1MDEyOCwtNTQ0OTY5MjczLC0xODk3NDI1
+ODQsNDg1ODY0NzI0LDE2NDU1MTUwNzEsLTYwOTA5NDY3OSwxMT
+IwOTY4MTE1LC0xODQ5NjI3MTE2LC0xMTc5MjcyMDExLC0xNTYx
+ODc3NzJdfQ==
 -->
