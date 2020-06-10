@@ -64,11 +64,14 @@ By default this pulls *all files* from `data/external`. To change this location 
 As mentioned before, if using your own S3 bucket, please mention the bucket name in `config/model_config.yaml`
 `src/config.py`
  - Download raw data from S3 -  **`make s3_download`**
- Configurable path - 
- 
- By default this saves downloaded data in `data/raw_data`. To change this location use,  `make s3_download S3_DOWNLOAD_PATH=<local file path>`
+ Configurable path - download data location
+ `make s3_download S3_DOWNLOAD_PATH=<local file path>`
+ By default downloaded data saved in `data/raw_data`
  - Clean data - **`make clean_base`**
- Again, this creates `clean_base.csv` and saves in `data/model_data`. To use an alternate location use  `make clean_base MODEL_DATA=<local file path>`
+  Configurable path - intermediate model data location
+ `make s3_download S3_DOWNLOAD_PATH=<local file path>`
+ By default downloaded data saved in `data/raw_data`
+ Again, this creates `clean_base.csv` and saves in `data/model_data`. To use an alternate location use 
  - Create features and EDA plots - **`make features`**
  This directive creates `features.csv` and a folder `eda_plots` with bivariate feature plots in `data/model_data`. To use an alternate location use  `make features MODEL_DATA=<local file path>`
  
@@ -304,7 +307,7 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4NjQ4OTkzMSwxNjQ1NTE1MDcxLC02MD
+eyJoaXN0b3J5IjpbMTY3NzE3MjIyMiwxNjQ1NTE1MDcxLC02MD
 kwOTQ2NzksMTEyMDk2ODExNSwtMTg0OTYyNzExNiwtMTE3OTI3
 MjAxMSwtMTU2MTg3NzcyLC0xMjE4OTE1OTYsNTg4MzAzMzM1LC
 0xMDgyNzE0NjM1LDEwMjYxMzU3NzAsLTEyNjMzNDM4MTQsLTEz
