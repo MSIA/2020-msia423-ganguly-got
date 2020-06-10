@@ -22,7 +22,10 @@ score: config/model_config.yaml
 	docker run --mount type=bind,source="`pwd`",target=/app/ got_make run.py score -c=config/model_config.yaml -o=${MODEL_DATA}/offline_score.csv --lfp=${MODEL_ARTIFACTS}
 
 database:
-	docker run -e SQLALCHEMY_DATABASE_URI --mount type=bind,source="`pwd`",target=/app/ got_make run.py create_db -i=${MODEL_ARTIFACTS}/offline_score.csv -c=config/model_config.yaml -t
+	docker run -e SQLALCHEMY_DATABASE_URI --mount type=bind,source="`pwd`",target=/app/ got_make run.py create_db -i=${MODEL_DATA}/offline_score.csv -c=config/model_config.yaml -t
+
+database_rds:
+	docker run -e MYSQL_USER -e MYSQL_PASSWORD -e MYSQL_PORT -e DATABASE_NAME -e MYSQL_HOST --mount type=bind,source="`pwd`",target=/app/ got_make run.py create_db -i=${MODEL_DATA}/offline_score.csv -c=config/model_config.yaml -t
 
 tests:
 	python3 -m pytest test/*
