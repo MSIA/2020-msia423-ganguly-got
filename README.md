@@ -105,64 +105,13 @@ By default creates offline score base and saves in `data/model_data` Picks expor
 In case the location to store the offline score has been changed above, please mention the same here 
 `make database_rds MODEL_DATA=<local file path>`
 
- - 
+ - Run application same as above - 
+  -Build docker image
+  `docker build -f app/Dockerfile -t got_app .`
+ -Run application
+   `docker run -p 5000:5000 --name test got_app`
 
-**To only query from the RDS database *already created* by the developer, skip to **Step 6: Verifying database creation**
 
-To create RDS database,
- - update the AWS RDS details in `.mysqlconfig` as follows, 
-
-Enter `vi .mysqlconfig`
-
-	- Set `MYSQL_USER` to the “master username” that you used to create the database server
-	- Set `MYSQL_PASSWORD` to the “master password” that you used to create the database server
-	- Set `MYSQL_HOST` to be the RDS instance endpoint from the console
-	- Set `MYSQL_HOST` to be 3306
-	- Set `DATABASE_NAME` to be the name of the database created
-
- - Set the environment variables in .mysqlconfig,
-
-     `source .mysqlconfig`
-
-### Step 3. Build docker image
-
-    docker build -t got_image .
-
-### Step 4. Write raw data to S3 bucket
-Run the following command with your AWS credentials
-
-    docker run -e AWS_ACCESS_KEY_ID=<aws_key> -e AWS_SECRET_ACCESS_KEY=<aws_secret_key> got_image src/write_to_s3.py
-
-The file character-deaths.csv is now written to the S3 bucket!
-
-### Step 5. Creating database for model serving
- -  Case 1: `CREATE_DB_LOCALLY=True` (creating local SQLite database)
-```bash
-docker run --mount type=bind,source="$(pwd)"/data,target=/app/data got_image src/createDB_RDS.py
-```
- - Case 2: `CREATE_DB_LOCALLY=False` (creating AWS RDS database)
-```bash
-sh run_docker.sh
-```
-The database with the 'prediction' table has been created in SQLite/RDS with a dummy row.
-
-***Note: If recreating the database add --t at the end of option1 and inside run_docker.sh file for option2, to avoid IntegrityErrors due to duplicate records*
-
-### Step 6: Verifying database creation
-If database is created in local SQLite, the same can be viewed/queried through applications like `DB Browser for SQLite`
-
-If the database is created in RDS, it can be queried as follows,
-
- - Enter suitable `MYSQL_USER` and `MYSQL_PASSWORD` in `.mysqlconfig` (for users created for MSIA423 instructors and QA)
- - Start MySQL client
- `sh run_mysql_client.sh` 
-- To show databases
- `mysql> show databases;` 
- - To show tables
- `mysql> show tables from msia423_project_db;
-` 
-- Select rows from table
- `mysql> select * from msia423_project_db.prediction;
 ` 
 
 
@@ -321,11 +270,11 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0Njc5Mzk4NiwtMzk0OTUwMTI4LC01ND
-Q5NjkyNzMsLTE4OTc0MjU4NCw0ODU4NjQ3MjQsMTY0NTUxNTA3
-MSwtNjA5MDk0Njc5LDExMjA5NjgxMTUsLTE4NDk2MjcxMTYsLT
-ExNzkyNzIwMTEsLTE1NjE4Nzc3MiwtMTIxODkxNTk2LDU4ODMw
-MzMzNSwtMTA4MjcxNDYzNSwxMDI2MTM1NzcwLC0xMjYzMzQzOD
-E0LC0xMzczNzE4MzUsLTEyODI4OTgwMjUsNDk3Mjg3NjkyLC0y
-OTQwNDEwNzRdfQ==
+eyJoaXN0b3J5IjpbOTg5MzE2NjAzLC0zOTQ5NTAxMjgsLTU0ND
+k2OTI3MywtMTg5NzQyNTg0LDQ4NTg2NDcyNCwxNjQ1NTE1MDcx
+LC02MDkwOTQ2NzksMTEyMDk2ODExNSwtMTg0OTYyNzExNiwtMT
+E3OTI3MjAxMSwtMTU2MTg3NzcyLC0xMjE4OTE1OTYsNTg4MzAz
+MzM1LC0xMDgyNzE0NjM1LDEwMjYxMzU3NzAsLTEyNjMzNDM4MT
+QsLTEzNzM3MTgzNSwtMTI4Mjg5ODAyNSw0OTcyODc2OTIsLTI5
+NDA0MTA3NF19
 -->
