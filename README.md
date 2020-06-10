@@ -150,7 +150,7 @@ By default creates offline score base and saves in `data/model_data [MODEL_DATA]
 
 In case the location to store the offline score has been changed above, please mention the same here 
 
-`make database_rds MODEL_DATA=<local file path>`
+`make database MODEL_DATA=<local file path>`
 
  - Run application same as above - 
 
@@ -328,11 +328,11 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyOTc1MzU2NywxMTIyMDM4NjEwLC0xMj
-g3Mjg4ODc0LC0xMjg3Mjg4ODc0LC05MTc2MDUxODMsMTM2Mzgz
-NzE0NiwyMzg1NTUxMDIsNDU5MzI5OTY5LDE5ODU4MTMyMzcsMT
-k3NTk5NzQ3NSwtMjc0NDE5MjczLC01NzQyMjIwOTEsNTE3MDY5
-MjExLC0zOTQ5NTAxMjgsLTU0NDk2OTI3MywtMTg5NzQyNTg0LD
-Q4NTg2NDcyNCwxNjQ1NTE1MDcxLC02MDkwOTQ2NzksMTEyMDk2
-ODExNV19
+eyJoaXN0b3J5IjpbOTk2OTUzNDM5LDExMjIwMzg2MTAsLTEyOD
+cyODg4NzQsLTEyODcyODg4NzQsLTkxNzYwNTE4MywxMzYzODM3
+MTQ2LDIzODU1NTEwMiw0NTkzMjk5NjksMTk4NTgxMzIzNywxOT
+c1OTk3NDc1LC0yNzQ0MTkyNzMsLTU3NDIyMjA5MSw1MTcwNjky
+MTEsLTM5NDk1MDEyOCwtNTQ0OTY5MjczLC0xODk3NDI1ODQsND
+g1ODY0NzI0LDE2NDU1MTUwNzEsLTYwOTA5NDY3OSwxMTIwOTY4
+MTE1XX0=
 -->
