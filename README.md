@@ -93,7 +93,7 @@ By default creates offline score base and saves in `data/model_data` Picks expor
 
 ### To connect application to RDS database
 
- - Provide RDS credentials in 
+ - Define 
 
  - `S3_BUCKET` - specify the name of the S3 bucket for storing the csv file
  - `CREATE_DB_LOCALLY` - specify `False` to create RDS database, `True` to create local SQLite database. Defaulted to `False`
@@ -321,10 +321,10 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDg1ODY0NzI0LDE2NDU1MTUwNzEsLTYwOT
-A5NDY3OSwxMTIwOTY4MTE1LC0xODQ5NjI3MTE2LC0xMTc5Mjcy
-MDExLC0xNTYxODc3NzIsLTEyMTg5MTU5Niw1ODgzMDMzMzUsLT
-EwODI3MTQ2MzUsMTAyNjEzNTc3MCwtMTI2MzM0MzgxNCwtMTM3
-MzcxODM1LC0xMjgyODk4MDI1LDQ5NzI4NzY5MiwtMjk0MDQxMD
-c0LDE5MTkzMTcwMDJdfQ==
+eyJoaXN0b3J5IjpbLTE4OTc0MjU4NCw0ODU4NjQ3MjQsMTY0NT
+UxNTA3MSwtNjA5MDk0Njc5LDExMjA5NjgxMTUsLTE4NDk2Mjcx
+MTYsLTExNzkyNzIwMTEsLTE1NjE4Nzc3MiwtMTIxODkxNTk2LD
+U4ODMwMzMzNSwtMTA4MjcxNDYzNSwxMDI2MTM1NzcwLC0xMjYz
+MzQzODE0LC0xMzczNzE4MzUsLTEyODI4OTgwMjUsNDk3Mjg3Nj
+kyLC0yOTQwNDEwNzQsMTkxOTMxNzAwMl19
 -->
