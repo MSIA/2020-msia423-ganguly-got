@@ -19,7 +19,9 @@
 
  - [ ] You are on Northwestern VPN and Docker app is running
  - [ ] AWS credentials have been set as environment variables via  the following commands
+ 
   `export AWS_ACCESS_KEY_ID=<your key>`
+  
   `export AWS_SECRET_ACCESS_KEY=<your secret key>`
 
 > If user has been given access to my S3 bucket, we are good to go. If not, user must create and provide a valid S3 Bucket name in `config/model_config.yaml` both for `s3_upload` and `s3_download`. They would then have to execute the S3 data upload step as mentioned later in the document, *before* proceeding with the model pipeline
@@ -269,7 +271,7 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3OTk1NzMwMyw1MTcwNjkyMTEsLTM5ND
+eyJoaXN0b3J5IjpbLTY0MzcyNzExMyw1MTcwNjkyMTEsLTM5ND
 k1MDEyOCwtNTQ0OTY5MjczLC0xODk3NDI1ODQsNDg1ODY0NzI0
 LDE2NDU1MTUwNzEsLTYwOTA5NDY3OSwxMTIwOTY4MTE1LC0xOD
 Q5NjI3MTE2LC0xMTc5MjcyMDExLC0xNTYxODc3NzIsLTEyMTg5
