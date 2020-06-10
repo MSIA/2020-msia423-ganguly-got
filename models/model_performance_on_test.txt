@@ -1,0 +1,7 @@
+Accuracy on test: 0.486
+
+Confusion Matrix:
+                Predicted gt200  Predicted 0-100  Predicted 100-200
+Actual gt200                 13               23                 11
+Actual 0-100                  5               44                 10
+Actual 100-200                8               14                 10

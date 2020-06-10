@@ -6,24 +6,174 @@
 
 <!-- toc -->
 
+- [Running Model Pipeline and Application](#Running-model-pipeline-and-application)
 - [Project Charter](#project-charter)
 - [Project Backlog](#project-backlog)
 - [Directory structure](#directory-structure)
-- [Running the app](#running-the-app)
-  * [1. Initialize the database](#1-initialize-the-database)
-    + [Create the database with a single song](#create-the-database-with-a-single-song)
-    + [Adding additional songs](#adding-additional-songs)
-    + [Defining your engine string](#defining-your-engine-string)
-      - [Local SQLite database](#local-sqlite-database)
-  * [2. Configure Flask app](#2-configure-flask-app)
-  * [3. Run the Flask app](#3-run-the-flask-app)
-- [Running the app in Docker](#running-the-app-in-docker)
-  * [1. Build the image](#1-build-the-image)
-  * [2. Run the container](#2-run-the-container)
-  * [3. Kill the container](#3-kill-the-container)
-  * [Workaround for potential Docker problem for Windows.](#workaround-for-potential-docker-problem-for-windows)
 
 <!-- tocstop -->
+
+## Running Model Pipeline and Application
+### To run the model pipeline and application with default settings
+**Things to ensure before proceeding**
+
+ - You are on Northwestern VPN and Docker app is running
+ - AWS credentials have been set as environment variables via  the following commands
+
+`export AWS_ACCESS_KEY_ID=<your key>`
+  
+`export AWS_SECRET_ACCESS_KEY=<your secret key>`
+
+> If user has been given access to my S3 bucket, we are good to go. If not, user must create and provide a valid S3 Bucket name in `config/model_config.yaml` both for `s3_upload` and `s3_download`. They would then have to execute the S3 data upload step as mentioned later in the document, *before* proceeding with the model pipeline
+
+  
+
+ - The *local* SQL Alchemy database connection string has been set up as,
+
+`export SQLALCHEMY_DATABASE_URI=<path to DB>`
+ 
+> For example,
+> relative path to local DB: sqlite:///data/got_simulator.db
+> 
+> absolute path to local DB: sqlite://///Users/cmawer/Repos/2020-MSIA423-template-repository/data/tracks.db
+
+**Reproduce Model Pipeline**
+
+ - Build docker image
+
+`docker build -t got_make .`
+
+ - Run model pipeline (download data from S3 bucket, clean, make features, train model and score offline base)
+
+`make pipeline`
+
+**Run Application**
+
+ - Store model serving data in `SQLALCHEMY_DATABASE_URI` defined above
+
+`make database`
+
+ - Build docker image
+
+`docker build -f app/Dockerfile -t got_app .`
+
+ - Run application
+
+`make run_flask_app`
+
+The terminal should now display  
+`* Running on http://0.0.0.0:5000/` 
+
+Click on the url to be directed to the application web page. Enjoy playing around!
+
+> Some interesting inputs to play with - 
+> 1. Allegiance=Night's Watch
+> 2. Nobility=1, Allegiance=Lannister
+
+**Run Unit Tests**
+
+`make tests`
+
+ *To stop the already running application docker container, execute `docker kill test` and `docker rm test` in a different terminal
+
+### To execute the model pipeline step by step with configurable inputs
+Docker image to be built same as above, i.e.,
+`docker build -t got_make .`
+
+If desired, all previous results and artifacts can be cleaned by running `make clean`
+
+ - Upload raw data to S3 - **`make s3_upload`**
+
+Configurable path - upload data location
+
+`make s3_upload S3_UPLOAD_PATH=<local file path>`
+
+By default this pulls *all files* from `data/external [S3_UPLOAD_PATH]`.
+As mentioned before, if using your own S3 bucket, please mention the bucket name in `config/model_config.yaml`
+
+ - Download raw data from S3 -  **`make s3_download`**
+ 
+ Configurable path - download data location
+ 
+ `make s3_download S3_DOWNLOAD_PATH=<local file path>`
+ 
+ By default downloaded data saved in `data/raw_data [S3_DOWNLOAD_PATH]`
+ 
+ - Clean data - **`make clean_base`**
+
+Configurable paths - download data location, intermediate model data location
+
+`make clean_base S3_DOWNLOAD_PATH=<local file path> MODEL_DATA=<local file path>`
+
+By default downloaded data saved in `data/raw_data [S3_DOWNLOAD_PATH]`. 
+Creates`clean_base.csv` and saves in `data/model_data [MODEL_DATA]`
+
+ - Create features and EDA plots - **`make features`**
+
+Configurable paths - download data location, intermediate model data location
+
+`make features S3_DOWNLOAD_PATH=<local file path> MODEL_DATA=<local file path>`
+
+By default downloaded data saved in `data/raw_data [S3_DOWNLOAD_PATH]`
+Creates`features.csv` and a folder `eda_plots` with bivariate feature plots in `data/model_data [MODEL_DATA]`
+ 
+ - Train model - **`make model`**
+
+Configurable paths - intermediate model data location, model artifacts location
+
+`make model MODEL_DATA=<local file path> MODEL_ARTIFACTS=<local file path>`
+
+By default picks model data saved in `data/model_data [MODEL_DATA]`
+This directive trains the classification model and stores artifacts like test performance metrics and model object in the folder `models [MODEL_ARTIFACTS]`
+
+- Score offline base for model serving - **`make score`**
+
+Configurable paths - intermediate model data location, model artifacts location
+
+`make score MODEL_DATA=<local file path> MODEL_ARTIFACTS=<local file path>`
+
+By default creates offline score base and saves in `data/model_data [MODEL_DATA]` Picks exported model object from `models [MODEL_ARTIFACTS]`
+
+*If using different file paths than the defaults, please ensure correct input and output locations are provided for chained steps:*  `clean_base -> features -> model -> score`
+
+### To connect application to RDS database
+
+ - Define the following environment variables and ensure `SQLALCHEMY_DATABASE_URI` is not defined as an environment variable with a local sqlite engine string
+
+>  -	`export MYSQL_USER=<“master username” used to create the database server>` 
+> 	- `export MYSQL_PASSWORD=<“master password” used to create the database server>` 
+>  - `export MYSQL_HOST=<RDS instance endpoint from the console>` 
+>  - `export MYSQL_PORT=<RDS instance port 3306>` 
+>  - `export DATABASE_NAME=<name of the database created>`   
+
+ - Create and populate the RDS database with offline scored base -  `make database`
+
+In case the location to store the offline score has been changed above, please mention the same here 
+
+`make database MODEL_DATA=<local file path>`
+
+*If using developer's RDS instance, no need to run `make database`, as it already has the scored database stored*
+
+ - Run application same as above - 
+
+  -Build docker image
+  `docker build -f app/Dockerfile -t got_app .`
+  
+ -Run application
+   `make run_flask_app`
+ 
+ 
+### Other model pipeline configurations
+All model pipeline related configurations are stored in `config/model_config.yaml` Some examples are as follows
+
+ - `S3_BUCKET` - S3 bucket name
+ - `s3_download: FILE_NAMES` - files to be downloaded from S3
+ - `featurize: eda_plot_features` - features chosen for creating EDA plots
+ - `model: feature_set` - independent variables
+ - `model: parameters` - hyper parameters of Random Forest
+ - `score: model_pkl_file` - exported model object
+ - `score: target_mapping` - prediction to target class mapping
+ - `database: LOCAL_DATABASE_URI` - default location to create SQLite database if user does not provide any inputs
 
 ## Project Charter
 ### Vision
@@ -179,128 +329,3 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── run.py                            <- Simplifies the execution of one or more of the src scripts  
 ├── requirements.txt                  <- Python package dependencies 
 ```
-
-## Running the app
-### 1. Initialize the database 
-
-#### Create the database with a single song 
-To create the database in the location configured in `config.py` with one initial song, run: 
-
-`python run.py create_db --engine_string=<engine_string> --artist=<ARTIST> --title=<TITLE> --album=<ALBUM>`
-
-By default, `python run.py create_db` creates a database at `sqlite:///data/tracks.db` with the initial song *Radar* by Britney spears. 
-#### Adding additional songs 
-To add an additional song:
-
-`python run.py ingest --engine_string=<engine_string> --artist=<ARTIST> --title=<TITLE> --album=<ALBUM>`
-
-By default, `python run.py ingest` adds *Minor Cause* by Emancipator to the SQLite database located in `sqlite:///data/tracks.db`.
-
-#### Defining your engine string 
-A SQLAlchemy database connection is defined by a string with the following format:
-
-`dialect+driver://username:password@host:port/database`
-
-The `+dialect` is optional and if not provided, a default is used. For a more detailed description of what `dialect` and `driver` are and how a connection is made, you can see the documentation [here](https://docs.sqlalchemy.org/en/13/core/engines.html). We will cover SQLAlchemy and connection strings in the SQLAlchemy lab session on 
-##### Local SQLite database 
-
-A local SQLite database can be created for development and local testing. It does not require a username or password and replaces the host and port with the path to the database file: 
-
-```python
-engine_string='sqlite:///data/tracks.db'
-
-```
-
-The three `///` denote that it is a relative path to where the code is being run (which is from the root of this directory).
-
-You can also define the absolute path with four `////`, for example:
-
-```python
-engine_string = 'sqlite://///Users/cmawer/Repos/2020-MSIA423-template-repository/data/tracks.db'
-```
-
-
-### 2. Configure Flask app 
-
-`config/flaskconfig.py` holds the configurations for the Flask app. It includes the following configurations:
-
-```python
-DEBUG = True  # Keep True for debugging, change to False when moving to production 
-LOGGING_CONFIG = "config/logging/local.conf"  # Path to file that configures Python logger
-HOST = "0.0.0.0" # the host that is running the app. 0.0.0.0 when running locally 
-PORT = 5000  # What port to expose app on. Must be the same as the port exposed in app/Dockerfile 
-SQLALCHEMY_DATABASE_URI = 'sqlite:///data/tracks.db'  # URI (engine string) for database that contains tracks
-APP_NAME = "penny-lane"
-SQLALCHEMY_TRACK_MODIFICATIONS = True 
-SQLALCHEMY_ECHO = False  # If true, SQL for queries made will be printed
-MAX_ROWS_SHOW = 100 # Limits the number of rows returned from the database 
-```
-
-### 3. Run the Flask app 
-
-To run the Flask app, run: 
-
-```bash
-python app.py
-```
-
-You should now be able to access the app at http://0.0.0.0:5000/ in your browser.
-
-## Running the app in Docker 
-
-### 1. Build the image 
-
-The Dockerfile for running the flask app is in the `app/` folder. To build the image, run from this directory (the root of the repo): 
-
-```bash
- docker build -f app/Dockerfile -t pennylane .
-```
-
-This command builds the Docker image, with the tag `pennylane`, based on the instructions in `app/Dockerfile` and the files existing in this directory.
- 
-### 2. Run the container 
-
-To run the app, run from this directory: 
-
-```bash
-docker run -p 5000:5000 --name test pennylane
-```
-You should now be able to access the app at http://0.0.0.0:5000/ in your browser.
-
-This command runs the `pennylane` image as a container named `test` and forwards the port 5000 from container to your laptop so that you can access the flask app exposed through that port. 
-
-If `PORT` in `config/flaskconfig.py` is changed, this port should be changed accordingly (as should the `EXPOSE 5000` line in `app/Dockerfile`)
-
-### 3. Kill the container 
-
-Once finished with the app, you will need to kill the container. To do so: 
-
-```bash
-docker kill test 
-```
-
-where `test` is the name given in the `docker run` command.
-
-### Workaround for potential Docker problem for Windows.
-
-It is possible that Docker will have a problem with the bash script `app/boot.sh` that is used when running on a Windows machine. Windows can encode the script wrongly so that when it copies over to the Docker image, it is corrupted. If this happens to you, try using the alternate Dockerfile, `app/Dockerfile_windows`, i.e.:
-
-```bash
- docker build -f app/Dockerfile_windows -t pennylane .
-```
-
-then run the same `docker run` command: 
-
-```bash
-docker run -p 5000:5000 --name test pennylane
-```
-
-The new image defines the entry command as `python3 app.py` instead of `./boot.sh`. Building the sample PennyLane image this way will require initializing the database prior to building the image so that it is copied over, rather than created when the container is run. Therefore, please **do the step [Create the database with a single song](#create-the-database-with-a-single-song) above before building the image**.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQ3Mzg5OTA1LC0xMjE4OTE1OTYsMjA4Nj
-kyNTI2OCwyMDc1NjU5NTUsLTE2MTAzOTI0MTAsLTE2MTc2NTM3
-MTgsMjEyOTAxNzI2NiwxNTI1NTk1NTMsLTIzOTU2NjEyMyw1OD
-gzMDMzMzUsLTEwODI3MTQ2MzUsMTAyNjEzNTc3MCwtMTI2MzM0
-MzgxNCwtMTM3MzcxODM1LC0xMjgyODk4MDI1LDQ5NzI4NzY5Mi
-wtMjk0MDQxMDc0LDE5MTkzMTcwMDJdfQ==
--->
