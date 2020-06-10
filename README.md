@@ -39,12 +39,15 @@
 
 **Run Application**
 
- - [ ] Store model serving data in `SQLALCHEMY_DATABASE_URI` defined above (if not using my RDS 
+ - [ ] Store model serving data in `SQLALCHEMY_DATABASE_URI` defined above
   `make database`
  - [ ] Build docker image
   `docker build -f app/Dockerfile -t got_app .`
- - [ ] Run model pipeline
-   `make pipeline`
+ - [ ] Run application
+   `docker run -p 5000:5000 --name test got_app`
+
+The terminal should now display  
+`* Running on http://0.0.0.0:5000/` 
 If you are 
 The file has been downloaded and stored in `data/external` folder. User can choose to use the same file for the subsequent steps, in which case there is no need to download again. Otherwise the file needs to be downloaded and placed in `data/external`. Please do not change the file name.
 
@@ -279,7 +282,7 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDExNzAzMjkyLDE2NDU1MTUwNzEsLTYwOT
+eyJoaXN0b3J5IjpbNDk0MjQwNzExLDE2NDU1MTUwNzEsLTYwOT
 A5NDY3OSwxMTIwOTY4MTE1LC0xODQ5NjI3MTE2LC0xMTc5Mjcy
 MDExLC0xNTYxODc3NzIsLTEyMTg5MTU5Niw1ODgzMDMzMzUsLT
 EwODI3MTQ2MzUsMTAyNjEzNTc3MCwtMTI2MzM0MzgxNCwtMTM3
