@@ -50,7 +50,8 @@ The terminal should now display
 `* Running on http://0.0.0.0:5000/` 
 Click on the link to be directed to the application web page. Enjoy playing around!
 
-### Step 1. Updating src/config.py
+### To execute step by step with configurable inputs
+
 `src/config.py` contains all the configurable details about the data ingestion pipeline. Please update the following items
 
  - `S3_BUCKET` - specify the name of the S3 bucket for storing the csv file
@@ -279,10 +280,10 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3OTE2NDYwNywxNjQ1NTE1MDcxLC02MD
-kwOTQ2NzksMTEyMDk2ODExNSwtMTg0OTYyNzExNiwtMTE3OTI3
-MjAxMSwtMTU2MTg3NzcyLC0xMjE4OTE1OTYsNTg4MzAzMzM1LC
-0xMDgyNzE0NjM1LDEwMjYxMzU3NzAsLTEyNjMzNDM4MTQsLTEz
-NzM3MTgzNSwtMTI4Mjg5ODAyNSw0OTcyODc2OTIsLTI5NDA0MT
-A3NCwxOTE5MzE3MDAyXX0=
+eyJoaXN0b3J5IjpbMjk3OTI5OTksMTY0NTUxNTA3MSwtNjA5MD
+k0Njc5LDExMjA5NjgxMTUsLTE4NDk2MjcxMTYsLTExNzkyNzIw
+MTEsLTE1NjE4Nzc3MiwtMTIxODkxNTk2LDU4ODMwMzMzNSwtMT
+A4MjcxNDYzNSwxMDI2MTM1NzcwLC0xMjYzMzQzODE0LC0xMzcz
+NzE4MzUsLTEyODI4OTgwMjUsNDk3Mjg3NjkyLC0yOTQwNDEwNz
+QsMTkxOTMxNzAwMl19
 -->
