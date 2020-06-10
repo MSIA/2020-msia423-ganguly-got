@@ -14,6 +14,9 @@ def eda_plots(df, plot_location=None, target_column=None, eda_plot_features=None
 
     :param df: model dataFrame
     :param target_column: dependent variable 'class'
+    :param plot_location: local file location for storing EDA plots
+    :param eda_plot_features: features to create EDA plots for
+
     :return: None, saves plots as .png files in data/plots
     """
     # Update matplotlib defaults to something nicer
