@@ -58,7 +58,7 @@
 
  - Run application
 
-`docker run -p 5000:5000 --name test got_app`
+`make run_flask_app`
 
 The terminal should now display  
 `* Running on http://0.0.0.0:5000/` 
@@ -327,11 +327,11 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODcyODg4NzQsLTEyODcyODg4NzQsLT
-kxNzYwNTE4MywxMzYzODM3MTQ2LDIzODU1NTEwMiw0NTkzMjk5
-NjksMTk4NTgxMzIzNywxOTc1OTk3NDc1LC0yNzQ0MTkyNzMsLT
-U3NDIyMjA5MSw1MTcwNjkyMTEsLTM5NDk1MDEyOCwtNTQ0OTY5
-MjczLC0xODk3NDI1ODQsNDg1ODY0NzI0LDE2NDU1MTUwNzEsLT
-YwOTA5NDY3OSwxMTIwOTY4MTE1LC0xODQ5NjI3MTE2LC0xMTc5
-MjcyMDExXX0=
+eyJoaXN0b3J5IjpbMTI2NTkxOTcxNCwtMTI4NzI4ODg3NCwtMT
+I4NzI4ODg3NCwtOTE3NjA1MTgzLDEzNjM4MzcxNDYsMjM4NTU1
+MTAyLDQ1OTMyOTk2OSwxOTg1ODEzMjM3LDE5NzU5OTc0NzUsLT
+I3NDQxOTI3MywtNTc0MjIyMDkxLDUxNzA2OTIxMSwtMzk0OTUw
+MTI4LC01NDQ5NjkyNzMsLTE4OTc0MjU4NCw0ODU4NjQ3MjQsMT
+Y0NTUxNTA3MSwtNjA5MDk0Njc5LDExMjA5NjgxMTUsLTE4NDk2
+MjcxMTZdfQ==
 -->
