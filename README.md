@@ -67,7 +67,8 @@ Click on the url to be directed to the application web page. Enjoy playing aroun
 
 **Run Unit Tests**
 
- - [ ] `make tests`
+`make tests`
+
  *To stop the already running application docker container, execute `docker kill test` and `docker rm test` in a different terminal
 
 ### To execute the model pipeline step by step with configurable inputs
@@ -283,11 +284,11 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzOTk1MjA5LC0yNzQ0MTkyNzMsLTU3ND
-IyMjA5MSw1MTcwNjkyMTEsLTM5NDk1MDEyOCwtNTQ0OTY5Mjcz
-LC0xODk3NDI1ODQsNDg1ODY0NzI0LDE2NDU1MTUwNzEsLTYwOT
-A5NDY3OSwxMTIwOTY4MTE1LC0xODQ5NjI3MTE2LC0xMTc5Mjcy
-MDExLC0xNTYxODc3NzIsLTEyMTg5MTU5Niw1ODgzMDMzMzUsLT
-EwODI3MTQ2MzUsMTAyNjEzNTc3MCwtMTI2MzM0MzgxNCwtMTM3
-MzcxODM1XX0=
+eyJoaXN0b3J5IjpbMjA5OTk4NTk0NCwtMjc0NDE5MjczLC01Nz
+QyMjIwOTEsNTE3MDY5MjExLC0zOTQ5NTAxMjgsLTU0NDk2OTI3
+MywtMTg5NzQyNTg0LDQ4NTg2NDcyNCwxNjQ1NTE1MDcxLC02MD
+kwOTQ2NzksMTEyMDk2ODExNSwtMTg0OTYyNzExNiwtMTE3OTI3
+MjAxMSwtMTU2MTg3NzcyLC0xMjE4OTE1OTYsNTg4MzAzMzM1LC
+0xMDgyNzE0NjM1LDEwMjYxMzU3NzAsLTEyNjMzNDM4MTQsLTEz
+NzM3MTgzNV19
 -->
