@@ -52,10 +52,13 @@
 
 `make database`
 
- - [ ] Build docker image
-  `docker build -f app/Dockerfile -t got_app .`
- - [ ] Run application
-   `docker run -p 5000:5000 --name test got_app`
+ - Build docker image
+
+`docker build -f app/Dockerfile -t got_app .`
+
+ - Run application
+
+`docker run -p 5000:5000 --name test got_app`
 
 The terminal should now display  
 `* Running on http://0.0.0.0:5000/` 
@@ -279,11 +282,11 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODcwOTk5NTk1LC01NzQyMjIwOTEsNTE3MD
-Y5MjExLC0zOTQ5NTAxMjgsLTU0NDk2OTI3MywtMTg5NzQyNTg0
-LDQ4NTg2NDcyNCwxNjQ1NTE1MDcxLC02MDkwOTQ2NzksMTEyMD
-k2ODExNSwtMTg0OTYyNzExNiwtMTE3OTI3MjAxMSwtMTU2MTg3
-NzcyLC0xMjE4OTE1OTYsNTg4MzAzMzM1LC0xMDgyNzE0NjM1LD
-EwMjYxMzU3NzAsLTEyNjMzNDM4MTQsLTEzNzM3MTgzNSwtMTI4
-Mjg5ODAyNV19
+eyJoaXN0b3J5IjpbLTI3NDQxOTI3MywtNTc0MjIyMDkxLDUxNz
+A2OTIxMSwtMzk0OTUwMTI4LC01NDQ5NjkyNzMsLTE4OTc0MjU4
+NCw0ODU4NjQ3MjQsMTY0NTUxNTA3MSwtNjA5MDk0Njc5LDExMj
+A5NjgxMTUsLTE4NDk2MjcxMTYsLTExNzkyNzIwMTEsLTE1NjE4
+Nzc3MiwtMTIxODkxNTk2LDU4ODMwMzMzNSwtMTA4MjcxNDYzNS
+wxMDI2MTM1NzcwLC0xMjYzMzQzODE0LC0xMzczNzE4MzUsLTEy
+ODI4OTgwMjVdfQ==
 -->
