@@ -98,7 +98,7 @@ By default creates offline score base and saves in `data/model_data` Picks expor
 >  -	`export MYSQL_USER=<“master username” used to create the database server>` 
 > 	- `export MYSQL_PASSWORD=<“master password” used to create the database server>` 
 >  - `export MYSQL_HOST=<RDS instance endpoint from the console>` 
->   - `export MYSQL_PORT=<RDS instance port 3306>` 
+>  - `export MYSQL_PORT=<RDS instance port 3306>` 
 >  - `export DATABASE_NAME=<name of the database created>`   
 
  - `S3_BUCKET` - specify the name of the S3 bucket for storing the csv file
@@ -327,11 +327,11 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4Njk2NjM1NywtNTQ0OTY5MjczLC0xOD
-k3NDI1ODQsNDg1ODY0NzI0LDE2NDU1MTUwNzEsLTYwOTA5NDY3
-OSwxMTIwOTY4MTE1LC0xODQ5NjI3MTE2LC0xMTc5MjcyMDExLC
-0xNTYxODc3NzIsLTEyMTg5MTU5Niw1ODgzMDMzMzUsLTEwODI3
-MTQ2MzUsMTAyNjEzNTc3MCwtMTI2MzM0MzgxNCwtMTM3MzcxOD
-M1LC0xMjgyODk4MDI1LDQ5NzI4NzY5MiwtMjk0MDQxMDc0LDE5
-MTkzMTcwMDJdfQ==
+eyJoaXN0b3J5IjpbNzM5NTU4NzA1LC01NDQ5NjkyNzMsLTE4OT
+c0MjU4NCw0ODU4NjQ3MjQsMTY0NTUxNTA3MSwtNjA5MDk0Njc5
+LDExMjA5NjgxMTUsLTE4NDk2MjcxMTYsLTExNzkyNzIwMTEsLT
+E1NjE4Nzc3MiwtMTIxODkxNTk2LDU4ODMwMzMzNSwtMTA4Mjcx
+NDYzNSwxMDI2MTM1NzcwLC0xMjYzMzQzODE0LC0xMzczNzE4Mz
+UsLTEyODI4OTgwMjUsNDk3Mjg3NjkyLC0yOTQwNDEwNzQsMTkx
+OTMxNzAwMl19
 -->
