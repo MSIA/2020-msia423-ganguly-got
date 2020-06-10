@@ -129,7 +129,7 @@ Configurable paths - intermediate model data location, model artifacts location
 
 By default creates offline score base and saves in `data/model_data [MODEL_DATA]` Picks exported model object from `models [MODEL_ARTIFACTS]`
 
-If using different file paths than the defaults, please ensure specifying the same 
+If using different file paths than the defaults, please ensure correct input and output locations are provided for chained steps like clean -> features -> model
 
 ### To connect application to RDS database
 
@@ -312,11 +312,11 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2MzgzNzE0NiwyMzg1NTUxMDIsNDU5Mz
-I5OTY5LDE5ODU4MTMyMzcsMTk3NTk5NzQ3NSwtMjc0NDE5Mjcz
-LC01NzQyMjIwOTEsNTE3MDY5MjExLC0zOTQ5NTAxMjgsLTU0ND
-k2OTI3MywtMTg5NzQyNTg0LDQ4NTg2NDcyNCwxNjQ1NTE1MDcx
-LC02MDkwOTQ2NzksMTEyMDk2ODExNSwtMTg0OTYyNzExNiwtMT
-E3OTI3MjAxMSwtMTU2MTg3NzcyLC0xMjE4OTE1OTYsNTg4MzAz
-MzM1XX0=
+eyJoaXN0b3J5IjpbMTA1Mzc0NDEwNywxMzYzODM3MTQ2LDIzOD
+U1NTEwMiw0NTkzMjk5NjksMTk4NTgxMzIzNywxOTc1OTk3NDc1
+LC0yNzQ0MTkyNzMsLTU3NDIyMjA5MSw1MTcwNjkyMTEsLTM5ND
+k1MDEyOCwtNTQ0OTY5MjczLC0xODk3NDI1ODQsNDg1ODY0NzI0
+LDE2NDU1MTUwNzEsLTYwOTA5NDY3OSwxMTIwOTY4MTE1LC0xOD
+Q5NjI3MTE2LC0xMTc5MjcyMDExLC0xNTYxODc3NzIsLTEyMTg5
+MTU5Nl19
 -->
