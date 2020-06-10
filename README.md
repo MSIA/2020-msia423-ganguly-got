@@ -103,7 +103,7 @@ By default creates offline score base and saves in `data/model_data` Picks expor
 
 - Create and populate the RDS database with offline scored base -  `make database_rds`
 In case the location to store the offline score has been changed above, please mention the same here 
-`make database_rds `
+`make database_rds MODEL_DATA=<local file path>`
 
 
 **To only query from the RDS database *already created* by the developer, skip to **Step 6: Verifying database creation**
@@ -320,7 +320,7 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzMwMDYwODYsLTM5NDk1MDEyOCwtNT
+eyJoaXN0b3J5IjpbLTE0MzQ3Mjc0MzksLTM5NDk1MDEyOCwtNT
 Q0OTY5MjczLC0xODk3NDI1ODQsNDg1ODY0NzI0LDE2NDU1MTUw
 NzEsLTYwOTA5NDY3OSwxMTIwOTY4MTE1LC0xODQ5NjI3MTE2LC
 0xMTc5MjcyMDExLC0xNTYxODc3NzIsLTEyMTg5MTU5Niw1ODgz
