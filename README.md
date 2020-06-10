@@ -15,16 +15,16 @@
 
 ## Running the data ingestion pipeline
 ### To run the model pipeline and application with default settings
-- Things to ensure before proceeding
+Things to ensure before proceeding
  - [ ] You are on Northwestern VPN and Docker app is running
  - [ ] AWS credentials have been set as environment variables via  the following commands
   `export AWS_ACCESS_KEY_ID=<your key>`
   `export AWS_SECRET_ACCESS_KEY=<your secret key>`
 
-> If you are someone I have given access to my S3 bucket, you are good to go. If not, you will have to create and provide a valid S3 Bucket name in `config/model_config.yaml` both for `s3_upload` and `s3_download`. You would then have to execute the S3 data upload step as mentioned later in the document
+> If you are someone I have given access to my S3 bucket, you are good to go. If not, you must create and provide a valid S3 Bucket name in `config/model_config.yaml` both for `s3_upload` and `s3_download`. You would then have to execute the S3 data upload step as mentioned later in the document, *before* proceeding with the model pipeline
 
   
- - [ ] The SQL Alchemy database connection has been set up as,
+ - [ ] The *local* SQL Alchemy database connection string has been set up as,
  `export SQLALCHEMY_DATABASE_URI=`
 > For example,
 > relative path to local DB: sqlite:///data/got_simulator.db
@@ -265,10 +265,10 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0NTUxNTA3MSwtNjA5MDk0Njc5LDExMj
-A5NjgxMTUsLTE4NDk2MjcxMTYsLTExNzkyNzIwMTEsLTE1NjE4
-Nzc3MiwtMTIxODkxNTk2LDU4ODMwMzMzNSwtMTA4MjcxNDYzNS
-wxMDI2MTM1NzcwLC0xMjYzMzQzODE0LC0xMzczNzE4MzUsLTEy
-ODI4OTgwMjUsNDk3Mjg3NjkyLC0yOTQwNDEwNzQsMTkxOTMxNz
-AwMl19
+eyJoaXN0b3J5IjpbMTE1Nzk0NTIxMSwxNjQ1NTE1MDcxLC02MD
+kwOTQ2NzksMTEyMDk2ODExNSwtMTg0OTYyNzExNiwtMTE3OTI3
+MjAxMSwtMTU2MTg3NzcyLC0xMjE4OTE1OTYsNTg4MzAzMzM1LC
+0xMDgyNzE0NjM1LDEwMjYxMzU3NzAsLTEyNjMzNDM4MTQsLTEz
+NzM3MTgzNSwtMTI4Mjg5ODAyNSw0OTcyODc2OTIsLTI5NDA0MT
+A3NCwxOTE5MzE3MDAyXX0=
 -->
