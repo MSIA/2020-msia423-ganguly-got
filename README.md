@@ -76,6 +76,7 @@ Docker image to be built same as above, i.e.,
 `docker build -t got_make .`
 If desired, all previous results and artifacts can be cleaned by running `make clean`
  - Upload raw data to S3 - **`make s3_upload`**
+
 By default this pulls *all files* from `data/external`. To change this location use,  `make s3_upload S3_UPLOAD_PATH=<local file path>`
 As mentioned before, if using your own S3 bucket, please mention the bucket name in `config/model_config.yaml`
 `src/config.py`
@@ -284,7 +285,7 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5OTk4NTk0NCwtMjc0NDE5MjczLC01Nz
+eyJoaXN0b3J5IjpbLTY0ODMxOTEyNiwtMjc0NDE5MjczLC01Nz
 QyMjIwOTEsNTE3MDY5MjExLC0zOTQ5NTAxMjgsLTU0NDk2OTI3
 MywtMTg5NzQyNTg0LDQ4NTg2NDcyNCwxNjQ1NTE1MDcxLC02MD
 kwOTQ2NzksMTEyMDk2ODExNSwtMTg0OTYyNzExNiwtMTE3OTI3
