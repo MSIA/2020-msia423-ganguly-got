@@ -38,8 +38,6 @@
 
 **Reproduce Model Pipeline**
 
-All
-
  - Build docker image
 
 `docker build -t got_make .`
@@ -329,11 +327,11 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODcyMTU0NTA3LC0xMjg3Mjg4ODc0LC05MT
-c2MDUxODMsMTM2MzgzNzE0NiwyMzg1NTUxMDIsNDU5MzI5OTY5
-LDE5ODU4MTMyMzcsMTk3NTk5NzQ3NSwtMjc0NDE5MjczLC01Nz
-QyMjIwOTEsNTE3MDY5MjExLC0zOTQ5NTAxMjgsLTU0NDk2OTI3
-MywtMTg5NzQyNTg0LDQ4NTg2NDcyNCwxNjQ1NTE1MDcxLC02MD
-kwOTQ2NzksMTEyMDk2ODExNSwtMTg0OTYyNzExNiwtMTE3OTI3
-MjAxMV19
+eyJoaXN0b3J5IjpbLTEyODcyODg4NzQsLTEyODcyODg4NzQsLT
+kxNzYwNTE4MywxMzYzODM3MTQ2LDIzODU1NTEwMiw0NTkzMjk5
+NjksMTk4NTgxMzIzNywxOTc1OTk3NDc1LC0yNzQ0MTkyNzMsLT
+U3NDIyMjA5MSw1MTcwNjkyMTEsLTM5NDk1MDEyOCwtNTQ0OTY5
+MjczLC0xODk3NDI1ODQsNDg1ODY0NzI0LDE2NDU1MTUwNzEsLT
+YwOTA5NDY3OSwxMTIwOTY4MTE1LC0xODQ5NjI3MTE2LC0xMTc5
+MjcyMDExXX0=
 -->
