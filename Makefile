@@ -22,10 +22,7 @@ score: config/model_config.yaml
 	docker run --mount type=bind,source="`pwd`",target=/app/ got_make run.py score -c=config/model_config.yaml -o=${MODEL_DATA}/offline_score.csv --lfp=${MODEL_ARTIFACTS}
 
 database:
-	docker run -e SQLALCHEMY_DATABASE_URI --mount type=bind,source="`pwd`",target=/app/ got_make run.py create_db -i=${MODEL_DATA}/offline_score.csv -c=config/model_config.yaml -t
-
-database_rds:
-	docker run -e MYSQL_USER -e MYSQL_PASSWORD -e MYSQL_PORT -e DATABASE_NAME -e MYSQL_HOST --mount type=bind,source="`pwd`",target=/app/ got_make run.py create_db -i=${MODEL_DATA}/offline_score.csv -c=config/model_config.yaml -t
+	docker run -e SQLALCHEMY_DATABASE_URI -e MYSQL_USER -e MYSQL_PASSWORD -e MYSQL_PORT -e DATABASE_NAME -e MYSQL_HOST --mount type=bind,source="`pwd`",target=/app/ got_make run.py create_db -i=${MODEL_DATA}/offline_score.csv -c=config/model_config.yaml -t
 
 run_flask_app:
 	docker run -e SQLALCHEMY_DATABASE_URI -e MYSQL_USER -e MYSQL_PASSWORD -e MYSQL_PORT -e DATABASE_NAME -e MYSQL_HOST -p 5000:5000 --name test got_app
@@ -34,10 +31,10 @@ tests:
 	python3 -m pytest test/*
 
 clean:
-	rm -rf data/model_artifacts/*
+	rm -rf models/*
 	rm -rf data/model_data/*
 	rm -rf data/raw_data/*
 
-pipeline: s3_download clean_base features model score
+pipeline: clean s3_download clean_base features model score
 
 .PHONY: pipeline
