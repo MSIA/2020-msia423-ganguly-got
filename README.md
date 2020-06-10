@@ -48,11 +48,12 @@
 
 The terminal should now display  
 `* Running on http://0.0.0.0:5000/` 
-Click on the link to be directed to the application web page. Enjoy playing around!
+Click on the url to be directed to the application web page. Enjoy playing around!
 
 **Run Unit Tests**
 
  - [ ] `make tests`
+ The previously running docker container for the application can be stopped by using docker kill test and docker rm test
 
 ### To execute step by step with configurable inputs
 Docker image to be built same as above, i.e.,
@@ -295,7 +296,7 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzMzY2MjczNywxNjQ1NTE1MDcxLC02MD
+eyJoaXN0b3J5IjpbLTgzNzIzMTExMiwxNjQ1NTE1MDcxLC02MD
 kwOTQ2NzksMTEyMDk2ODExNSwtMTg0OTYyNzExNiwtMTE3OTI3
 MjAxMSwtMTU2MTg3NzcyLC0xMjE4OTE1OTYsNTg4MzAzMzM1LC
 0xMDgyNzE0NjM1LDEwMjYxMzU3NzAsLTEyNjMzNDM4MTQsLTEz
