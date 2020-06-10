@@ -20,6 +20,7 @@ logger.debug('Test log')
 from src.create_score_db import got_prediction
 # Initialize the database
 db = SQLAlchemy(app)
+logger.info("database string: " + str(db))
 
 
 @app.route('/')
@@ -36,7 +37,7 @@ def index():
         return render_template('index.html', predictions=predictions)
     except:
         traceback.print_exc()
-        logger.warning("Not able to display tracks, error page returned")
+        logger.warning("Not able to display predictions, error page returned")
         return render_template('error.html')
 
 
@@ -102,7 +103,7 @@ def add_entry():
         logger.info("New prediction generated for user in House : %s", request.form['Allegiance'])
         return render_template('index.html', predictions=pred)
     except:
-        logger.warning("Not able to display tracks, error page returned")
+        logger.warning("Not able to display predictions, error page returned")
         return render_template('error.html')
 
 
