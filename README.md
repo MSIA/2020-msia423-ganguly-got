@@ -67,13 +67,19 @@ As mentioned before, if using your own S3 bucket, please mention the bucket name
  Configurable path - download data location
  `make s3_download S3_DOWNLOAD_PATH=<local file path>`
  By default downloaded data saved in `data/raw_data`
+ 
  - Clean data - **`make clean_base`**
-  Configurable path - raw data location, intermediate model data location
+  Configurable paths - download data location, intermediate model data location
 `make clean_base S3_DOWNLOAD_PATH=<local file path> MODEL_DATA=<local file path>`
+By default downloaded data saved in `data/raw_data`
+Creates`clean_base.csv` and saves in `data/model_data`
 
- By default downloaded data saved in `data/raw_data`
- Again, this creates `clean_base.csv` and saves in `data/model_data`. To use an alternate location use 
  - Create features and EDA plots - **`make features`**
+   Configurable paths - download data location, intermediate model data location
+`make clean_base S3_DOWNLOAD_PATH=<local file path> MODEL_DATA=<local file path>`
+By default downloaded data saved in `data/raw_data`
+Creates`clean_base.csv` and saves in `data/model_data`
+
  This directive creates `features.csv` and a folder `eda_plots` with bivariate feature plots in `data/model_data`. To use an alternate location use  `make features MODEL_DATA=<local file path>`
  
  - Train model - **`make model`**
@@ -308,10 +314,10 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxODM1NDI0NCwxNjQ1NTE1MDcxLC02MD
-kwOTQ2NzksMTEyMDk2ODExNSwtMTg0OTYyNzExNiwtMTE3OTI3
-MjAxMSwtMTU2MTg3NzcyLC0xMjE4OTE1OTYsNTg4MzAzMzM1LC
-0xMDgyNzE0NjM1LDEwMjYxMzU3NzAsLTEyNjMzNDM4MTQsLTEz
-NzM3MTgzNSwtMTI4Mjg5ODAyNSw0OTcyODc2OTIsLTI5NDA0MT
-A3NCwxOTE5MzE3MDAyXX0=
+eyJoaXN0b3J5IjpbLTE2NzI1OTUyMzAsMTY0NTUxNTA3MSwtNj
+A5MDk0Njc5LDExMjA5NjgxMTUsLTE4NDk2MjcxMTYsLTExNzky
+NzIwMTEsLTE1NjE4Nzc3MiwtMTIxODkxNTk2LDU4ODMwMzMzNS
+wtMTA4MjcxNDYzNSwxMDI2MTM1NzcwLC0xMjYzMzQzODE0LC0x
+MzczNzE4MzUsLTEyODI4OTgwMjUsNDk3Mjg3NjkyLC0yOTQwND
+EwNzQsMTkxOTMxNzAwMl19
 -->
