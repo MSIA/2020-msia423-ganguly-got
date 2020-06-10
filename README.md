@@ -50,6 +50,10 @@ The terminal should now display
 `* Running on http://0.0.0.0:5000/` 
 Click on the link to be directed to the application web page. Enjoy playing around!
 
+**Run Unit Tests**
+
+ - [ ] `make tests`
+
 ### To execute step by step with configurable inputs
 Docker image to be built same as above, i.e.,
 `docker build -t got_make .`
@@ -62,7 +66,7 @@ As mentioned before, if using your own S3 bucket, please mention the bucket name
  By default this saves downloaded data in `data/raw_data`. To change this location use,  `make s3_download S3_DOWNLOAD_PATH=<local file path>`
  - Clean data - **`make clean_base`**
  Again, this creates `clean_base.csv` and saves in `data/model_data`. To use an alternate location use  `make clean_base MODEL_DATA=<local file path>`
- - Create features and EDA plots - `make features`
+ - Create features and EDA plots - **`make features`**
  This directive creates `features.csv` and a folder `eda_plots` with bivariate feature plots in `data/model_data`. To use an alternate location use  `make features MODEL_DATA=<local file path>`
 
  - `S3_BUCKET` - specify the name of the S3 bucket for storing the csv file
@@ -291,7 +295,7 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2MzM5MDE3MywxNjQ1NTE1MDcxLC02MD
+eyJoaXN0b3J5IjpbMjAzMzY2MjczNywxNjQ1NTE1MDcxLC02MD
 kwOTQ2NzksMTEyMDk2ODExNSwtMTg0OTYyNzExNiwtMTE3OTI3
 MjAxMSwtMTU2MTg3NzcyLC0xMjE4OTE1OTYsNTg4MzAzMzM1LC
 0xMDgyNzE0NjM1LDEwMjYxMzU3NzAsLTEyNjMzNDM4MTQsLTEz
