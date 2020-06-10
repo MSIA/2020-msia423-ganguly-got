@@ -34,8 +34,16 @@
 
  - [ ] Build docker image
   `docker build -t got_make .`
- - [ ] Re
+ - [ ] Run model pipeline
+   `make pipeline`
 
+**Run Application**
+
+ - [ ] Store model 
+ - [ ] Build docker image
+  `docker build -t got_make .`
+ - [ ] Run model pipeline
+   `make pipeline`
 If you are 
 The file has been downloaded and stored in `data/external` folder. User can choose to use the same file for the subsequent steps, in which case there is no need to download again. Otherwise the file needs to be downloaded and placed in `data/external`. Please do not change the file name.
 
@@ -270,10 +278,10 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxMDE0MDkwMywxNjQ1NTE1MDcxLC02MD
-kwOTQ2NzksMTEyMDk2ODExNSwtMTg0OTYyNzExNiwtMTE3OTI3
-MjAxMSwtMTU2MTg3NzcyLC0xMjE4OTE1OTYsNTg4MzAzMzM1LC
-0xMDgyNzE0NjM1LDEwMjYxMzU3NzAsLTEyNjMzNDM4MTQsLTEz
-NzM3MTgzNSwtMTI4Mjg5ODAyNSw0OTcyODc2OTIsLTI5NDA0MT
-A3NCwxOTE5MzE3MDAyXX0=
+eyJoaXN0b3J5IjpbLTE3NjkwMTU1NDUsMTY0NTUxNTA3MSwtNj
+A5MDk0Njc5LDExMjA5NjgxMTUsLTE4NDk2MjcxMTYsLTExNzky
+NzIwMTEsLTE1NjE4Nzc3MiwtMTIxODkxNTk2LDU4ODMwMzMzNS
+wtMTA4MjcxNDYzNSwxMDI2MTM1NzcwLC0xMjYzMzQzODE0LC0x
+MzczNzE4MzUsLTEyODI4OTgwMjUsNDk3Mjg3NjkyLC0yOTQwND
+EwNzQsMTkxOTMxNzAwMl19
 -->
