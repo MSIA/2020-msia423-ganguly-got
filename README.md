@@ -38,9 +38,12 @@
 **Reproduce Model Pipeline**
 
  - [ ] Build docker image
-  `docker build -t got_make .`
+
+`docker build -t got_make .`
+  
  - [ ] Run model pipeline (download data from S3 bucket, clean, make features, train model and score offline base)
-   `make pipeline`
+
+`make pipeline`
 
 **Run Application**
 
@@ -273,11 +276,11 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3NDIyMjA5MSw1MTcwNjkyMTEsLTM5ND
-k1MDEyOCwtNTQ0OTY5MjczLC0xODk3NDI1ODQsNDg1ODY0NzI0
-LDE2NDU1MTUwNzEsLTYwOTA5NDY3OSwxMTIwOTY4MTE1LC0xOD
-Q5NjI3MTE2LC0xMTc5MjcyMDExLC0xNTYxODc3NzIsLTEyMTg5
-MTU5Niw1ODgzMDMzMzUsLTEwODI3MTQ2MzUsMTAyNjEzNTc3MC
-wtMTI2MzM0MzgxNCwtMTM3MzcxODM1LC0xMjgyODk4MDI1LDQ5
-NzI4NzY5Ml19
+eyJoaXN0b3J5IjpbLTIxMzUwMTExMzksLTU3NDIyMjA5MSw1MT
+cwNjkyMTEsLTM5NDk1MDEyOCwtNTQ0OTY5MjczLC0xODk3NDI1
+ODQsNDg1ODY0NzI0LDE2NDU1MTUwNzEsLTYwOTA5NDY3OSwxMT
+IwOTY4MTE1LC0xODQ5NjI3MTE2LC0xMTc5MjcyMDExLC0xNTYx
+ODc3NzIsLTEyMTg5MTU5Niw1ODgzMDMzMzUsLTEwODI3MTQ2Mz
+UsMTAyNjEzNTc3MCwtMTI2MzM0MzgxNCwtMTM3MzcxODM1LC0x
+MjgyODk4MDI1XX0=
 -->
