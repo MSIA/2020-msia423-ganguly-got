@@ -21,7 +21,7 @@
   `export AWS_ACCESS_KEY_ID=<your key>`
   `export AWS_SECRET_ACCESS_KEY=<your secret key>`
 
-> If you are someone I have given access to my S3 bucket, you ar
+> If you are someone I have given access to my S3 bucket, you are good to go. If not, you will have to provide a valid S3 Bucket name in `config/model_config.yaml` both for s3_upload and s3_download
 
   
  - [ ] The SQL Alchemy database connection has been set up as,
@@ -261,7 +261,7 @@ Stories that are not essential immediately, but are good to have, are not sized 
 ├── requirements.txt                  <- Python package dependencies 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzNDQ0MzkyOCwtNjA5MDk0Njc5LDExMj
+eyJoaXN0b3J5IjpbMTYxMDcwNzkwMSwtNjA5MDk0Njc5LDExMj
 A5NjgxMTUsLTE4NDk2MjcxMTYsLTExNzkyNzIwMTEsLTE1NjE4
 Nzc3MiwtMTIxODkxNTk2LDU4ODMwMzMzNSwtMTA4MjcxNDYzNS
 wxMDI2MTM1NzcwLC0xMjYzMzQzODE0LC0xMzczNzE4MzUsLTEy
